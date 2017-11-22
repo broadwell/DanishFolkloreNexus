@@ -8,6 +8,7 @@ extras/src
 extras/README.old.txt
 extras/index.login.html
 extras/InformantBubbleMarker.as
+extras/chapters
 extras/data/*.dfl
 extras/data/extra
 extras/data/backup
