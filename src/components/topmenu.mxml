@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" height="34" borderStyle="solid" borderColor="#a4a4a4" borderThickness="1" cornerRadius="4" themeColor="#a4a4a4" backgroundAlpha="0.0" backgroundColor="#A2A2A2">
+
+<mx:Style source="../danish.css"/>
+
+<mx:Script>
+<![CDATA[
+	import mx.core.Application;
+
+	import mx.events.MenuEvent;
+
+	private function handleMenuClick(event:MenuEvent):void {
+		
+		var menuLabel:String = event.item.@label;
+		var chapterNumber:String = "";
+		var launchURL:String = "";
+		var searchType:String = "";
+		var docURL:String = "";
+		var bibType:String = "";
+		var docTitle:String = "";
+
+		switch(menuLabel) {
+			
+			case "Introduction":
+				chapterNumber = "1";
+				docURL = "data/chapters/01_Intro.dfl";
+				break;
+				
+			case "The Rise of Folklore Scholarship":
+				chapterNumber = "2";
+				docURL = "data/chapters/02_Rise_folklore.dfl";
+				break;
+				
+			case "Life and Works":
+				chapterNumber = "3";
+				docURL = "data/chapters/03_Tang_Kristensen.dfl";
+				break;
+				
+			case "Folklore Genres":
+				chapterNumber = "4";
+				docURL = "data/chapters/04_Genres.dfl";
+				break;
+			
+			case "Mapping Folklore":
+				chapterNumber = "5";
+				docURL = "data/chapters/05_Mapping.dfl";
+				break;
+				
+			case "Repertoire and the Individual":
+				chapterNumber = "6";
+				docURL = "data/chapters/06_Repertoire.dfl";
+				break;
+
+			case "Tang Kristensen's Works":
+				docTitle = "EVALD TANG KRISTENSEN'S PUBLISHED WORKS"
+				bibType = "ETK";
+				docURL = "data/chapters/12_etk-bib.dfl";
+				break;
+				
+			case "Bibliography":
+				docTitle = "BIBLIOGRAPHY";
+				bibType = "General";
+				docURL = "data/chapters/13_bib.dfl";
+				break;
+			
+			case "Acknowledgments":
+				docTitle = "PREFACE AND ACKNOWLEDGMENTS";
+				docURL = "data/chapters/00b_Preface_Ack.dfl";
+				break;
+			
+			case "Table of Contents":
+				docTitle = "TABLE OF CONTENTS";
+				docURL = "data/chapters/00a_Contents.dfl";
+				break;
+				
+			case "Abbreviations":
+				docTitle = "ABBREVIATIONS AND MEASUREMENTS";
+				docURL = "data/chapters/14_abbrev.dfl";
+				break;
+				
+			case "Search all stories in Danish":
+				searchType = "Danish";
+				break;
+				
+			case "Search all stories in English":
+				searchType = "English";
+				break;
+				
+			case "Search story annotations":
+				searchType = "Annotation";
+				break;
+				
+			case "Open entire book as a PDF":
+				launchURL = "data/chapters/DFL.pdf";
+				break;
+
+			case "How to Use This System":
+				docTitle = "HOW TO USE";
+				docURL = "data/chapters/11_how_to_use.dfl";
+				menuLabel = "How to Use";
+				break;				
+
+			case "Launch local maps":
+				launchURL = "../localmaps.pmf";
+				break;
+			
+			case "How to Cite":
+				docTitle = "HOW TO CITE";
+				docURL = "data/chapters/99_how_to_cite.dfl";
+				break;	
+
+			case "Copyrights and Permissions":
+				docTitle = "COPYRIGHTS AND PERMISSIONS";
+				docURL = "data/chapters/10b_copyright.dfl";
+				break;	
+
+			default:
+				break;
+				
+		}
+			
+		if (chapterNumber) {
+	   		mx.core.Application.application.loadNewTab("Chapter", chapterNumber, menuLabel, docURL);
+	   	} else if (bibType) {
+	   		mx.core.Application.application.loadNewTab("Bibliography", bibType, menuLabel, docURL);
+	   	} else if (searchType) {
+	   		mx.core.Application.application.loadNewTab("Search", searchType);
+	   	} else if (docTitle) {
+	   		mx.core.Application.application.loadNewTab("Document", menuLabel, docTitle, docURL);
+	   	} else if (launchURL) {
+			var req:URLRequest = new URLRequest(launchURL);
+	   		navigateToURL(req);   		
+	   	}
+	}
+
+
+]]>
+</mx:Script>
+
+<mx:MenuBar fillColors="[#4C4C4C, #E2E2E2, #700015, #E2E2E2]" id="menuBar" labelField="@label" top="1" bottom="1" left="1" right="1" styleName="menuBar" itemClick="{handleMenuClick(event)}" borderColor="#D00C33" color="#000000" themeColor="#450415" fillAlphas="[1.0, 1.0, 1.0, 0.49]" alpha="1.0">
+
+	<mx:XMLList xmlns="">
+
+		<menuitem label="Folklore and 19th Century Denmark">
+			<menuitem label="Introduction"/>
+			<menuitem label="The Rise of Folklore Scholarship"/>
+		</menuitem>
+
+		<menuitem label="Evald Tang Kristensen">
+			<menuitem label="Life and Works"/>
+		</menuitem>
+
+		<menuitem label="Folktales, Legends and Ballads">
+			<menuitem label="Folklore Genres"/>
+			<menuitem label="Mapping Folklore"/>
+			<menuitem label="Repertoire and the Individual"/>
+		</menuitem>
+
+		<menuitem label="Bibliography">
+			<menuitem label="Tang Kristensen's Works"/>
+			<menuitem label="Bibliography"/>
+			<menuitem label="Abbreviations"/>
+		</menuitem>
+		
+		<menuitem label="Search">
+			<menuitem label="Search all stories in English"/>
+			<menuitem label="Search all stories in Danish"/>
+			<menuitem label="Search story annotations"/>
+			<menuitem label="Open entire book as a PDF"/>
+		</menuitem>
+		
+		<menuitem label="About">
+			<menuitem label="How to Use This System"/>
+			<!-- <menuitem label="Installation"/> -->
+			<!-- <menuitem label="Launch local maps"/> -->
+			<menuitem label="Copyrights and Permissions"/>
+			<menuitem label="Table of Contents"/>
+			<menuitem label="How to Cite"/>
+			<menuitem label="Acknowledgments"/>
+		</menuitem>
+
+	</mx:XMLList>
+
+</mx:MenuBar>
+
+</mx:Canvas>

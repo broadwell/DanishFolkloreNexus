@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<informant person_id="448">
+  <core_informant/>
+  <full_name>Karl Larsen</full_name>
+  <last_name>Larsen</last_name>
+  <first_name>Karl</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="610" secondary_informant="0">
+      <informant_id>448</informant_id>
+      <publication_info>DS_VI_323</publication_info>
+      <full_name>448 - 0.00 - DS_VI_323</full_name>
+      <url>data/stories/610.dfl</url>
+      <place_recorded id="816">Kornerup</place_recorded>
+      <places_mentioned>
+        <place id="96">
+          <name>Br&#xF8;ndbyvester</name>
+        </place>
+        <place id="117">
+          <name>Damhuskro</name>
+        </place>
+        <place id="559">
+          <name>Snoldelev</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>816</place_id>
+      <name>Kornerup</name>
+      <display_name>Kornerup (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>559</place_id>
+      <name>Snoldelev</name>
+      <display_name>Snoldelev (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>117</place_id>
+      <name>Damhuskro</name>
+      <display_name>Damhuskro (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>96</place_id>
+      <name>Br&#xF8;ndbyvester</name>
+      <display_name>Br&#xF8;ndbyvester (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

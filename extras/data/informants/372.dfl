@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<informant person_id="372">
+  <core_informant/>
+  <full_name>L&#xE6;rer H. Hansen</full_name>
+  <last_name>Hansen</last_name>
+  <first_name>H.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="649" secondary_informant="0">
+      <informant_id>372</informant_id>
+      <publication_info>DS_VI_150</publication_info>
+      <full_name>372 - 0.00 - DS_VI_150</full_name>
+      <url>data/stories/649.dfl</url>
+      <place_recorded id="795">Hjallese</place_recorded>
+      <places_mentioned>
+        <place id="549">
+          <name>Skovsbo</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="650" secondary_informant="0">
+      <informant_id>372</informant_id>
+      <publication_info>DS_VI_478</publication_info>
+      <full_name>372 - 0.00 - DS_VI_478</full_name>
+      <url>data/stories/650.dfl</url>
+      <place_recorded id="795">Hjallese</place_recorded>
+      <places_mentioned>
+        <place id="177">
+          <name>Fyn</name>
+        </place>
+        <place id="392">
+          <name>Lyndelse kro</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>795</place_id>
+      <name>Hjallese</name>
+      <display_name>Hjallese (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>392</place_id>
+      <name>Lyndelse kro</name>
+      <display_name>Lyndelse kro (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>177</place_id>
+      <name>Fyn</name>
+      <display_name>Fyn (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>549</place_id>
+      <name>Skovsbo</name>
+      <display_name>Skovsbo (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

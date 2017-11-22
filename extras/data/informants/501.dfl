@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<informant person_id="501">
+  <core_informant/>
+  <full_name>Seminarist Peder Nielsen</full_name>
+  <last_name>Nielsen</last_name>
+  <first_name>Peder</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="797" secondary_informant="0">
+      <informant_id>501</informant_id>
+      <publication_info>DS_IV_1449</publication_info>
+      <full_name>501 - 0.00 - DS_IV_1449</full_name>
+      <url>data/stories/797.dfl</url>
+      <place_recorded id="226">Hald</place_recorded>
+      <places_mentioned>
+        <place id="226">
+          <name>Hald</name>
+        </place>
+        <place id="334">
+          <name>Kloster</name>
+        </place>
+        <place id="335">
+          <name>Kloster skov</name>
+        </place>
+        <place id="502">
+          <name>R&#xF8;verstuebakke</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>226</place_id>
+      <name>Hald</name>
+      <display_name>Hald (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>502</place_id>
+      <name>R&#xF8;verstuebakke</name>
+      <display_name>R&#xF8;verstuebakke (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>335</place_id>
+      <name>Kloster skov</name>
+      <display_name>Kloster skov (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>334</place_id>
+      <name>Kloster</name>
+      <display_name>Kloster (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>226</place_id>
+      <name>Hald</name>
+      <display_name>Hald (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

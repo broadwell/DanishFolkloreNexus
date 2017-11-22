@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<informant person_id="550">
+  <core_informant/>
+  <full_name>Niels Nielsen V&#xE6;ver</full_name>
+  <last_name>V&#xE6;ver</last_name>
+  <first_name>Niels Nielsen</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="752" secondary_informant="0">
+      <informant_id>550</informant_id>
+      <publication_info>DS_VII_141</publication_info>
+      <full_name>550 - 0.00 - DS_VII_141</full_name>
+      <url>data/stories/752.dfl</url>
+      <place_recorded id="111">Dalby</place_recorded>
+      <places_mentioned>
+        <place id="327">
+          <name>Kj&#xE6;rteminde</name>
+        </place>
+        <place id="402">
+          <name>Martofte</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>111</place_id>
+      <name>Dalby</name>
+      <display_name>Dalby (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>402</place_id>
+      <name>Martofte</name>
+      <display_name>Martofte (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>327</place_id>
+      <name>Kj&#xE6;rteminde</name>
+      <display_name>Kj&#xE6;rteminde (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

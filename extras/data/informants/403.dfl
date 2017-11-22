@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<informant person_id="403">
+  <core_informant/>
+  <full_name>L&#xE6;rer P. K. Jensen</full_name>
+  <last_name>Jensen</last_name>
+  <first_name>P. K.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="780" secondary_informant="0">
+      <informant_id>403</informant_id>
+      <publication_info>DS_V_690</publication_info>
+      <full_name>403 - 0.00 - DS_V_690</full_name>
+      <url>data/stories/780.dfl</url>
+      <place_recorded id="747">&#xC5;sted</place_recorded>
+      <places_mentioned>
+        <place id="310">
+          <name>Jebj&#xE6;rg</name>
+        </place>
+        <place id="535">
+          <name>Skive</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>747</place_id>
+      <name>&#xC5;sted</name>
+      <display_name>&#xC5;sted (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>535</place_id>
+      <name>Skive</name>
+      <display_name>Skive (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>310</place_id>
+      <name>Jebj&#xE6;rg</name>
+      <display_name>Jebj&#xE6;rg (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

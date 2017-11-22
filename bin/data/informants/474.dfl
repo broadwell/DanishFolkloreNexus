@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<informant person_id="474">
+  <core_informant/>
+  <full_name>Kristen Meldg&#xE5;rd</full_name>
+  <last_name>Meldg&#xE5;rd</last_name>
+  <first_name>Kristen</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="629" secondary_informant="0">
+      <informant_id>474</informant_id>
+      <publication_info>DS_IV_1682</publication_info>
+      <full_name>474 - 0.00 - DS_IV_1682</full_name>
+      <url>data/stories/629.dfl</url>
+      <place_recorded id="888">Tapdrup</place_recorded>
+      <places_mentioned>
+        <place id="471">
+          <name>Randers</name>
+        </place>
+        <place id="423">
+          <name>Nedre Hornb&#xE6;k</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>888</place_id>
+      <name>Tapdrup</name>
+      <display_name>Tapdrup (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>423</place_id>
+      <name>Nedre Hornb&#xE6;k</name>
+      <display_name>Nedre Hornb&#xE6;k (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>471</place_id>
+      <name>Randers</name>
+      <display_name>Randers (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="566">
+  <core_informant/>
+  <full_name>Gunde Gundesen</full_name>
+  <last_name>Gundesen</last_name>
+  <first_name>Gunde</first_name>
+  <gender>m</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="903" secondary_informant="0">
+      <informant_id>566</informant_id>
+      <publication_info>DS_VII_597</publication_info>
+      <full_name>566 - 0.00 - DS_VII_597</full_name>
+      <url>data/stories/903.dfl</url>
+      <place_recorded id="927">Kjelst</place_recorded>
+      <places_mentioned>
+        <place id="751">
+          <name>Billum</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>927</place_id>
+      <name>Kjelst</name>
+      <display_name>Kjelst (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>751</place_id>
+      <name>Billum</name>
+      <display_name>Billum (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

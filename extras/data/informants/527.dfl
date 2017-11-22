@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="527">
+  <core_informant/>
+  <full_name>Ane Kirstine Refsg&#xE5;rd</full_name>
+  <last_name>Refsg&#xE5;rd</last_name>
+  <first_name>Ane Kirstine</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="464" secondary_informant="0">
+      <informant_id>527</informant_id>
+      <publication_info>DS_I_860</publication_info>
+      <full_name>527 - 0.00 - DS_I_860</full_name>
+      <url>data/stories/464.dfl</url>
+      <place_recorded id="488">R&#xF8;dding</place_recorded>
+      <places_mentioned>
+        <place id="1000">
+          <name>H&#xF8;jslev kirke</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>488</place_id>
+      <name>R&#xF8;dding</name>
+      <display_name>R&#xF8;dding (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>1000</place_id>
+      <name>H&#xF8;jslev kirke</name>
+      <display_name>H&#xF8;jslev kirke (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

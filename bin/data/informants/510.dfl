@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<informant person_id="510">
+  <core_informant/>
+  <full_name>Dyrl&#xE6;ge Andreas Pedersen</full_name>
+  <last_name>Pedersen</last_name>
+  <first_name>Andreas</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="452" secondary_informant="0">
+      <informant_id>510</informant_id>
+      <publication_info>DS_V_42</publication_info>
+      <full_name>510 - 0.00 - DS_V_42</full_name>
+      <url>data/stories/452.dfl</url>
+      <place_recorded id="859">Sams&#xF8;</place_recorded>
+      <places_mentioned>
+        <place id="339">
+          <name>Kolby</name>
+        </place>
+        <place id="711">
+          <name>Visborg</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>859</place_id>
+      <name>Sams&#xF8;</name>
+      <display_name>Sams&#xF8; (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>711</place_id>
+      <name>Visborg</name>
+      <display_name>Visborg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>339</place_id>
+      <name>Kolby</name>
+      <display_name>Kolby (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

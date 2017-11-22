@@ -1,0 +1,570 @@
+person_id	first_name	last_name	core_informant?
+1	Birte Marie	(Rejstrup)	0
+2		Adventist	0
+3		anden Mand	0
+4	Marie Kirstine	Andersdatter	0
+5	Erik Larsen	Andersen	0
+6	Gerhard Peter	Andersen	0
+7	Hans	Andersen	0
+8	Jens	Andersen	0
+9	Karen	Andersen	0
+10	Karl	Andersen	0
+11	Kornelia	Andersen	0
+12	Kristen	Andersen	0
+13	Kristen	Andersen	0
+14	Ole	Andersen	0
+15	Poul Kristian	Andersen	0
+16	Søren Krist.	Andersen	0
+17		Andersen	0
+18	Gerhard Peter	Andersens moder	0
+19	Severine Kirstine	Andreassen	0
+20	C. O.	Andresen	0
+21	Gregers Kristian	Andresen	0
+22	Roland Peder	Andresen	0
+23		Anonymous	0
+24	(Jens) Kristen	Bæk	0
+25	Jens Nielsen	Bæk	0
+26	Jørgen	Bæk	0
+27	Mads Thomsen	Bæk	0
+28	Ole Pedersen	Barsøe	0
+29	Jens	Bertelsen	0
+30	Niels	Bertelsen	0
+31		Birk	0
+32	Peder Andersen	Bjerregaard	0
+33	Johanne	Bøggild	0
+34	Christen Andersen	Brøgger	0
+35	Madam	Brøndum	0
+36	Th	Bugge	0
+37		Bülow	0
+38	Chr.	Christensen	0
+39	H. P. A.	Christensen	0
+40	Jens	Christensen	0
+41	P. Chr.	Christensen	0
+42		Christensen	0
+43		Christensen	0
+44	Pedersen	Dahl	0
+45	R. A.	Dahl	0
+46	J. J. (P.)	Damgaard	0
+47	F.	Dirksen	0
+48	Kristen	Ebbesen	0
+49	Rasmus Sørensen	Elegaard (Elgaard)	0
+50	Bodil Marie	Enevoldsen	0
+51	Ane	Eriksdatter	0
+52	Anton	Eriksen	0
+53	S. C.	Eriksen	0
+54	Niels	Feldballe	0
+55	Mads	Filtenborg	0
+56	Rasmus	Frandsen	0
+57	Kirsten Marie	Frederiksdatter	0
+58	Kristen (Kristian)	Frederiksen	0
+59	Jens	Gudesen	0
+60	Ane	Hansdatter	0
+61	Mette Marie	Hansdatter	0
+62	Ane Margrete	Hansen	0
+63	Iver Balsen	Hansen	0
+64	Jens	Hansen	0
+65	Jensine	Hansen	0
+66	Julius	Hansen	0
+67	Karl Kristian	Hansen	0
+68	Mikkel	Hansen	0
+69	Søren	Hansen	0
+70	Urban	Hansen	0
+71		Hansen	0
+72		Hansen	0
+73	Jens Andersen	Hattemager	0
+74		Hjelmdrup Smed	0
+75	C S	Hjortnæs	0
+76	Peter Nielsen	Hjulmand	0
+77	S. L.	Høeg	0
+78	Søren	Høeg	0
+79	Kristian	Holst	0
+80	Rasmus	Hornbæk	0
+81	K. N.	Hovgaard	0
+82	Anders Kristen	Hovstrup	0
+83	Kristian Andersen	Hust (Huset)	0
+84	Martin	Iversen	0
+85	Martin	Iversens	0
+86	Søren Krist.	Jacobsen	0
+87	Ane Kirstine	Jakobsdatter	0
+88	Jakob Kr.	Jakobsen	0
+89	Jørgen	Jakobsen	0
+90	(Ane) Margrete	Jensdatter	1
+91	Ane	Jensdatter	0
+92	Ane Dorotea	Jensdatter	0
+93	Ane Johanne	Jensdatter	0
+94	Inger Katrine	Jensdatter	0
+95	Maren	Jensdatter	0
+96	Maren	Jensdatter	0
+97	Marianne	Jensdatter	0
+98	Anders	Jensen	0
+99	Ane Sofie	Jensen	0
+100	Eli	Jensen	0
+101	Erik	Jensen	0
+102	Frederik	Jensen	0
+103	Jakob	Jensen	0
+104	Jens	Jensen	0
+105	Jens Larsen	Jensen	0
+106	Jeppe	Jensen	0
+107	Karen Marie	Jensen	0
+108	Kristen Peder	Jensen	0
+109	Laurs	Jensen	0
+110	Lavst	Jensen	0
+111	Niels	Jensen	0
+112	Niels Kristian	Jensen	0
+113	Peder	Jensen	0
+114	Søren Krist.	Jensen	0
+115		Jensen	0
+116	Mette Marie	Jensen (Jensdatter)	0
+117	Anders Kr.	Jensen Nordmose	0
+118	Larsine	Jens-Kristiansdatter	0
+119	Helene	Johansdatter	0
+120	C	Johansen	0
+121	Jens	Johansen	0
+122	Laust	Johansen	0
+123	Peder	Johansen	1
+124	Marie	Jonsen	0
+125	Peder	Jonsen	0
+126	Inger Marie	Jørgensdatter	0
+127	Hans	Jørgensen	0
+128	Jakob	Jørgensen	0
+129	Jakob	Jørgensen	0
+130	Søren	Jørgensen	0
+131		Jørgensen	0
+132		Jørgensen	0
+133		Jørgensen	0
+134	Niels (Kristensen)	Josef	0
+135	A B	Kaalund	0
+136		Kjeldsen	0
+137	Karen	Klavsdatter	0
+138	Maren	Knudsdatter	0
+139	Niels Nielsen	Kobberholm	0
+140	M.	Kolstrup	0
+141	C. A.	Kondrup	0
+142		Kondrup	0
+143		Korsgaard	0
+144	Johanne Marie	Kristensdatter	0
+145	Karen Marie	Kristensdatter	0
+146	Karen Marie	Kristensdatter	0
+147	Kirsten	Kristensdatter	0
+148	Kristense	Kristensdatter	0
+149	Maren	Kristensdatter	0
+150	Jens	Kristensen	1
+151	Jokum	Kristensen	0
+152	M. K.	Kristensen	0
+153	Peder Kristian	Kristensen	0
+154	Hans	Kristiansen	0
+155	Kristian	Kristiansen	0
+156	Marianne	Kristoffersdatter	0
+157	Kristen	Kristoffersen	0
+158	Bertil (Bærtel)	Krog	0
+159	Bertil	Krogs	0
+160		Lange	0
+161	Helle Marie	Larsdatter	0
+162	Kristen	Larsen	0
+163	L.	Larsen	0
+164	Mette Sofie	Larsen	0
+165	Niels Krist.	Larsen	0
+166	Ane Sofie	Lauridsdatter	0
+167	Hans Jokum	Lauridsen	0
+168	L. F.	Lauritsen	0
+169	Ivar (Iver)	Laursen	0
+170	Laurids	Lavrsen	0
+171	Søren	Lavrsen	0
+172	Niels Hansen	Li	0
+173	Wilhelm Frederik (V.F.) (F.V. in JA)	Lind	0
+174	M.	Lindeloff	0
+175	Hans Kristensen	Lund	0
+176	P. J. T.	Lund	0
+177	J. P.	Lyngby	0
+178	Svend	Maaen	0
+179	Johanne Katrine	Madsdatter	0
+180	Morten	Madsen	0
+181	N	Madsen	0
+182	Niels	Madsen	0
+183	Niels	Madsen	0
+184	Poul	Madsen	0
+185	Kristen	Magaard	0
+186		Mand	0
+187	Jens	Mark	0
+188	Anders	Mathisen	0
+189	A. J.	Meldgaard	0
+190	Ole	Melkiorsen	0
+191	Else Marie	Mikaelsdatter	0
+192	Niels Mikkel	Mikkelsen	0
+193	Kristen	Mikkelsens	0
+194	Kristiane	Mogensdatter	0
+195	Chr.	Møller	0
+196	Christen Hansen	Møller	0
+197	Mads	Møller	0
+198	Mads	Møller	0
+199	Ole	Mønsted	0
+200	Maren	Mortensdatter	0
+201	C. P.	Mortensen	0
+202	Niels	Mortensen	0
+203	Rasmus Peter	Mortensen	0
+204	Ludvig	Mosbæk	0
+205	Jens Kr. Kristensen	Mosen	0
+206	Maren Pedersdatter	Naibjærg	0
+207	Birte Marie	Nielsdatter	0
+208	Dorte Marie	Nielsdatter	0
+209	Maren	Nielsdatter	0
+210	Marie	Nielsdatter	0
+211	Petrea (Petra) Marie	Nielsdatter	0
+212	A. C.	Nielsen	0
+213	Ane Marie	Nielsen	0
+214	Hans	Nielsen	0
+215	Jens Larsen	Nielsen	0
+216	Kaj Burkhardt	Nielsen	0
+217	Kristen	Nielsen	0
+218	Laust	Nielsen	0
+219	Marie	Nielsen	0
+220	Niels	Nielsen	0
+221	Niels	Nielsen	0
+222	Søren Peter	Nielsen	0
+223	Peder	Nielsen Hale	0
+224	Jacob	Nøhr	0
+225	Rasmus	Nørregaard	0
+226		Nørregaard	0
+227	Kristian	Østergaard	0
+228		par gamle mænd	0
+229	Ane Dorotea (Dorthea)	Pedersdatter	0
+230	Ane Marie	Pedersdatter	0
+231	Else	Pedersdatter	0
+232	Inger Katrine	Pedersdatter	0
+233	Johanne Frederikke	Pedersdatter	0
+234	Johanne Kirstine	Pedersdatter	0
+235	Kirsten Marie	Pedersdatter	1
+236	Anders	Pedersen	0
+237	H. V.	Pedersen	0
+238	Henrik	Pedersen	0
+239	Jacob	Pedersen	0
+240	Jens	Pedersen	0
+241	Jens Peter	Pedersen	1
+242	Karen Kirstine	Pedersen	0
+243	Klaus	Pedersen	0
+244	Kristen	Pedersen	0
+245	Kristen	Pedersen	0
+246	Marie	Pedersen	0
+247	Niels	Pedersen	0
+248	Niels	Pedersen	0
+249	Niels Laurids	Pedersen	0
+250	Peder Kristian	Pedersen	0
+251	Rasmus Kjær	Pedersen	0
+252	Torkild	Pedersen	0
+253		Pedersen	0
+254	Niels	Pedersens	0
+255	Ole	Post	0
+256	Julianne Marie	Poulsdatter	0
+257	Mette Marie	Poulsdatter	0
+258	Elisabet	Poulsen	0
+259	Jens Kr.	Poulsen	0
+260	Jens Kristian	Poulsen	0
+261		Præstholm	0
+262	Rasmus P.	Randlev	0
+263	Johanne	Rasmusdatter	0
+264	Maren	Rasmusdatter	0
+265	Anders	Rasmussen	0
+266	Axel	Rasmussen	0
+267	Holm	Rasmussen	0
+268	Kjeld	Rasmussen	0
+269	Inger Marie	Ravn	0
+270	Jens	Ravnkilde	0
+271	L. V.	Rømer	0
+272	Kristen	Rønning	0
+273	Anders Jørgensen	Sams	0
+274	Kristine Frederikke	Schnevoigt	0
+275	Peder	Schultz	0
+276		Schytte	0
+277		Schytte	0
+278	Jens	Skaksen	0
+279	Kristian	Skole	0
+280	Niels Frederiksen	Skov	0
+281	Laust	Sommer	0
+282	Kristen	Søndermark	0
+283	Kirsten Marie	Sørensdatter	0
+284	Laurine	Sørensdatter	0
+285	Louise	Sørensdatter	0
+286	Maren	Sørensdatter	0
+287	Jens	Sørensen	0
+288	Jens	Sørensen	0
+289	Morten	Sørensen	0
+290	Morten	Sørensen	0
+291	Peder Kr.	Sørensen	0
+292	Peder Kristian	Sørensen	0
+293	Rasmus	Sørensen	0
+294	S.	Sørensen	0
+295	Simon	Sørensen	0
+296	Steffen	Sørensen	0
+297	Villum	Sørensen	0
+298		Steengaard	0
+299	Peder Kvist	Svane	0
+300	Johanne	Svendsdatter	0
+301		Svenningsen	0
+302	Jens Jensen	Talund	0
+303	Jesper Pedersen	Talund	0
+304	Jakob Kristian	Thomsen	0
+305	Peder	Thomsen	0
+306	Rasmus	Thomsen	0
+307	Niels Jensen	Thorsen	0
+308	Jens	Tovbro	0
+309	Inger	Tronsig	0
+310	Anders	Udesen	0
+311	Vilhelm	Udesen	0
+312	Niels	Uglsø	0
+313	Jens Jensen	Vaande	0
+314	Klauvdiane Jensen	Vaande	0
+315	Jens	Væver	0
+316	Peder Kristensen	Vestergaard	0
+317		Vestergaard	0
+318	Evald	Kristensen	0
+319	Frederik	Algreen-Ussing	0
+320	Thomas	Andbæk	0
+321	Bodil Marie	Andersdatter	0
+322	Kirsten	Andersdatter	0
+323	Knud	Andersen	0
+324	Mikkel	Andersen	0
+325	Niels Krist.	Andersen	0
+326	Anne	Andresen	0
+327	Jørgen Rasmussen	Bak	0
+328	V.	Bennike	0
+329	Ane Birgitte	Berg	0
+330	H. Anton	Bering	0
+331	Lavst Nikolaj	Bertelsen	0
+332	Marie Kirstine	Birk	0
+333	P.	Bliksted	0
+334	F. C.	Bloch	0
+335	Harald	Boisen	0
+336	Simon	Bojsen	0
+337	Maren Mogensen	Bonde	0
+338	Ole	Bonde	0
+339	O. Chr.	Boye	0
+340	J. G. O.	Brix	0
+341	Peder	Brogård	0
+342	Anders	Brøsted	0
+343	Iver	Bundgård	0
+344	Jens	Bærtelsen	0
+345	Niels	Bøgeskov	0
+346	Chr. Adolf	Christensen	0
+347	N. P.	Christensen	0
+348	Nikolaj	Christensen	0
+349	P.	Christensen	0
+350	Niels	Claussøn	0
+351	Sidsel Andersdatter	Dahl	0
+352	K. P.	Dalin	0
+353	Else og Maren	Dissing	0
+354	Tøger	Dissing	0
+355	Lars	Dybdahl	0
+356	Martin	Dyrholm	0
+357	Rasmus	Dyrholm	0
+358	Niels	Ebbesen	0
+359	Kr.	Eriksen	0
+360	Lars Peter	Eriksen	0
+361	Hanne (Johanne Marie Christine)	Fenger	0
+362	Hans Pedersen	Fladbirk	0
+363	Kristian	Frederiksen	0
+364	Lars	Frederiksen	0
+365	Klavs	Gjerging	0
+366	Katrine	Glud	0
+367	C. F.	Grove	0
+368	F. L.	Grundtvig	0
+369	Andreas Thøgersen	Grønborg	0
+370	Inger	Halkjær	0
+371	Constantin	Hansen	0
+372	H.	Hansen	0
+373	Hans	Hansen	0
+374	Hans Peder	Hansen	0
+375	Jørgen	Hansen	0
+376	Lorens	Hansen	0
+377	Louise	Hansen	0
+378	Louise	Hansen	0
+379	Mads	Hansen	0
+380	N. E.	Hansen	0
+381	Peder	Hansen	0
+382	Peder	Hansen	0
+383	Søren Lavrsen	Hansen	0
+384	Hans Peder	Hansen-Nørremølle	0
+385	C. C.	Haugård	0
+386	U. N.	Henneberg	0
+387	Jørgen	Henriksen	0
+388	Georg	Himmelstrup	0
+389	Margrethe	Hoberg	0
+390	Mads	Holdt	0
+391	Ove	Holm	0
+392	P. C.	Holm	0
+393	Peder	Holskov	0
+394	A. E.	Jakobsen	0
+395	J.	Jakobsen	0
+396	Peder Lavrids	Jakobsen	0
+397	Jens	Jensen	0
+398	Johan	Jensen	0
+399	Karl Kristian	Jensen	0
+400	Kr.	Jensen	0
+401	Mikkel	Jensen	0
+402	P.	Jensen	0
+403	P. K.	Jensen	0
+404	Poul	Jensen	0
+405	Svend Peter	Jensen	0
+406	Svend Peter	Jensen	0
+407	J.	Jeppesen	0
+408	Morten	Jeppesen	0
+409	Kristen	Jepsen	0
+410	Mads	Jepsen	0
+411	Chr.	Jespersen	0
+412	Diderik	Johansen	0
+413	Marie	Johansen	0
+414	Niels	Johansen	0
+415	Niels	Johansen	0
+416	Niels	Jonsen	0
+417	Ane Bolette	Justsdatter	0
+418	Anders	Jørgensen	0
+419	Jutta	Jørgensen	0
+420	Jørgen	Jørgensen	0
+421	Karl P. J.	Jørgensen	0
+422	Knud	Jørgensen	0
+423	S.	Jørgensen	0
+424	Marie	Kalmar	0
+425	Hans	Kirk	0
+426	Jens	Kjellerup	0
+427	Severin	Kjær	0
+428	Marie Kirstine	Kjærgård	0
+429	Frederik	Knudsen	0
+430	Kristen	Knudsen	0
+431	Ane Marie	Kristensdatter	0
+432	Ane Marie	Kristensdatter	0
+433	Ane Sofie	Kristensdatter	0
+434	Dortea	Kristensdatter	0
+435	Peder Justesen	Kristensen	0
+436	Sigurd J.	Kristensen	0
+437	T.	Kristensen	0
+438	T. Kr.	Kristensen	0
+439	Tellef	Kristensen	0
+440	Maren	Kristiansdatter	0
+441	Niels	Kristiansen	0
+442	Petrine	Kristiansen	0
+443	Rasmus H.	Kruse	0
+444	Th.	Kruse	0
+445	Peder	Ladefoged	0
+446	C. M.	Larsen	0
+447	Hans Kristian	Larsen	0
+448	Karl	Larsen	0
+449	Kristian	Larsen	0
+450	A. P.	Lauritsen	0
+451	Stine	Lauritsen	0
+452	Dorte	Lavrsdatter	0
+453	L. P.	Lavrsen	0
+454	Th.	Leth	0
+455	Elise	Lindberg	0
+456	Anna Christ.	Ludvigsen	0
+457	F. P. J.	Lund	0
+458	Hans	Lund	0
+459	Niels Johannes	Lund	0
+460	Sofie	Lund	0
+461	Poul Jeppesen	Lystbæk	0
+462	J. H.	Madelung	0
+463	Ane Marie	Madsdatter	0
+464	Marianne	Madsdatter	0
+465	E. F.	Madsen	0
+466	Jens	Madsen	0
+467	P. K.	Madsen	0
+468	Tue	Madsen	0
+469	Hans Jensen	Mand	0
+470	Søren	Mand	0
+471	Søren	Mand	0
+472	Frederik	Melbye	0
+473	M.	Melbye	0
+474	Kristen	Meldgård	0
+475	Karen Marie	Mikkelsen	0
+476	Anna	Moltke	0
+477	P. K.	Munch	0
+478	M.	Møller	0
+479	Niels	Møller	0
+480	Niels Kr.	Møller	0
+481	Otto	Møller	0
+482	Signe Christensen	Møller	0
+483	Ane Katrine	Nielsdatter	0
+484	Ane	Nielsen	0
+485	Anton	Nielsen	0
+486	Chr.	Nielsen	0
+487	H. P.	Nielsen	0
+488	Jens	Nielsen	0
+489	Joh.	Nielsen	0
+490	Jørgen	Nielsen	0
+491	Jørgen	Nielsen	0
+492	Lars	Nielsen	0
+493	Lars Kristian	Nielsen	0
+494	M.	Nielsen	0
+495	M.	Nielsen	0
+496	M. C.	Nielsen	0
+497	Maren	Nielsen	0
+498	Morten	Nielsen	0
+499	O. V.	Nielsen	0
+500	Peder	Nielsen	0
+501	Peder	Nielsen	0
+502	J. V.	Nissen	0
+503	Maren	Noesgård	0
+504	C. C.	Nørgård	0
+505	N. P.	Olsen	0
+506	Rasmus	Olsen	0
+507	Morten	Overgård	0
+508	Else Marie	Pedersdatter	0
+509	Kristiane	Pedersdatter	0
+510	Andreas	Pedersen	0
+511	Hans Kristian	Pedersen	0
+512	Herman	Pedersen	0
+513	Johannes Grønbæk	Pedersen	0
+514	L. Chr.	Pedersen	0
+515	Lars	Pedersen	0
+516	Mathias	Pedersen	0
+517	N. Kr.	Pedersen	0
+518	Søren	Pedersen	0
+519	H.	Petersen	0
+520	A. C.	Poulsen	0
+521	Anders H.	Poulsen	0
+522	Martinus	Poulsen	0
+523	Maren	Primdal	0
+524	Chr.	Rasmussen	0
+525	H. V.	Rasmussen	0
+526	S. P.	Rasmussen	0
+527	Ane Kirstine	Refsgård	0
+528	Jens	Rod	0
+529	A. H.	Schade	0
+530	C.	Schade	0
+531	Villads	Skov	0
+532	Kr.	Skovmand	0
+533	Mads Kristensen	Skriver	0
+534	Jens	Smed	0
+535	Peder Jensen	Smed	0
+536	K. N.	Stegger	0
+537	Hanne	Storgård	0
+538	Hjalmar	Svendsen	0
+539	J.	Søe	0
+540	Karl	Sørensen	0
+541	Mikkel	Sørensen	0
+542	N. J.	Termansen	0
+543	Johanne Marie	Thomasdatter	0
+544	C. Sørensen	Thomaskjær	0
+545	E.	Thomsen	0
+546	Karen	Toxværd	0
+547	E.	Trier	0
+548	Johan	Vorm	0
+549	Jens Jensen	Vånde	0
+550	Niels Nielsen	Væver	0
+551	Christian	Weiss	0
+552	F.	Wennerwald	0
+553	J. L.	West	0
+554	J. L.	West	0
+559	Kristen	Pedersen	0
+555	Ole	Worm	0
+558	Niels	Pedersen	0
+556	Anders	Ålborg	0
+557	Kristen	Andersen	0
+562	Peter	Juhl	0
+563	Dorthea	Pedersdatter	0
+564	Hans	Andersen	0
+565	H	Brøchner	0
+566	Gunde	Gundesen	0
+567	Kristian	Kristensen Norge	0
+568	Peder 	Jensen Skrædder	0
+569	Klavs	Gjerding	0
+570	Mads	Christensen	0
+572	N	Jakobsen	0

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<informant person_id="334">
+  <core_informant/>
+  <full_name>Pastor F. C. Bloch</full_name>
+  <last_name>Bloch</last_name>
+  <first_name>F. C.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="509" secondary_informant="0">
+      <informant_id>334</informant_id>
+      <publication_info>DS_IV_1400</publication_info>
+      <full_name>334 - 0.00 - DS_IV_1400</full_name>
+      <url>data/stories/509.dfl</url>
+      <place_recorded id="854">Ringe, Fyn</place_recorded>
+      <places_mentioned>
+        <place id="965">
+          <name>Varde</name>
+        </place>
+        <place id="1009">
+          <name>Ringkj&#xF8;bing</name>
+        </place>
+        <place id="1010">
+          <name>Lyne</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>854</place_id>
+      <name>Ringe, Fyn</name>
+      <display_name>Ringe, Fyn (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>1010</place_id>
+      <name>Lyne</name>
+      <display_name>Lyne (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>1009</place_id>
+      <name>Ringkj&#xF8;bing</name>
+      <display_name>Ringkj&#xF8;bing (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>965</place_id>
+      <name>Varde</name>
+      <display_name>Varde (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="344">
+  <core_informant/>
+  <full_name>Jens B&#xE6;rtelsen</full_name>
+  <last_name>B&#xE6;rtelsen</last_name>
+  <first_name>Jens</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="558" secondary_informant="0">
+      <informant_id>344</informant_id>
+      <publication_info>DS_IV_1696</publication_info>
+      <full_name>344 - 0.00 - DS_IV_1696</full_name>
+      <url>data/stories/558.dfl</url>
+      <place_recorded id="914">Vole</place_recorded>
+      <places_mentioned>
+        <place id="824">
+          <name>Lin&#xE5;</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>914</place_id>
+      <name>Vole</name>
+      <display_name>Vole (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>824</place_id>
+      <name>Lin&#xE5;</name>
+      <display_name>Lin&#xE5; (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

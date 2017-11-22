@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="535">
+  <core_informant/>
+  <full_name>Peder Jensen Smed</full_name>
+  <last_name>Smed</last_name>
+  <first_name>Peder Jensen</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="793" secondary_informant="0">
+      <informant_id>535</informant_id>
+      <publication_info>DS_II_G_340</publication_info>
+      <full_name>535 - 0.00 - DS_II_G_340</full_name>
+      <url>data/stories/793.dfl</url>
+      <place_recorded id="881">Strandby</place_recorded>
+      <places_mentioned>
+        <place id="699">
+          <name>Viborg</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>881</place_id>
+      <name>Strandby</name>
+      <display_name>Strandby (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>699</place_id>
+      <name>Viborg</name>
+      <display_name>Viborg (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

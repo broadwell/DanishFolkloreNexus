@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<informant person_id="565">
+  <core_informant/>
+  <full_name>H Br&#xF8;chner</full_name>
+  <last_name>Br&#xF8;chner</last_name>
+  <first_name>H</first_name>
+  <gender>m</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations>
+    <occupation occupation_id="65">Pr&#xE6;st</occupation>
+    <occupation occupation_id="62">pastor</occupation>
+  </occupations>
+  <stories>
+    <story story_id="902" secondary_informant="0">
+      <informant_id>565</informant_id>
+      <publication_info>DS_VII_1612</publication_info>
+      <full_name>565 - 0.00 - DS_VII_1612</full_name>
+      <url>data/stories/902.dfl</url>
+      <place_recorded id="954">Gangsted</place_recorded>
+      <places_mentioned>
+        <place id="926">
+          <name>S&#xF8;vind</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>954</place_id>
+      <name>Gangsted</name>
+      <display_name>Gangsted (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>926</place_id>
+      <name>S&#xF8;vind</name>
+      <display_name>S&#xF8;vind (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

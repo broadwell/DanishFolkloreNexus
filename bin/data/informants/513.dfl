@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="513">
+  <core_informant/>
+  <full_name>L&#xE6;rer Johannes Gr&#xF8;nb&#xE6;k Pedersen</full_name>
+  <last_name>Pedersen</last_name>
+  <first_name>Johannes Gr&#xF8;nb&#xE6;k</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="561" secondary_informant="0">
+      <informant_id>513</informant_id>
+      <publication_info>DS_I_889</publication_info>
+      <full_name>513 - 0.00 - DS_I_889</full_name>
+      <url>data/stories/561.dfl</url>
+      <place_recorded id="62">Blegind</place_recorded>
+      <places_mentioned>
+        <place id="1021">
+          <name>Dejret</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>62</place_id>
+      <name>Blegind</name>
+      <display_name>Blegind (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>1021</place_id>
+      <name>Dejret</name>
+      <display_name>Dejret (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="463">
+  <core_informant/>
+  <full_name>Ane Marie Madsdatter</full_name>
+  <last_name>Madsdatter</last_name>
+  <first_name>Ane Marie</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="468" secondary_informant="0">
+      <informant_id>463</informant_id>
+      <publication_info>DS_V_1026</publication_info>
+      <full_name>463 - 0.00 - DS_V_1026</full_name>
+      <url>data/stories/468.dfl</url>
+      <place_recorded id="760">Brovst</place_recorded>
+      <places_mentioned>
+        <place id="760">
+          <name>Brovst</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>760</place_id>
+      <name>Brovst</name>
+      <display_name>Brovst (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>760</place_id>
+      <name>Brovst</name>
+      <display_name>Brovst (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

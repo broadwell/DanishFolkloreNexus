@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<informant person_id="567">
+  <core_informant/>
+  <full_name>Kristian Kristensen Norge</full_name>
+  <last_name>Kristensen Norge</last_name>
+  <first_name>Kristian</first_name>
+  <gender>m</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations>
+    <occupation occupation_id="33">husmand</occupation>
+  </occupations>
+  <stories>
+    <story story_id="906" secondary_informant="0">
+      <informant_id>567</informant_id>
+      <publication_info>JAH_II_255</publication_info>
+      <full_name>567 - 0.00 - JAH_II_255</full_name>
+      <url>data/stories/906.dfl</url>
+      <place_recorded id="928">G&#xF8;ttrup</place_recorded>
+      <places_mentioned>
+        <place id="992">
+          <name>Aggersborgg&#xE5;rd</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>928</place_id>
+      <name>G&#xF8;ttrup</name>
+      <display_name>G&#xF8;ttrup (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>992</place_id>
+      <name>Aggersborgg&#xE5;rd</name>
+      <display_name>Aggersborgg&#xE5;rd (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

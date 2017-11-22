@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<informant person_id="568">
+  <core_informant/>
+  <full_name>Peder  Jensen Skr&#xE6;dder</full_name>
+  <last_name>Jensen Skr&#xE6;dder</last_name>
+  <first_name>Peder </first_name>
+  <gender>m</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="909" secondary_informant="0">
+      <informant_id>568</informant_id>
+      <publication_info>JAH_II_414</publication_info>
+      <full_name>568 - 0.00 - JAH_II_414</full_name>
+      <url>data/stories/909.dfl</url>
+      <place_recorded id="436">N&#xF8;rre Vissing</place_recorded>
+      <places_mentioned>
+        <place id="235">
+          <name>Hammel</name>
+        </place>
+        <place id="929">
+          <name>Frisenborg</name>
+        </place>
+        <place id="338">
+          <name>K&#xF8;benhavn</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>436</place_id>
+      <name>N&#xF8;rre Vissing</name>
+      <display_name>N&#xF8;rre Vissing (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>338</place_id>
+      <name>K&#xF8;benhavn</name>
+      <display_name>K&#xF8;benhavn (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>929</place_id>
+      <name>Frisenborg</name>
+      <display_name>Frisenborg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>235</place_id>
+      <name>Hammel</name>
+      <display_name>Hammel (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

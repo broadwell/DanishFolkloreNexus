@@ -1,0 +1,14 @@
+bin/tiles/*
+bin/data/manuscript_images/*
+bin/data/chapters/*
+extras/chapters
+extras/images
+extras/last_data
+extras/src
+extras/README.old.txt
+extras/index.login.html
+extras/InformantBubbleMarker.as
+extras/data/*.dfl
+extras/data/extra
+extras/data/backup
+extras/data/tiles

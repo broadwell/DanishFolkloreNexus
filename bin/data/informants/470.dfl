@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="470">
+  <core_informant/>
+  <full_name>S&#xF8;ren Mand</full_name>
+  <last_name>Mand</last_name>
+  <first_name>S&#xF8;ren</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="835" secondary_informant="0">
+      <informant_id>470</informant_id>
+      <publication_info>DS_V_39</publication_info>
+      <full_name>470 - 0.00 - DS_V_39</full_name>
+      <url>data/stories/835.dfl</url>
+      <place_recorded id="887">Tanderup</place_recorded>
+      <places_mentioned>
+        <place id="144">
+          <name>Endelave</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>887</place_id>
+      <name>Tanderup</name>
+      <display_name>Tanderup (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>144</place_id>
+      <name>Endelave</name>
+      <display_name>Endelave (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:custom="components.*"
+	xmlns:fp="com.devaldi.controls.flexpaper.*"
+	themeColor="#450415"
+	creationComplete="initializeData()">
+	
+<mx:Style source="danish.css"/>
+
+<mx:Script>
+<![CDATA[
+//	import mx.rpc.events.ResultEvent;
+//	import mx.core.Application;
+	// DEBUGGING
+	import mx.controls.Alert;
+	import mx.core.Application;
+	
+	// MENU STUFF
+/*
+	import mx.rpc.events.FaultEvent;
+	import mx.events.ListEvent;
+	import mx.events.IndexChangedEvent;
+*/
+
+	[Bindable] public var englishURL:String;
+	[Bindable] public var docTitle:String = "";
+
+    private function initializeData():void {
+		
+		if (Application.application.fileAccessError == true) {
+			Alert.show(Application.application.loadErrorText, "ACCESS ERROR");
+		}
+    	
+    	paperViewer.SwfFile=englishURL;
+    	paperViewer.enabled = true;
+    		//paperViewer.visible = true;
+    }
+    
+]]>
+</mx:Script>
+
+<mx:Panel width="100%" height="100%" cornerRadius="6" borderStyle="solid" borderThickness="1" id="mainPanel" backgroundAlpha="0.42" title="{docTitle}" styleName="sectionTitle" paddingTop="0">
+			<fp:FlexPaperViewer id="paperViewer" width="100%" height="100%" enabled="false" FitWidthOnLoad="true" FullScreenAsMaxWindow="true"/>
+<!--<fp:FlexPaperViewer width="520" height="450" Scale="0.6" SwfFile="data/chapters/C1_a_intro.swf" /> -->
+
+</mx:Panel>
+	
+</mx:Canvas>

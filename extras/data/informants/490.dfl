@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<informant person_id="490">
+  <core_informant/>
+  <full_name>J&#xF8;rgen Nielsen</full_name>
+  <last_name>Nielsen</last_name>
+  <first_name>J&#xF8;rgen</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="598" secondary_informant="0">
+      <informant_id>490</informant_id>
+      <publication_info>DS_II_E_22</publication_info>
+      <full_name>490 - 0.00 - DS_II_E_22</full_name>
+      <url>data/stories/598.dfl</url>
+      <place_recorded id="876">S&#xF8;llinge</place_recorded>
+      <places_mentioned>
+        <place id="375">
+          <name>Lindkj&#xE6;r</name>
+        </place>
+        <place id="477">
+          <name>Ravnholt</name>
+        </place>
+        <place id="507">
+          <name>Ryslinge</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>876</place_id>
+      <name>S&#xF8;llinge</name>
+      <display_name>S&#xF8;llinge (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>507</place_id>
+      <name>Ryslinge</name>
+      <display_name>Ryslinge (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>477</place_id>
+      <name>Ravnholt</name>
+      <display_name>Ravnholt (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>375</place_id>
+      <name>Lindkj&#xE6;r</name>
+      <display_name>Lindkj&#xE6;r (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<informant person_id="478">
+  <core_informant/>
+  <full_name>L&#xE6;rer M. M&#xF8;ller</full_name>
+  <last_name>M&#xF8;ller</last_name>
+  <first_name>M.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="680" secondary_informant="0">
+      <informant_id>478</informant_id>
+      <publication_info>DS_I_1128</publication_info>
+      <full_name>478 - 0.00 - DS_I_1128</full_name>
+      <url>data/stories/680.dfl</url>
+      <place_recorded id="823">Lime</place_recorded>
+      <places_mentioned>
+        <place id="273">
+          <name>Holstebro</name>
+        </place>
+        <place id="688">
+          <name>Vejvad</name>
+        </place>
+        <place id="709">
+          <name>Vinding</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="681" secondary_informant="0">
+      <informant_id>478</informant_id>
+      <publication_info>DS_VII_335</publication_info>
+      <full_name>478 - 0.00 - DS_VII_335</full_name>
+      <url>data/stories/681.dfl</url>
+      <place_recorded id="823">Lime</place_recorded>
+      <places_mentioned>
+        <place id="661">
+          <name>Troms&#xF8;</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>823</place_id>
+      <name>Lime</name>
+      <display_name>Lime (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>661</place_id>
+      <name>Troms&#xF8;</name>
+      <display_name>Troms&#xF8; (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>709</place_id>
+      <name>Vinding</name>
+      <display_name>Vinding (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>688</place_id>
+      <name>Vejvad</name>
+      <display_name>Vejvad (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>273</place_id>
+      <name>Holstebro</name>
+      <display_name>Holstebro (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

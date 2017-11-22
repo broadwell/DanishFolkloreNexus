@@ -1,0 +1,306 @@
+pers_id	pla_id	person_name	place	lat	lon	place_type	core_informant
+6	384	Gerhard Peter Andersen	Lørslev	57.4284	10.0853	residence	0
+41	336	P. Chr. Christensen	Knebel	56.2137	10.4859	residence	0
+48	139	Kristen Ebbesen	Egtved	55.6151	9.30973	residence	0
+54	652	Niels Feldballe	Torsager	56.3435	10.4589	residence	0
+57	20	Kirsten Marie Frederiksdatter	Albæk	57.2336	10.4234	residence	0
+59	811	Jens Gudesen	Kjeldstrup	56.6818	9.92075	residence	0
+61	817	Mette Marie Hansdatter	Krarup mølle	56.5707	8.95567	residence	0
+65	398	Jensine Hansen	Madum Sø	56.8064	9.93258	residence	0
+69	870	Søren Hansen	Skjolde	55.7986	9.9459	residence	0
+69	243	Søren Hansen	Hårup	56.2828	10.2189	residence	0
+77	721	S. L. Høeg	Voldum	56.3664	10.1647	residence	0
+90	540	(Ane) Margrete Jensdatter	Skjødstrup	56.2635	10.3033	birthplace	1
+90	405	(Ane) Margrete Jensdatter	Mejlby	56.3007	10.2134	deathplace	1
+90	405	(Ane) Margrete Jensdatter	Mejlby	56.3007	10.2134	residence	1
+104	190	Jens Jensen	Gjedved	55.946	9.8582	residence	0
+104	836	Jens Jensen	Nordrup	55.4822	11.4157	residence	0
+106	19	Jeppe Jensen	Åkjær	56.1089	9.86729	residence	0
+108	374	Kristen Peder Jensen	Linderumgårds mark	57.4374	10.1654	residence	0
+110	813	Lavst Jensen	Kokholm	56.4779	9.49942	residence	0
+111	783	Niels Jensen	Glenstrup	56.5842	9.85317	residence	0
+111	435	Niels Jensen	Nørre Tranders	57.0327	9.99886	residence	0
+112	170	Niels Kristian Jensen	Fredbjærg	56.8085	9.29411	residence	0
+123	615	Peder Johansen	Svejstrup	56.0714	9.83801	birthplace	1
+123	110	Peder Johansen	Dakbjærg	56.053	9.83623	deathplace	1
+123	175	Peder Johansen	Fuldbro Mølle	56.0245	9.8344	residence	1
+124	137	Marie Jonsen	Egholt	55.5306	9.28247	residence	0
+128	775	Jakob Jørgensen	Firgårde	56.0878	9.80719	residence	0
+130	768	Søren Jørgensen	Engesvang	56.171	9.3528	residence	0
+130	22	Søren Jørgensen	Alken	56.0536	9.84777	residence	0
+144	313	Johanne Marie Kristensdatter	Jerslev	57.285	10.0923	residence	0
+144	673	Johanne Marie Kristensdatter	Ugilt	57.4252	10.1369	residence	0
+150	147	Jens Kristensen	Ersted	56.8247	9.77472	birthplace	1
+150	147	Jens Kristensen	Ersted	56.8247	9.77472	deathplace	1
+150	147	Jens Kristensen	Ersted	56.8247	9.77472	residence	1
+151	510	Jokum Kristensen	Sæsing	57.3728	10.1742	residence	0
+158	695	Bertil (Bærtel) Krog	Vester Hassing	57.0652	10.1201	residence	0
+182	93	Niels Madsen	Bratten	57.5169	10.4602	residence	0
+187	720	Jens Mark	Vokslev	56.9665	9.68121	residence	0
+189	59	A. J. Meldgaard	Bjedstrup	56.0663	9.85405	residence	0
+191	205	Else Marie Mikaelsdatter	Grindsted	57.1472	10.0459	residence	0
+205	455	Jens Kr. Kristensen Mosen	Øster Brønderslev	57.2481	9.99782	residence	0
+212	828	A. C. Nielsen	Malle, Løgstør	56.9205	9.23955	residence	0
+217	831	Kristen Nielsen	Mosehusene, Jetsmark	56.5276	9.92211	residence	0
+217	706	Kristen Nielsen	Vilsted	56.9106	9.28803	residence	0
+225	137	Rasmus Nørregaard	Egholt	55.5306	9.28247	residence	0
+235	63	Kirsten Marie Pedersdatter	Bodholm	56.359	10.1304	birthplace	1
+235	279	Kirsten Marie Pedersdatter	Hornslet	56.3126	10.3167	deathplace	1
+235	280	Kirsten Marie Pedersdatter	Hornslet Mark	56.3159	10.304	residence	1
+238	829	Henrik Pedersen	Maribo	54.7743	11.5091	residence	0
+240	807	Jens Pedersen	Jævngyde	56.1125	9.81866	residence	0
+241	79	Jens Peter Pedersen	Borup Mark	57.4005	10.0793	birthplace	1
+241	306	Jens Peter Pedersen	Ilbjærge	57.4162	10.0744	deathplace	1
+241	306	Jens Peter Pedersen	Ilbjærge	57.4162	10.0744	residence	1
+245	673	Kristen Pedersen	Ugilt	57.4252	10.1369	residence	0
+258	652	Elisabet Poulsen	Torsager	56.3435	10.4589	residence	0
+281	369	Laust Sommer	Lille Taaning	56.0136	9.84015	residence	0
+283	208	Kirsten Marie Sørensdatter	Grønfeld	56.2539	10.5528	residence	0
+306	301	Rasmus Thomsen	Hvilsager	56.3687	10.351	residence	0
+319	338	Frederik Algreen-Ussing	København	55.6796	12.6029	residence	0
+320	845	Thomas Andbæk	Øster Lem	56.045	8.4287	residence	0
+321	313	Bodil Marie Andersdatter	Jerslev	57.285	10.0923	residence	0
+322	77	Kirsten Andersdatter	Borre	54.9979	12.451	residence	0
+323	835	Knud Andersen	Nørbeg	56.5389	9.82306	residence	0
+324	757	Mikkel Andersen	Brandstrup	56.3664	9.50728	residence	0
+325	777	Niels Krist. Andersen	Flade, Mors	56.8909	8.79596	residence	0
+326	873	Anne Andresen	Snogbæk, Sundeved	54.9633	9.70894	residence	0
+327	895	Jørgen Rasmussen Bak	Tulstrup	56.1104	9.77957	residence	0
+328	900	V. Bennike	Vallekilde	55.5333	8.9554	residence	0
+329	756	Ane Birgitte Berg	Bovlstrup	55.9424	10.2197	residence	0
+330	896	H. Anton Bering	Tyholm	57.0986	9.60315	residence	0
+331	846	Lavst Nikolaj Bertelsen	Øster Vandet	56.9958	8.61685	residence	0
+332	422	Marie Kirstine Birk	Navtrup	56.7463	8.9104	residence	0
+333	794	P. Bliksted	Hillerslev	55.2066	10.3496	residence	0
+334	854	F. C. Bloch	Ringe, Fyn	55.2403	10.4829	residence	0
+335	909	Harald Boisen	Vigsnæs, Låland	54.8894	11.6554	residence	0
+336	751	Simon Bojsen	Billum	55.616	8.33131	residence	0
+337	902	Maren Mogensen Bonde	Vedersø	56.2334	8.20006	residence	0
+338	861	Ole Bonde	Selsinggårde, Samsø	55.8343	10.5599	residence	0
+339	685	O. Chr. Boye	Vejen	55.4862	9.13998	residence	0
+340	540	J. G. O. Brix	Skjødstrup	56.2635	10.3033	residence	0
+341	316	Peder Brogård	Jetsmark	57.2099	9.67306	residence	0
+342	834	Anders Brøsted	Nørager	56.347	10.6365	residence	0
+343	248	Iver Bundgård	Havbjærg	56.7073	9.11639	residence	0
+344	914	Jens Bærtelsen	Vole	56.1938	9.69566	residence	0
+345	745	Niels Bøgeskov	Askov	55.4698	9.09812	residence	0
+346	190	Chr. Adolf Christensen	Gjedved	55.946	9.8582	residence	0
+347	555	N. P. Christensen	Smidstrup	55.7805	9.28303	residence	0
+348	1	Nikolaj Christensen	Aaby	57.1652	9.74127	residence	0
+349	818	P. Christensen	Kvols	56.5266	9.29151	residence	0
+350	765	Niels Claussøn	Dalby-Stubdrup	56.3717	10.006	residence	0
+351	877	Sidsel Andersdatter Dahl	Sønderkjær	56.2921	8.37482	residence	0
+352	740	K. P. Dalin	Åle	55.8876	9.56112	residence	0
+353	867	Else og Maren Dissing	Skallerup, Mors	56.8535	8.65881	residence	0
+354	146	Tøger Dissing	Erslev	56.3638	10.0746	residence	0
+355	291	Lars Dybdahl	Hundborg, Ty	56.9288	8.50629	residence	0
+356	761	Martin Dyrholm	Brudager	55.116	10.6748	residence	0
+357	753	Rasmus Dyrholm	Bode	56.478	10.3058	residence	0
+358	32	Niels Ebbesen	Andrup	55.3582	9.3877	residence	0
+359	338	Kr. Eriksen	København	55.6796	12.6029	residence	0
+360	246	Lars Peter Eriksen	Hassing	56.8271	8.44792	residence	0
+361	916	Hanne (Johanne Marie Christine) Fenger	Vosborg	56.0874	8.35511	residence	0
+362	875	Hans Pedersen Fladbirk	Søheden	57.3001	10.1857	residence	0
+363	700	Kristian Frederiksen	Vidstrup	57.4994	9.94496	residence	0
+364	758	Lars Frederiksen	Bredballe	55.7155	9.60583	residence	0
+366	310	Katrine Glud	Jebjærg	56.6709	9.01475	residence	0
+367	830	C. F. Grove	Marielyst	55.6874	12.5674	residence	0
+368	338	F. L. Grundtvig	København	55.6796	12.6029	residence	0
+369	802	Andreas Thøgersen Grønborg	Hvilshøj	57.2266	10.03	residence	0
+370	189	Inger Halkjær	Gjedsted	56.6974	9.34014	residence	0
+371	806	Constantin Hansen	Jærnved	55.4207	8.79118	residence	0
+372	795	H. Hansen	Hjallese	55.3596	10.3853	residence	0
+373	841	Hans Hansen	Ørridslev	55.9393	9.93701	residence	0
+374	788	Hans Peder Hansen	Halskov	54.8021	12.0779	residence	0
+375	899	Jørgen Hansen	Værslev	55.6552	11.2133	residence	0
+376	769	Lorens Hansen	Fælsted	54.9808	9.50396	residence	0
+377	799	Louise Hansen	Hurup	56.7562	8.42042	residence	0
+377	293	Louise Hansen	Hurup	56.805	10.2725	residence	0
+378	799	Louise Hansen	Hurup	56.7562	8.42042	residence	0
+379	772	Mads Hansen	Fårdrup	55.3208	11.343	residence	0
+380	77	N. E. Hansen	Borre	54.9979	12.451	residence	0
+381	804	Peder Hansen	Iowa, USA	41.5888	-93.6203	residence	0
+382	824	Peder Hansen	Linå	56.1979	9.69543	residence	0
+383	414	Søren Lavrsen Hansen	Møltrup	56.7777	9.94735	residence	0
+384	884	Hans Peder Hansen-Nørremølle	Sundeved	54.9204	9.82811	residence	0
+385	11	C. C. Haugård	Åbenrå	55.0505	9.41294	residence	0
+386	868	U. N. Henneberg	Skals	56.5522	9.40683	residence	0
+387	889	Jørgen Henriksen	Testrup	56.987	9.77588	residence	0
+388	780	Georg Himmelstrup	Galtrup	56.8459	8.72426	residence	0
+389	804	Margrethe Hoberg	Iowa, USA	41.5888	-93.6203	residence	0
+390	847	Mads Holdt	Påbøl	55.8192	8.76849	residence	0
+391	843	Ove Holm	Ørsted	56.5533	10.3623	residence	0
+392	685	P. C. Holm	Vejen	55.4862	9.13998	residence	0
+393	782	Peder Holskov	Gjesing	55.992	10.0247	residence	0
+394	842	A. E. Jakobsen	Ørritslev	55.5004	10.2287	residence	0
+395	405	J. Jakobsen	Mejlby	56.3007	10.2134	residence	0
+396	797	Peder Lavrids Jakobsen	Hørret skov	56.0869	10.1985	residence	0
+397	853	Jens Jensen	Refshalegård	56.19	9.38267	residence	0
+398	412	Johan Jensen	Mollerup	56.1561	9.72682	residence	0
+399	214	Karl Kristian Jensen	Gudum	56.5203	8.46656	residence	0
+400	907	Kr. Jensen	Vester Vedsted	55.2919	8.68282	residence	0
+401	786	Mikkel Jensen	Grynderup	56.7097	9.67191	residence	0
+402	664	P. Jensen	Trunderup	55.1926	10.5438	residence	0
+403	747	P. K. Jensen	Åsted	56.7718	8.9895	residence	0
+404	897	Poul Jensen	Udbyovre	56.6501	10.2114	residence	0
+405	670	Svend Peter Jensen	Tvilum	56.2516	9.68702	residence	0
+406	914	Svend Peter Jensen	Vole	56.1938	9.69566	residence	0
+407	878	J. Jeppesen	Staby	56.2645	8.24156	residence	0
+408	894	Morten Jeppesen	Tovstrup	56.7353	8.95168	residence	0
+409	855	Kristen Jepsen	Rødhus, Hune	57.2177	9.54674	residence	0
+410	759	Mads Jepsen	Bredstrup	55.5947	9.66543	residence	0
+411	838	Chr. Jespersen	Ø Marie	55.1438	9.01853	residence	0
+412	905	Diderik Johansen	Vester Egede	55.2654	11.9643	residence	0
+413	754	Marie Johansen	Bøffelkobbel	54.9133	9.70452	residence	0
+414	886	Niels Johansen	Svendborg	55.0658	10.6229	residence	0
+415	338	Niels Johansen	København	55.6796	12.6029	residence	0
+416	749	Niels Jonsen	Bække	55.5718	9.14238	residence	0
+417	803	Ane Bolette Justsdatter	Imer, Klim	57.1112	9.16663	residence	0
+418	874	Anders Jørgensen	Søby	56.5307	9.11125	residence	0
+419	810	Jutta Jørgensen	Kistrup, Assens	56.5207	9.41881	residence	0
+420	805	Jørgen Jørgensen	Jærnelund	55.4256	8.80278	residence	0
+421	341	Karl P. J. Jørgensen	Kolding	55.4919	9.49149	residence	0
+422	835	Knud Jørgensen	Nørbeg	56.5389	9.82306	residence	0
+423	810	S. Jørgensen	Kistrup, Assens	56.5207	9.41881	residence	0
+424	892	Marie Kalmar	Tislum	57.4453	10.2667	residence	0
+425	488	Hans Kirk	Rødding	56.6494	8.81116	residence	0
+426	800	Jens Kjellerup	Hvidbjærg Hede	56.5669	8.92571	residence	0
+427	815	Severin Kjær	Kongsted	55.2488	12.0436	residence	0
+428	898	Marie Kirstine Kjærgård	Ulfborg	56.2723	8.31756	residence	0
+429	738	Frederik Knudsen	Agerskov, Bording	56.1452	9.2799	residence	0
+430	869	Kristen Knudsen	Skibsby	57.4833	10.0215	residence	0
+431	8	Ane Marie Kristensdatter	Aarhus	56.159	10.2072	residence	0
+432	452	Ane Marie Kristensdatter	Ørum	56.4841	9.62445	residence	0
+433	316	Ane Sofie Kristensdatter	Jetsmark	57.2099	9.67306	residence	0
+434	785	Dortea Kristensdatter	Grønnebæk	55.3644	9.1719	residence	0
+435	112	Peder Justesen Kristensen	Dalby Nedre	56.6379	10.2226	residence	0
+436	190	Sigurd J. Kristensen	Gjedved	55.946	9.8582	residence	0
+437	857	T. Kristensen	Rønslund	55.9405	9.32256	residence	0
+438	866	T. Kr. Kristensen	Skallerup, Hjørring	57.4795	9.85687	residence	0
+439	904	Tellef Kristensen	Vendsted, Åbybro	57.1613	9.70719	residence	0
+440	885	Maren Kristiansdatter	Sundstrup	56.6073	9.30243	residence	0
+441	914	Niels Kristiansen	Vole	56.1938	9.69566	residence	0
+442	412	Petrine Kristiansen	Mollerup	56.1561	9.72682	residence	0
+443	763	Rasmus H. Kruse	Dalager	56.8285	9.02887	residence	0
+444	784	Th. Kruse	Greve	55.5975	12.2408	residence	0
+445	743	Peder Ladefoged	Årup	56.759	9.41644	residence	0
+446	839	C. M. Larsen	Ommel, Ærø	54.8735	10.4898	residence	0
+447	869	Hans Kristian Larsen	Skibsby	57.4833	10.0215	residence	0
+448	816	Karl Larsen	Kornerup	55.6339	11.9826	residence	0
+449	774	Kristian Larsen	Finderup	55.5023	11.3091	residence	0
+450	881	A. P. Lauritsen	Strandby	56.7872	9.21668	residence	0
+451	742	Stine Lauritsen	Amerika	41.8819	-87.6278	residence	0
+452	793	Dorte Lavrsdatter	Hesselbakke	57.4645	10.2516	residence	0
+453	791	L. P. Lavrsen	Havlykke	54.8328	11.4289	residence	0
+454	858	Th. Leth	Sale	56.2812	9.82669	residence	0
+455	770	Elise Lindberg	Falster	54.8162	11.9077	residence	0
+456	766	Anna Christ. Ludvigsen	Døstrup	55.1182	8.80444	residence	0
+457	911	F. P. J. Lund	Vinten-Enner	55.908	9.74228	residence	0
+458	398	Hans Lund	Madum Sø	56.8064	9.93258	residence	0
+459	37	Niels Johannes Lund	Astrup	57.4803	10.097	residence	0
+460	602	Sofie Lund	Støvring	56.8872	9.84135	residence	0
+461	893	Poul Jeppesen Lystbæk	Torsted, Tim	56.2077	8.41856	residence	0
+462	865	J. H. Madelung	Sjøring, Tisted	56.9591	8.59015	residence	0
+463	760	Ane Marie Madsdatter	Brovst	57.0943	9.509	residence	0
+464	752	Marianne Madsdatter	Bjærgby	56.8683	8.73114	residence	0
+465	827	E. F. Madsen	Magleby	54.9861	12.4919	residence	0
+466	767	Jens Madsen	Ellund	54.7955	9.31526	residence	0
+467	878	P. K. Madsen	Staby	56.2645	8.24156	residence	0
+467	924	P. K. Madsen	Gråkjær	56.7584	8.57489	residence	0
+468	825	Tue Madsen	Lindeballe	55.7706	9.24203	residence	0
+469	849	Hans Jensen Mand	Pilemark, Samsø	55.8412	10.601	residence	0
+470	887	Søren Mand	Tanderup	55.841	10.5563	residence	0
+472	338	Frederik Melbye	København	55.6796	12.6029	residence	0
+473	746	M. Melbye	Asperup	55.4822	9.90727	residence	0
+474	888	Kristen Meldgård	Tapdrup	56.4389	9.48691	residence	0
+475	879	Karen Marie Mikkelsen	Sterregård	55.1041	10.4317	residence	0
+476	848	Anna Moltke	Palsgård	55.6785	11.4822	residence	0
+477	833	P. K. Munch	Nimtoft	56.4107	10.563	residence	0
+478	823	M. Møller	Lime	56.3889	10.2484	residence	0
+479	864	Niels Møller	Sjellerup	55.0005	9.86173	residence	0
+480	773	Niels Kr. Møller	Fårup	56.3633	9.54445	residence	0
+481	787	Otto Møller	Gylling	55.89	10.1699	residence	0
+482	762	Signe Christensen Møller	Charlottenlund	55.751	12.5855	residence	0
+483	776	Ane Katrine Nielsdatter	Fjellerup	56.5089	10.5861	residence	0
+484	377	Ane Nielsen	Lisbjærg Terp	56.216	10.1905	residence	0
+485	832	Anton Nielsen	Munkebjærgby	55.5074	11.5257	residence	0
+486	808	Chr. Nielsen	Jelling	55.7541	9.41612	residence	0
+487	860	H. P. Nielsen	Sejling	56.2176	9.52005	residence	0
+488	821	Jens Nielsen	Lem	56.591	8.78439	residence	0
+489	852	Joh. Nielsen	Randrup	56.7499	8.31272	residence	0
+490	876	Jørgen Nielsen	Søllinge	55.2856	10.5368	residence	0
+492	910	Lars Nielsen	Vinkel	56.4211	9.4982	residence	0
+493	901	Lars Kristian Nielsen	Vangeskrog	57.2615	10.1662	residence	0
+494	297	M. Nielsen	Hvidbjærg	56.651	8.5316	residence	0
+495	814	M. Nielsen	Kongerslev	56.8837	10.1119	residence	0
+496	750	M. C. Nielsen	Bælum	56.8287	10.1161	residence	0
+497	763	Maren Nielsen	Dalager	56.8285	9.02887	residence	0
+498	58	Morten Nielsen	Bjærggrav	56.4904	9.89689	residence	0
+499	856	O. V. Nielsen	Romdrup-Klarup	57.0015	10.0385	residence	0
+500	903	Peder Nielsen	Vejlø	55.1776	11.7535	residence	0
+501	226	Peder Nielsen	Hald	56.6018	9.19759	residence	0
+502	851	J. V. Nissen	Ramten	56.4379	10.6294	residence	0
+503	796	Maren Noesgård	Holev	55.4094	10.5088	residence	0
+504	872	C. C. Nørgård	Snedsted	56.8954	8.52354	residence	0
+505	861	N. P. Olsen	Selsinggårde, Samsø	55.8343	10.5599	residence	0
+506	908	Rasmus Olsen	Viemose, Kalvhave	55.0164	12.1399	residence	0
+507	812	Morten Overgård	Kjelstrup, Tisted	56.9967	8.75359	residence	0
+508	737	Else Marie Pedersdatter	Abildgård, Navtrup	56.7444	8.90908	residence	0
+509	819	Kristiane Pedersdatter	Kvotrup, Mundelstrup	56.2162	10.0814	residence	0
+510	859	Andreas Pedersen	Samsø	55.8278	10.5869	residence	0
+511	790	Hans Kristian Pedersen	Haslund	56.419	10.0253	residence	0
+512	789	Herman Pedersen	Hammerum	56.1371	9.06182	residence	0
+513	62	Johannes Grønbæk Pedersen	Blegind	56.0699	10.0732	residence	0
+514	871	L. Chr. Pedersen	Skjørtholt	57.4244	10.358	residence	0
+515	820	Lars Pedersen	Langemark, Samsø	55.8479	10.6226	residence	0
+516	741	Mathias Pedersen	Allerup, Varde	55.4478	8.61389	residence	0
+517	786	N. Kr. Pedersen	Grynderup	56.7097	9.67191	residence	0
+518	798	Søren Pedersen	Hosby	55.7472	10.0121	residence	0
+519	771	H. Petersen	Fårbæk	56.3891	8.99743	residence	0
+520	111	A. C. Poulsen	Dalby	55.4662	9.49367	residence	0
+521	822	Anders H. Poulsen	Lervad	55.4558	8.95968	residence	0
+522	889	Martinus Poulsen	Testrup	56.987	9.77588	residence	0
+523	422	Maren Primdal	Navtrup	56.7463	8.9104	residence	0
+524	840	Chr. Rasmussen	Ormitslev	55.3518	11.2424	residence	0
+525	338	H. V. Rasmussen	København	55.6796	12.6029	residence	0
+526	744	S. P. Rasmussen	Ås, Tvingstrup	55.9163	9.97233	residence	0
+527	488	Ane Kirstine Refsgård	Rødding	56.6494	8.81116	residence	0
+528	863	Jens Rod	Sinding	56.2097	9.4657	residence	0
+529	837	A. H. Schade	Nykjøbing, Mors	56.7946	8.85868	residence	0
+530	837	C. Schade	Nykjøbing, Mors	56.7946	8.85868	residence	0
+531	557	Villads Skov	Snebjærg	56.1353	8.9051	residence	0
+532	844	Kr. Skovmand	Øst Marie, Bornholm	55.1435	9.01851	residence	0
+533	412	Mads Kristensen Skriver	Mollerup	56.1561	9.72682	residence	0
+534	807	Jens Smed	Jævngyde	56.1125	9.81866	residence	0
+535	881	Peder Jensen Smed	Strandby	56.7872	9.21668	residence	0
+536	396	K. N. Stegger	Lystrup	56.2294	10.2374	residence	0
+537	488	Hanne Storgård	Rødding	56.6494	8.81116	residence	0
+538	809	Hjalmar Svendsen	Kirke Skjensved	55.5244	12.1193	residence	0
+539	214	J. Søe	Gudum	56.5203	8.46656	residence	0
+540	906	Karl Sørensen	Vester Tørslev	56.5967	9.90039	residence	0
+541	792	Mikkel Sørensen	Herskind	56.1855	9.96324	residence	0
+542	781	N. J. Termansen	Gammelby	55.5172	9.09125	residence	0
+543	891	Johanne Marie Thomasdatter	Tirstrup	56.3004	10.6864	residence	0
+544	912	C. Sørensen Thomaskjær	Virklund	56.1303	9.55943	residence	0
+545	694	E. Thomsen	Vester Brønderslev	57.2583	9.95093	residence	0
+546	862	Karen Toxværd	Sillestrup	54.7238	11.9657	residence	0
+547	900	E. Trier	Vallekilde	55.5333	8.9554	residence	0
+548	883	Johan Vorm	Sundby	56.881	8.67674	residence	0
+549	826	Jens Jensen Vånde	Løt, Lendum	57.4112	10.3005	residence	0
+550	111	Niels Nielsen Væver	Dalby	55.4662	9.49367	residence	0
+551	890	Christian Weiss	Tingerup	56.4389	9.48691	residence	0
+552	829	F. Wennerwald	Maribo	54.7743	11.5091	residence	0
+553	913	J. L. West	Voldby	56.4632	10.8684	residence	0
+554	913	J. L. West	Voldby	56.4632	10.8684	residence	0
+559	234	Kristen Pedersen	Hals	56.9952	10.3066	residence	0
+558	880	Niels Pedersen	Stjær	56.1167	9.95282	residence	0
+556	850	Anders Ålborg	Rævhede	57.1662	9.69007	residence	0
+557	915	Kristen Andersen	Vore, Rugsø	56.5239	10.2689	residence	0
+562	919	Peter Juhl	Kirke Værløse	55.7849	12.3212	birthplace	0
+562	338	Peter Juhl	København	55.6796	12.6029	residence	0
+563	923	Dorthea Pedersdatter	Skjæve	57.288	10.3106	residence	0
+564	863	Hans Andersen	Sinding	56.2097	9.4657	residence	0
+566	927	Gunde Gundesen	Kjelst	55.5947	8.29601	residence	0
+567	928	Kristian Kristensen Norge	Gøttrup	57.0551	9.21304	residence	0
+568	436	Peder  Jensen Skrædder	Nørre Vissing	56.1249	9.84764	residence	0
+570	950	Mads Christensen	Vester Grønning	56.6525	9.0522	residence	0

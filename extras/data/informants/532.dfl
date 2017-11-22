@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<informant person_id="532">
+  <core_informant/>
+  <full_name>L&#xE6;rer Kr. Skovmand</full_name>
+  <last_name>Skovmand</last_name>
+  <first_name>Kr.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="623" secondary_informant="0">
+      <informant_id>532</informant_id>
+      <publication_info>DS_I_869</publication_info>
+      <full_name>532 - 0.00 - DS_I_869</full_name>
+      <url>data/stories/623.dfl</url>
+      <place_recorded id="844">&#xD8;st Marie, Bornholm</place_recorded>
+      <places_mentioned>
+        <place id="212">
+          <name>Gudhjem</name>
+        </place>
+        <place id="239">
+          <name>H&#xE5;rkaraklippen</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>844</place_id>
+      <name>&#xD8;st Marie, Bornholm</name>
+      <display_name>&#xD8;st Marie, Bornholm (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>239</place_id>
+      <name>H&#xE5;rkaraklippen</name>
+      <display_name>H&#xE5;rkaraklippen (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>212</place_id>
+      <name>Gudhjem</name>
+      <display_name>Gudhjem (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

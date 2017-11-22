@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="460">
+  <core_informant/>
+  <full_name>Fr&#xF8;ken Sofie Lund</full_name>
+  <last_name>Lund</last_name>
+  <first_name>Sofie</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="818" secondary_informant="0">
+      <informant_id>460</informant_id>
+      <publication_info>DS_V_728</publication_info>
+      <full_name>460 - 0.00 - DS_V_728</full_name>
+      <url>data/stories/818.dfl</url>
+      <place_recorded id="602">St&#xF8;vring</place_recorded>
+      <places_mentioned>
+        <place id="579">
+          <name>Spentrup</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>602</place_id>
+      <name>St&#xF8;vring</name>
+      <display_name>St&#xF8;vring (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>579</place_id>
+      <name>Spentrup</name>
+      <display_name>Spentrup (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

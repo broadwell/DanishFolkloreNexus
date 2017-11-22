@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:panzoom="com.adobe.wheelerstreet.fig.panzoom.*" 
+	xmlns:custom="components.*"
+	themeColor="#450415"
+	creationComplete="initializeData()"
+	currentState="storyState">
+
+<mx:Style source="danish.css"/>
+
+<mx:states>
+	<mx:State name="storyState">
+		<mx:SetEventHandler target="{details}" name="change" handler="{informantMapUpdate()}"/>
+	</mx:State>
+		
+	<mx:State name="storyDetailsState" basedOn="storyState">
+		<mx:SetProperty target="{mainPanel}" name="title" value="MANUSCRIPT/PUBLISHED VERSIONS AND ANNOTATIONS for {storyPubInfo} told by {informantData.lastResult.full_name}"/>
+		<mx:RemoveChild target="{hbox2}"/>
+		<mx:RemoveChild target="{spacer1}"/>
+		<mx:RemoveChild target="{danishmap}"/>
+		<mx:RemoveChild target="{storyPanel}"/>
+		<mx:RemoveChild target="{informantPanel}"/>
+		<mx:RemoveChild target="{textAndIndicesBox}"/>
+		<mx:RemoveChild target="{goToStoryDetailsButton}"/>
+		<mx:AddChild relativeTo="{mainPanel}" position="lastChild">
+			<mx:TabNavigator width="100%" height="100%" styleName="navPanel" id="storyNavigator" paddingTop="5">
+				<mx:VBox label="Texts and Annotations" width="100%" height="100%" styleName="navPanel" id="storyTextsAndAnnotations" verticalGap="10">
+					<mx:HBox width="100%" height="60%" id="storyTexts" horizontalGap="20">
+						<mx:TabNavigator width="50%" height="100%" styleName="navPanel" id="manuscriptVersions" alpha="1.0" paddingTop="0">
+							<mx:VBox label="Danish manuscript" width="100%" height="100%" styleName="navPanel" id="danishManuscript" alpha="1.0">
+								<mx:TextArea width="100%" height="100%" styleName="basicText" id="danishManuscriptText" text="{storyData.danish_manuscript}" wordWrap="true" editable="false"/>
+							</mx:VBox>
+							<mx:VBox label="English translation" width="100%" height="100%" styleName="navPanel" id="englishManuscript" alpha="1.0">
+								<mx:TextArea width="100%" height="100%" styleName="basicText" id="englishManuscriptText" htmlText="{storyData.english_manuscript}" wordWrap="true" editable="false"/>
+							</mx:VBox>						
+						</mx:TabNavigator>
+
+						<mx:TabNavigator width="50%" height="100%" styleName="navPanel" id="publishedVersions" alpha="1.0" paddingTop="0">
+							<mx:VBox label="Danish published version" width="100%" height="100%" styleName="navPanel" id="danishPublished" alpha="1.0">
+								<mx:TextArea width="100%" height="100%" styleName="basicText" id="danishPublishedText" htmlText="{storyData.danish_publication}" wordWrap="true" editable="false" />
+							</mx:VBox>
+							<mx:VBox label="English translation" width="100%" height="100%" styleName="navPanel" id="englishPublished" alpha="1.0">
+								<mx:TextArea width="100%" height="100%" styleName="basicText" id="englishPublishedText" htmlText="{storyData.english_publication}" wordWrap="true" editable="false" />
+							</mx:VBox>														
+						</mx:TabNavigator>
+					</mx:HBox>
+					<mx:TabNavigator width="100%" height="40%" styleName="navPanel" id="annotationsAndBib" alpha="1.0" paddingTop="0">
+						 <mx:HBox label="Annotations" width="100%" height="100%" styleName="navPanel" id="annotations" alpha="1.0">
+						 	<mx:TextArea width="70%" height="100%" styleName="basicText" id="annotationsText" htmlText="{storyData.annotation}" wordWrap="true" editable="false" />
+			    			<mx:Panel layout="absolute" title="Related stories" width="30%" height="100%" id="relatedStoriesPanel" styleName="navPanel">
+				    			<mx:List x="0" y="0" width="100%" id="relatedStoriesList" height="100%" dataProvider="{relatedStoriesProvider}" labelField="full_name" enabled="true" styleName="basicText" itemClick="{storyClickHandler(event)}" doubleClickEnabled="true" itemDoubleClick="{storyDoubleClickHandler(event)}" toolTip="{listItemToolTip}"/>
+			    			</mx:Panel>
+						 </mx:HBox>
+						 <mx:VBox label="Bibliographic references" width="100%" height="100%" styleName="navPanel" id="bibReferences" alpha="1.0">
+						 	<!--<mx:TextArea width="100%" height="100%" id="bibInfoText" enabled="true" htmlText="{storyData.bibliographic_info}" wordWrap="true" editable="false" styleName="basicText"/>-->
+				    		<mx:List x="0" y="0" width="100%" id="bibReferencesList" height="100%" dataProvider="{storyData.bibliography_references.reference}" itemRenderer="{bibEntryRenderer}" enabled="true" styleName="basicText" doubleClickEnabled="true" itemDoubleClick="{bibDoubleClickHandler(event)}" toolTip="{listItemToolTip}"/>
+						 </mx:VBox>
+					</mx:TabNavigator>
+				</mx:VBox>
+				<mx:VBox label="Manuscript Images" width="100%" height="100%" styleName="navPanel" id="images">
+					<mx:Panel enabled="false" visible="false" creationComplete="{viewerCreationComplete()}" id="imageViewerPanel" title="Manuscript Image Viewer" width="100%" height="80%" styleName="ViewerPanel" left="5" right="5" top="5" bottom="5">	
+						<mx:HBox width="100%" height="100%">
+							<!--Navigation controls -->
+							<mx:VBox styleName="ViewerVBox" left="10" top="10" width="20">
+								<mx:Spacer/>
+								<mx:Button styleName="ZoomOutButton" toolTip="Zoom In" click="{imageViewer.zoom('in');}"/>
+								<mx:HBox width="20">
+									<mx:VSlider id="viewerZoomSlider" maximum="4" minimum=".125" value="{ imageViewer.bitmapScaleFactor }"	change="{ imageViewer.setZoom(VSlider(event.currentTarget).value) }" snapInterval=".1" liveDragging="true"/>	
+								</mx:HBox>
+								<mx:Button styleName="ZoomInButton" toolTip="Zoom Out" click="{ imageViewer.zoom('out'); }"/>	
+								<mx:Spacer/>
+							</mx:VBox>
+							<!--ImageViewer -->
+							<panzoom:ImageViewer id="imageViewer" imageURL="{ _imageURL }" bitmapScaleFactorMax="4" bitmapScaleFactorMin=".125" bitmapScaleFactor=".5" width="100%" height="100%" x="0" y="0"/>
+						</mx:HBox>
+					</mx:Panel>
+					<!-- PMB: Put field_diary_page info and maybe order_told in the title, remove publication_info (it's included above anyway) --> 		
+					<mx:Panel id="manuscriptNavigator" verticalAlign="bottom" width="100%" height="20%" title="{manuscriptImagesLabel}" styleName="sectionTitle">
+						<mx:HorizontalList id="manuscriptThumbnailImages" width="100%" height="100%" dataProvider="{storyManuscriptImages}" enabled="true" verticalAlign="middle" itemRenderer="manuscriptThumbnail" itemClick="{manuscriptClickHandler(event)}"/>
+					</mx:Panel>
+				</mx:VBox>
+			</mx:TabNavigator>
+		</mx:AddChild>
+		<mx:AddChild relativeTo="{mainPanel}" position="lastChild">
+			<mx:Button label="BACK TO STORY VIEW" width="100%" height="35" id="returnToStory" enabled="true" click="backToStoryViewHandler(event)" styleName="navButton"/>
+		</mx:AddChild>
+    	
+	</mx:State>
+		
+</mx:states>
+	
+	
+<mx:Script>
+<![CDATA[
+	import com.esri.ags.Graphic;
+	
+	import flash.net.navigateToURL;
+	
+	import mx.controls.Alert;
+	import mx.controls.LinkButton;
+	import mx.core.Application;
+	import mx.events.ListEvent;
+	import mx.rpc.events.FaultEvent;
+
+	public var storyID:String;
+	private var informantID:String;
+	[Bindable] private var fullBioButtonOn:Boolean = false;
+	[Bindable] private var informantPicSource:String;
+	[Bindable] private var informantPicVisible:Boolean = false;
+	[Bindable] private var fieldtripCollected:String;
+	[Bindable] private var storyPlaceRecordedName:String;
+	[Bindable] private var storyPlaceRecordedID:String;
+	[Bindable] private var informantBirthLabel:String;
+	[Bindable] private var informantBirthPlaceName:String;
+	[Bindable] private var informantBirthPlaceID:String;
+	[Bindable] private var birthPlaceButtonOn:Boolean = false;
+	[Bindable] private var informantDeathLabel:String;
+	[Bindable] private var informantDeathPlaceID:String = "";
+	[Bindable] private var informantDeathPlaceName:String = "";
+	[Bindable] private var deathPlaceButtonOn:Boolean = false;
+	[Bindable] private var informantOccupations:String = "";
+//	[Bindable] private var informantVitalStats:String;
+	[Bindable] private var informantShortBio:String = "";
+	[Bindable] private var storyKeywords:String = "";
+	[Bindable] private var placesMentioned:String = "";
+	[Bindable] private var etkIndex:String = "";
+	[Bindable] private var genre:String = "";
+	[Bindable] private var tangoIndices:String = "";
+	[Bindable] private var indicesText:String = "";
+	[Bindable] private var fieldDiaryPages:String = "No field diary recording";
+	[Bindable] private var fieldDiaryLabel:String = "Field diary pages";
+	[Bindable] private var storySelectedIndex:int;
+	
+	private var markerColors:Object = Application.application.markerColors;
+	
+	private var detailsLastSelected:int = 2;
+	private var storiesMarkers:Object = new Object();
+	private var placesMarkers:Object = new Object();
+	[Bindable] private var manuscriptInfo:Object = new Object();
+    [Bindable] private var placesProvider:XMLList;
+    [Bindable] private var placesMentionedProvider:XMLList;
+    [Bindable] private var keywordsProvider:XMLList;
+    [Bindable] private var storiesProvider:XMLList;
+    [Bindable] private var relatedStoriesProvider:XMLList;
+	[Bindable] private var secondaryInformantsProvider:XMLList;
+    [Bindable] private var storyPubInfo:String;
+    [Bindable] private var manuscriptImagesLabel:String = "No images are available for this story";
+    [Bindable] private var listItemToolTip:String = "Double click to open a new window about this item.";
+    
+    [Bindable] private var storyData:Object;
+    
+	import com.pixelbreaker.ui.osx.MacMouseWheel;
+	
+    private function initializeData():void {
+    	//storyID = this.parameters.storyID;
+    	// So far the story list is limited to one informant, though that may change if we allow
+    	// linking to other stories from the annotations view.
+
+		if ((Application.application.placesData.lastResult != null) &&
+			Application.application.placesData.lastResult.hasOwnProperty("place")) {
+			placesData = Application.application.placesData;
+			placesDataHandler();
+		} else {
+			placesData.send();
+		}
+
+    }
+    
+    private function placesDataHandler():void {
+    	
+    	var storyURL:String = "data/stories/" + storyID + ".dfl";
+  		//storyURL = Application.application.parameters.storyURL;
+		//storyURL = "data/informants/189/stories/DS_V_687.xml";
+
+		//informantURL = Application.application.parameters.informantURL;		
+		//informantURL = "data/informants/189/189.xml";
+
+		if (Application.application.storyCache.hasOwnProperty(storyID)) {
+			storyData = Application.application.storyCache[storyID];
+			storyInfoHandler(false);
+		} else {
+			storyInfo.url = storyURL;
+			storyInfo.send();
+		}  	
+    	  
+    }
+    
+/*  // PMB - We always load the Nexus first, so we don't need to check for data faults here
+    private function placesDataFault(event:FaultEvent):void {
+    	var url:String = event.currentTarget.url.toString();
+		
+		if ((url == placesData.url.toString()) && (event.fault.faultString == "Error #2148")) {
+			Alert.show(Application.application.loadErrorText);
+			//Application.application.fileAccessError = true;
+		}
+    }
+*/
+	private function loadFieldtripTab(fieldtripID:String):void {
+	
+		Application.application.loadNewTab("Fieldtrip", fieldtripID);	
+		
+	}
+
+	// XXX This should definitely be in a component somewhere, since it's the same for every MXML file
+	// XXX Do we need to specify the font color here, or can it be done in a CSS file?
+	private function makeLinkHTML(linkAndQueryKey:String, queryValue:String, text:String):String {
+		var link:String = '<a href="' + linkAndQueryKey + queryValue + '" target="_blank"><font color="#ff0033">' + text + '</font></a>';
+		return link;
+	}
+
+	// XXX REALLY need to include the names of these things along with their IDs in the XML file...
+	// It's just too cumbersome not to
+	private function storyInfoHandler(firstCall:Boolean):void {
+				
+		if (firstCall) {
+			Application.application.storyCache[storyID] = storyInfo.lastResult;
+			storyData = storyInfo.lastResult;
+		}
+		
+		if (storyData.hasOwnProperty("fieldtrip_start_date")) {
+			fieldtripButton.enabled=true;
+			fieldtripDates.visible=true;
+		}
+		
+		if (storyData.hasOwnProperty("fielddiary_page_start") && (storyData.fielddiary_page_start != "No field diary recording")) {
+			if (storyData.fielddiary_page_start.toString() == storyData.fielddiary_page_end.toString()) {
+				fieldDiaryPages = storyData.fielddiary_page_start;
+				fieldDiaryLabel = "Field diary page";
+			} else {
+				fieldDiaryPages = storyData.fielddiary_page_start + " - " + storyData.fielddiary_page_end;
+			}
+		}
+		
+		if (storyData.hasOwnProperty("secondary_informants")) {
+			//secondaryInformantsBox.includeInLayout = true;
+			secondaryInformantsProvider = storyData.secondary_informants.informant;
+
+			var secondaryInformantsBox:VBox = new VBox();
+			secondaryInformantsBox.label = "OTHER INFORMANTS";
+			secondaryInformantsBox.percentWidth=100;
+			secondaryInformantsBox.percentHeight=100;
+			secondaryInformantsBox.styleName="canvasTitle";
+			
+			var secondaryInformantsList:List = new List();
+			secondaryInformantsList.percentWidth=100;
+			secondaryInformantsList.percentHeight=100;
+			secondaryInformantsList.dataProvider = secondaryInformantsProvider;
+			secondaryInformantsList.styleName="basicText";
+			secondaryInformantsList.doubleClickEnabled = true;
+			/* no single-click behavior for now */
+			secondaryInformantsList.addEventListener(ListEvent.ITEM_DOUBLE_CLICK, informantDoubleClickHandler);
+			secondaryInformantsList.toolTip = listItemToolTip;
+			
+			secondaryInformantsBox.addChild(secondaryInformantsList);
+			
+			details.addChildAt(secondaryInformantsBox, 3);
+			
+			//details.selectedIndex=3;
+		}
+		
+		if (storyData.informant_id == "")
+			informantID = "0";
+		else
+			informantID = storyData.informant_id;
+		
+		placesProvider = storyData.places.place;
+		
+		keywordsProvider = storyData.keywords.keyword;
+		
+		relatedStoriesProvider = storyData.stories_mentioned.story;
+		
+		storyPubInfo = storyData.publication_info;
+		
+		//fieldtripName = story.lastResult.fieldtrip;
+		
+		//fieldtripCollected = makeLinkHTML("index.swf?fieldtripID=", storyData.fieldtrip.@id, storyData.fieldtrip);
+
+		storyPlaceRecordedName = placesProvider.(@type == "place_recorded").name;
+		storyPlaceRecordedID = placesProvider.(@type == "place_recorded").place_id;
+		
+		placesMentionedProvider = placesProvider.(@type == "place_mentioned");
+		
+		for (var i:int=0; i<placesMentionedProvider.length(); i++) {
+			if (placesMentioned) {
+				placesMentioned = placesMentioned + ", ";
+			}
+			placesMentioned = placesMentioned + placesMentionedProvider[i].name;
+		}
+		
+		for (var j:int=0; j<keywordsProvider.length(); j++) {
+			if (storyKeywords) {
+				storyKeywords = storyKeywords + ", ";
+			}
+			// XXX PMB eventually make these into links to the keyword page, or to the data nexus with this keyword selected
+			storyKeywords = storyKeywords + keywordsProvider[j];
+		}
+		
+		if (storyData.hasOwnProperty("etk_index")) {
+			etkIndex = storyData.etk_index.heading_english + " (" + storyData.etk_index.heading_danish + ")";
+		}
+				
+		if (storyData.hasOwnProperty("tango_indices")) {
+			for (var k:int=0; k<storyData.tango_indices.tango_index.length(); k++) {
+				if (tangoIndices) {
+					tangoIndices = tangoIndices + "<br>";
+				}
+				tangoIndices = tangoIndices + storyData.tango_indices.tango_index[k].@display_name;
+			}
+		}
+				
+		if (storyData.hasOwnProperty("genre"))
+			genre = storyData.genre.@name;
+
+		if (genre)
+			indicesText = indicesText + "<b>Genre:</b> " + genre;
+		if (indicesText)
+			indicesText = indicesText + "<br>";
+		if (etkIndex)
+			indicesText = indicesText + "<b>ETK index:</b> " + etkIndex;
+		if (indicesText)
+			indicesText = indicesText + "<br>";
+		if (tangoIndices)
+			indicesText = indicesText + "<b>Tangherlini indices</b><br>" + tangoIndices;
+		
+		if (Application.application.informantDataCache.hasOwnProperty(informantID)) {
+			informantData = Application.application.informantDataCache[informantID];
+			informantInfoHandler(false);
+		} else {
+			var informantURL:String = "data/informants/" + informantID + ".dfl";
+			
+			informantData.url = informantURL;
+			informantData.send();
+		}
+				
+		if (Application.application.manuscriptImageData.length()) {
+			//Alert.show("application manuscript image data is " + Application.application.manuscriptImageData.toString());
+			//manuscriptImages = Application.application.manuscriptImages;
+			//manuscriptImages = Application.application.manuscriptImageData.story;
+			manuscriptImagesHandler(false);
+		} else {
+			manuscriptImages.send();
+		}
+				
+		addPlacesMarkers();
+
+	}
+	
+	private function placeButtonClickHandler(event:MouseEvent):void {
+		//PMB This is probably a violation of the Flex model...
+		Application.application.loadNewTab("Place", event.target.name);
+		
+	}
+	
+	private function manuscriptImagesHandler(firstTime:Boolean):void {
+		
+		if (firstTime) {
+			Application.application.manuscriptImageData = new XMLList(manuscriptImages.lastResult);
+			manuscriptInfo = manuscriptImages.lastResult.story.(@id == storyID);
+		} else {
+			manuscriptInfo = Application.application.manuscriptImageData.story.(@id == storyID);
+		}
+		/*
+		if (!Application.application.manuscriptImageData.hasOwnProperty("story")) {
+			Application.application.manuscriptImageData = new XMLList(manuscriptImages.lastResult);
+			Alert.show("application manuscript image data set to " + Application.application.manuscriptImageData.toString());
+		}*/
+		
+   	   	storyManuscriptImages = manuscriptInfo.images.image;
+	}
+
+	private function informantInfoHandler(firstCall:Boolean):void {
+		if (firstCall)
+			Application.application.informantDataCache[informantID] = informantData;
+		
+		if (informantData.lastResult.hasOwnProperty("image")) {
+			informantPicSource = informantData.lastResult.image;
+			informantPicVisible = true;
+		}
+
+		informantShortBio="No biographical information available.";		
+		
+		informantBirthLabel = "<b>BORN:</b> " + informantData.lastResult.birth_date;
+		informantBirthPlaceName = informantData.lastResult.places.place.(@type=="birth_place").name;
+		if (informantData.lastResult.places.place.(@type=="birth_place").name != "N/A") {
+			informantBirthPlaceID = informantData.lastResult.places.place.(@type=="birth_place").place_id;
+			birthPlaceButtonOn = true;
+			/*birthPlaceButton.enabled = true;
+			birthPlaceButton.visible = true;*/
+		}
+		informantDeathLabel = "<b>DIED:</b> " + informantData.lastResult.death_date;
+		informantDeathPlaceName = informantData.lastResult.places.place.(@type=="death_place").name;
+		if (informantData.lastResult.places.place.(@type=="death_place").name != "N/A") {
+			informantDeathPlaceID = informantData.lastResult.places.place.(@type=="death_place").place_id;
+			deathPlaceButtonOn = true;
+			/*deathPlaceButton.enabled = true;
+			deathPlaceButton.visible = true;*/
+		}
+
+		var occupations:String = "";
+		if (informantData.lastResult.occupations.length()) {
+			for (var i:int=0;i<informantData.lastResult.occupations.occupation.length();i++) {
+				if (occupations) {
+					occupations = occupations + ", ";
+				}
+				occupations = occupations + informantData.lastResult.occupations.occupation[i];
+			}
+			if (!occupations)
+				occupations = "N/A";
+		}
+
+		informantOccupations = "<b>OCCUPATIONS: </b>" + occupations;
+		//var maritalStatus:String = informant.lastResult.marital_status;
+
+		if (informantData.lastResult.hasOwnProperty("intro_bio")) {
+			if (Application.application.informantIntroBioCache.hasOwnProperty(informantData.lastResult.intro_bio)) {
+				informantIntroBio = Application.application.informantIntroBioCache[informantData.lastResult.intro_bio];
+				informantIntroBioHandler(false);
+			} else {
+				informantIntroBio.url = informantData.lastResult.intro_bio.toString().replace('.xml','.dfl');
+				informantIntroBio.send();
+			}
+		}
+					
+		storiesProvider = informantData.lastResult.stories.story;
+		storySelectedIndex = informantData.lastResult.stories.story.(@story_id == storyID).@story_id - 1;
+		
+	}
+	
+	private function informantIntroBioHandler(firstCall:Boolean):void {
+		if (firstCall)
+			Application.application.informantIntroBioCache[informantIntroBio.url] = informantIntroBio;
+		informantShortBio = informantIntroBio.lastResult.toString();
+		/* PMB disable for online public version */
+		fullBioButtonOn = true;
+	}	
+
+	private function informantClickHandler(event:ListEvent):void {
+		
+	}
+	
+	private function informantDoubleClickHandler(event:ListEvent):void {
+		Application.application.loadNewTab('Informant', event.currentTarget.selectedItem.@id);	
+	}
+
+	private function storyClickHandler(event:ListEvent):void {
+		if (event.currentTarget.selectedItem.hasOwnProperty("place_recorded")) {
+			var placeRecordedID:String = event.currentTarget.selectedItem.place_recorded.@id;
+			var placeRecordedName:String = event.currentTarget.selectedItem.place_recorded;
+		
+			var lon:Number = placesData.lastResult.place.(@place_id==placeRecordedID).longitude;
+			var lat:Number = placesData.lastResult.place.(@place_id==placeRecordedID).latitude;
+		
+			var text:String = event.currentTarget.selectedItem.publication_info + " recorded at " + placeRecordedName; 
+		
+			danishmap.toggleTextAtCoords(lon, lat, text, markerColors["story"]);
+		}
+	}
+
+	private function storyDoubleClickHandler(event:ListEvent):void {
+		Application.application.loadNewTab("Story", event.currentTarget.selectedItem.@story_id);
+   	}
+   	
+   	private function bibDoubleClickHandler(event:ListEvent):void {
+   		if (event.currentTarget.selectedItem.@category == "general")
+   			Application.application.loadNewTab("Bibliography", "General", "Bibliography", "data/chapters/13_bib.dfl");
+   		else if (event.currentTarget.selectedItem.@category == "etk")
+   		   	Application.application.loadNewTab("Bibliography", "ETK", "ETK's Works", "data/chapters/12_etk-bib.dfl");
+   	}
+   	
+   	private function manuscriptClickHandler(event:ListEvent):void {
+   		var imagePath:String = event.currentTarget.selectedItem.image_path;
+   		_imageURL = "data/" + imagePath;
+   	}
+
+	private function placeClickHandler(event:ListEvent):void {
+		if (event.currentTarget.selectedItem.@type == "place_recorded") {
+			var markerColor:uint = markerColors["story"];
+		} else if (event.currentTarget.selectedItem.@type == "place_mentioned") {
+			markerColor = markerColors["place"];		
+		}
+		var placeID:String = event.currentTarget.selectedItem.place_id;
+		var placeDisplayName:String = event.currentTarget.selectedItem.display_name;
+		
+		//var lon:Number = event.currentTarget.selectedItem.longitude;
+		//var lat:Number = event.currentTarget.selectedItem.latitude;
+		
+		var lon:Number = placesData.lastResult.place.(@place_id==placeID).longitude;
+		var lat:Number = placesData.lastResult.place.(@place_id==placeID).latitude;
+		
+		danishmap.toggleTextAtCoords(lon, lat, placeDisplayName, markerColor);
+	}
+
+	private function placeDoubleClickHandler(event:ListEvent):void {
+		Application.application.loadNewTab("Place", event.currentTarget.selectedItem.place_id);
+	}
+
+   	private function storyDetailsClickHandler(event:Event):void {
+
+		var manuscriptImagePrefix:String = "Manuscript Images";
+
+   		if (storyManuscriptImages.length() > 0) {
+   			
+   			if (storyManuscriptImages.length() == 1)
+   				manuscriptImagePrefix = "Manuscript Image";
+   			
+   			if (manuscriptInfo.fielddiary_page_start.toString() == manuscriptInfo.fielddiary_page_end.toString()) {
+   				manuscriptImagesLabel = manuscriptImagePrefix + ": Field diary page " + manuscriptInfo.fielddiary_page_start;
+   			} else {
+   				manuscriptImagesLabel = manuscriptImagePrefix + ": Field diary pages " + manuscriptInfo.fielddiary_page_start + " - " + manuscriptInfo.fielddiary_page_end;
+   			}
+   		}
+   		
+		currentState = "storyDetailsState";
+   	}
+   			
+   	private function backToStoryViewHandler(event:Event):void {
+   		currentState = "storyState";
+   	}
+   	
+   	private function showfullbio():void{
+   		/*var req:URLRequest = new URLRequest(informantData.lastResult.fullbio);
+   		navigateToURL(req);*/
+   		
+   		Application.application.loadNewTab("Biography", informantID, informantData.lastResult.full_name, "data/informants/" + informantID + "_full.dfl");
+   	}
+
+	//-------- MANUSCRIPT PAGE PAN & ZOOM STUFF -------------------------------------------------------------//
+   	//-------------------------------------------------------------------------------------------------------//
+   	//-------------------------------------------------------------------------------------------------------//
+   	//-------------------------------------------------------------------------------------------------------//
+	
+	[Bindable] private var _imageURL:String;
+	[Bindable] private var storyManuscriptImages:Object;
+      		
+    private var _contextMenu:ContextMenu;
+	private var _contextMenuItems:Array = ["Zoom In Image", "Zoom Out Image", "Show All Image", "Toggle Smooth Bitmap"];			
+		
+	/**
+	  * In its simplest form, the Pan|Zoom component offers a set of navigation 
+  	  * tools that allow for freedom of motion along the X, Y, and Z axes. 
+	  * This style of navigation becomes necessary when dealing with massively 
+	  * scalable content (such as maps, or large files in image editing applications), 
+	  * and is the foundation of Zoomable User Interfaces (ZUI's).  
+	  * <p>
+	  * When used correctly, Pan|Zoom presents an intuitive and context-sensitive 
+	  * way to view content that reinforces the user's natural spatial and 
+	  * geographic ways of thinking.
+	  * </p>
+	  */
+
+	private function viewerCreationComplete():void {
+	
+		// handle contenxt menu
+		_contextMenu = new ContextMenu();
+		_contextMenu.hideBuiltInItems();
+	           
+		for (var i:uint = 0; i<_contextMenuItems.length; i++) {
+					
+			var menuItem:ContextMenuItem = new ContextMenuItem(_contextMenuItems[i]);
+			_contextMenu.customItems.push(menuItem);
+			menuItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, handleContextMenu);
+		}
+				
+		contextMenu = _contextMenu;
+		
+		// This should first check to see if there are any manuscript images for the story in question. If not, it exits.
+	    // Otherwise, it sets _imageURL to the first manuscript image (also set selectedIndex of the navigator to 0).
+		
+		if (storyManuscriptImages.length() > 0) {
+			
+   			imageViewerPanel.enabled = true;
+   			imageViewerPanel.visible = true;
+
+		}
+	}
+	        
+	private function handleContextMenu(e:ContextMenuEvent):void {
+            
+		switch(ContextMenuItem(e.currentTarget).caption) {
+	    	case "Zoom In Image":
+	         	imageViewer.zoomByOrigin("in")	
+	           	break;
+	    	case "Zoom Out Image":
+	          	imageViewer.zoomByOrigin("out")
+	            break;		
+	    	case "Show All Image":
+	            imageViewer.centerView();
+				break;	 
+			case "Toggle Smooth Bitmap":
+				if (imageViewer.smoothBitmap == true) {
+					imageViewer.smoothBitmap = false;            		
+            	} else {
+					imageViewer.smoothBitmap = true;   	            			
+            	}
+				break;	 
+        }
+	}	
+
+	
+	//-------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------//
+	//--------------------------------------------code for map-----------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------//
+	
+	private function addPlacesMarkers():void {
+		
+		resetMapMarkers();
+
+		var markerColor:uint = markerColors["story"];
+		var lat:Number = placesData.lastResult.place.(@place_id==storyPlaceRecordedID).latitude;
+		var lon:Number = placesData.lastResult.place.(@place_id==storyPlaceRecordedID).longitude;
+		
+		var g:Graphic = danishmap.drawSimpleMarkerAtCoords(lon, lat, markerColor, storyPlaceRecordedName, storyPlaceRecordedID);
+		placesMarkers[storyPlaceRecordedID] = g;
+		
+		for (var p:int=0; p<placesMentionedProvider.length(); p++) {
+		//for (var p:int=0; p<storyPlaces.length(); p++) {
+			var placeID:String = placesMentionedProvider[p].place_id;
+			
+			lat = placesData.lastResult.place.(@place_id==placeID).latitude;
+			lon = placesData.lastResult.place.(@place_id==placeID).longitude;
+
+			markerColor = markerColors["place"];
+			g = danishmap.drawSimpleMarkerAtCoords(lon, lat, markerColor, placesMentionedProvider[p].name, placeID);
+
+			placesMarkers[placeID] = g;
+			
+		}
+		
+		danishmap.zoomInOnMarkers(placesMarkers, 1.7);
+		
+	}	
+	
+	private function addStoriesMarkers():void {
+            	
+		resetMapMarkers();
+            	
+		for (var p:int=0;p<informantData.lastResult.places.place.length();p++) {
+        	var markerColor:uint;
+            var toolTip:String = "";
+            var placeID:String = informantData.lastResult.places.place[p].place_id;
+            //var storiesCollectedHere:String = "";
+            var numberOfStories:Number = 0;
+            
+            if (informantData.lastResult.places.place[p].@type == "story_place") {
+            	markerColor = markerColors["story"];
+            	
+            	for (var i:int=0;i<informantData.lastResult.stories.story.length();i++){
+            		var placeRecordedID:String = informantData.lastResult.stories.story[i].place_recorded.@id;
+            				
+            		if (placeRecordedID == placeID) {
+            			numberOfStories++;
+            			//storiesCollectedHere = storiesCollectedHere + "\n" + informant.lastResult.stories.story[i].full_name;		
+            		}
+            	}
+            			
+            	toolTip = informantData.lastResult.places.place[p].display_name + ": " + numberOfStories + " told by " + informantData.lastResult.full_name;
+
+            	var g:Graphic =  danishmap.drawSimpleMarkerAtCoords(placesData.lastResult.place.(@place_id==informantData.lastResult.places.place[p].place_id).longitude,
+            														placesData.lastResult.place.(@place_id==informantData.lastResult.places.place[p].place_id).latitude,
+            														markerColor, toolTip, placeID);				 		 
+            	storiesMarkers[placeID] = g;			
+
+            }
+            /* don't inclde informant's life places anymore - they can get those from the informant view
+            else{
+            	markerColor = 0x00cc00;
+            	toolTip = informantData.lastResult.places.place[p].display_name;
+            } */
+            									 		 
+       	}
+       	danishmap.zoomInOnMarkers(storiesMarkers, 1.5);
+	}
+                   
+    //------------------------------------------------------------------------------------------------//
+    
+	private function resetMapMarkers():void {
+			danishmap.removeMarkers(placesMarkers);
+			placesMarkers = {};	
+			danishmap.removeMarkers(storiesMarkers);
+			storiesMarkers = {};
+	}    
+
+	private function informantMapUpdate():void{
+		var sI:int = details.selectedIndex;
+		danishmap.clearAllTextMarkers();
+		if(sI==1) {
+			addPlacesMarkers();
+		}
+		else if(sI==2) {
+			addStoriesMarkers();
+		}
+		/* PMB May still want to add special functionality for story-specific places and stories */
+		detailsLastSelected = sI;
+	}
+	
+	private function scrollToSelectedStory():void {
+		//informantStoryList.validateNow();
+		//Alert.show("storySelectedIndex is " + storySelectedIndex);
+		informantStoryList.scrollToIndex(storySelectedIndex);
+		//Alert.show("survived scrolling to selected index");			
+	}
+
+	//-------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------//	
+	
+]]>
+</mx:Script>
+
+<mx:Component id="bibEntryRenderer">
+	<mx:TextArea paddingBottom="0" paddingTop="0" htmlText="{data.display_string}" wordWrap="true" styleName="basicText" selectable="false" />
+</mx:Component>
+
+<!-- requests for initial values to populate the lists -->
+<custom:ZIPService id="placesData" resultFormat="e4x" url="data/places.dfl" result="placesDataHandler()"/>
+<custom:ZIPService id="manuscriptImages" resultFormat="e4x" url="data/manuscript_images.dfl" result="manuscriptImagesHandler(true)"/>
+<mx:HTTPService id="informantData" resultFormat="e4x" url="{}" result="informantInfoHandler(true)"/>
+<mx:HTTPService id="informantIntroBio" resultFormat="e4x" url="{}" result="informantIntroBioHandler(true)"/>
+<!-- Obviously we get the URL from the POST data used to invoke this MXML file. -->
+<mx:HTTPService id="storyInfo" resultFormat = "e4x" url="{}" result="storyInfoHandler(true)"/>
+
+<mx:NumberFormatter id="PadOrderTold"
+	precision="2" 
+    rounding="none"
+    decimalSeparatorTo="."
+    thousandsSeparatorTo=","
+    useThousandsSeparator="true"
+    useNegativeSign="true"/>
+
+<!-- Layout (base state)? -->
+
+<mx:Panel width="100%" height="100%" cornerRadius="6" borderStyle="solid" borderThickness="1" id="mainPanel" backgroundAlpha="0.42" title="STORY DETAILS for {storyPubInfo} told by {informantData.lastResult.full_name}" styleName="sectionTitle" paddingTop="0">
+    <!-- <custom:topmenu width="100%" id="mainMenu">
+    </custom:topmenu> -->
+    <mx:HBox width="100%" height="55%" id="hbox2">
+        <custom:danishmap id="danishmap" width="33%" height="100%">
+	    </custom:danishmap>
+	    <mx:Panel layout="vertical" width="33%" height="100%" title="Story data for {storyPubInfo}" id="storyPanel" styleName="navPanel" shadowDistance="0">
+	    	<mx:VBox verticalGap="0" verticalAlign="top" height="100%" width="100%" id="storyInfoBox" backgroundColor="#ffffff">
+	    		<mx:HBox styleName="infoWindowBox" width="100%">
+	    			<mx:Label text="Order told: {PadOrderTold.format(storyData.order_told)}" styleName="basicText"/>
+	    		<!-- <mx:TextArea width="100%" id="fieldtrip" enabled="true" htmlText="Recorded during fieldtrip: {fieldtripCollected}&lt;br&gt;Fieldtrip dates: {storyData.fieldtrip_start_date} - {storyData.fieldtrip_end_date}" wordWrap="true" editable="false" styleName="basicText"/>
+	    		-->
+	    		</mx:HBox>
+	    		<mx:VBox styleName="infoWindowBox" width="100%">
+					<mx:HBox width="100%" paddingLeft="0" paddingRight="0" horizontalGap="0">
+						<mx:Label text="Recorded during fieldtrip:" styleName="basicText"/>
+						<mx:LinkButton id="fieldtripButton" label="{storyData.fieldtrip}" enabled="false" styleName="linkButton" click="{Application.application.loadNewTab('Fieldtrip', storyData.fieldtrip.@id)}"/>
+					</mx:HBox>
+					<mx:Label width="100%" id="fieldtripDates" visible="false" selectable="true" text="Fieldtrip dates: {storyData.fieldtrip_start_date} - {storyData.fieldtrip_end_date}" styleName="basicText"/>	
+				</mx:VBox>
+				<mx:HBox styleName="infoWindowBox" width="100%"> 
+					<mx:Label text="Place recorded:" styleName="basicText"/>
+					<mx:LinkButton label="{storyPlaceRecordedName}" styleName="linkButton" click="{Application.application.loadNewTab('Place', storyPlaceRecordedID)}"/>
+				</mx:HBox>
+				<mx:HBox styleName="infoWindowBox" width="100%"> 
+					<mx:Label id="fieldDiaryInfo" width="100%" visible="true" selectable="true" text="{fieldDiaryLabel}: {fieldDiaryPages}" styleName="basicText"/>
+				</mx:HBox>
+				<mx:VBox styleName="infoWindowBox" width="100%" height="100%">
+					<mx:TextArea width="100%" height="100%" id="keywordsList" borderThickness="0" htmlText="Associated keywords: {storyKeywords}" wordWrap="true" editable="false" styleName="basicText"/>
+<!--					<mx:Label width="100%" text="Keywords:" styleName="basicText"/>
+					<mx:TileList width="100%" height="100%" variableRowHeight="true"direction="vertical" borderThickness="0" id="keywordsList" paddingRight="2" paddingLeft="2" dataProvider="{keywordsProvider}" labelField="full_name" styleName="basicText"/>
+					<mx:Spacer width="1"/>
+					<mx:Label width="100%" styleName="basicText" text="Places mentioned: "/>
+					<mx:List width="100%" id="placesMentionedList" height="100%" dataProvider="{placesMentionedProvider}" labelField="name" styleName="basicText"/>
+-->				</mx:VBox>
+				<mx:VBox styleName="infoWindowBox" width="100%" height="100%">
+					<mx:TextArea width="100%" height="100%" id="placesMentionedList" borderThickness="0" htmlText="Places mentioned in story: {placesMentioned}" wordWrap="true" editable="false" styleName="basicText"/>
+				</mx:VBox>
+			</mx:VBox>
+	    </mx:Panel>
+		<mx:Panel width="34%" layout="vertical" title="{storyPubInfo}" id="informantPanel" height="100%" shadowDistance="0" styleName="navPanel">
+			<mx:Accordion width="100%" height="100%" id="details" selectedIndex="1" styleName="accordion" headerStyleName="accordionHead">
+				<mx:VBox id="informantsCanvas" label="INFORMANT BIOGRAPHY" width="100%" height="100%" styleName="canvasTitle" verticalGap="0" verticalScrollPolicy="off">
+					<mx:HBox width="100%" height="132" horizontalAlign="left">
+						<mx:Image id="informantPic" maxWidth="132" maxHeight="132" maintainAspectRatio="true" visible="{informantPicVisible}" source="{informantPicSource}" scaleContent="true"/>
+					   	<mx:VBox height="132" width="100%" horizontalAlign="left" styleName="infoWindowBox" borderThickness="0">
+					   		<mx:Button id="fullBioButton" visible="{fullBioButtonOn}" enabled="{fullBioButtonOn}" width="20%" click="showfullbio()" color="#4c4c4c" label="Full Bio"/>
+							<mx:LinkButton label="{informantData.lastResult.full_name}" styleName="linkButton" paddingTop="4" fontSize="12" fontWeight="bold" click="{Application.application.loadNewTab('Informant', informantData.lastResult.@person_id)}"/>
+							<mx:HBox horizontalAlign="left" styleName="infoWindowBox" borderThickness="0">
+								<mx:Label selectable="true" styleName="smallText" htmlText="{informantBirthLabel}"/>
+								<mx:LinkButton id="birthPlaceButton" styleName="linkButton" enabled="{birthPlaceButtonOn}" visible="{birthPlaceButtonOn}" fontSize="12" label="{informantBirthPlaceName}" click="{Application.application.loadNewTab('Place', informantBirthPlaceID)}"/>
+							</mx:HBox>
+							<mx:HBox horizontalAlign="left" styleName="infoWindowBox" borderThickness="0">
+								<mx:Label selectable="true" styleName="smallText" htmlText="{informantDeathLabel}"/>
+								<mx:LinkButton id="deathPlaceButton" styleName="linkButton" enabled="{deathPlaceButtonOn}" visible="{deathPlaceButtonOn}" fontSize="12" label="{informantDeathPlaceName}" click="{Application.application.loadNewTab('Place', informantDeathPlaceID)}"/>
+							</mx:HBox>
+							<mx:TextArea width="100%" height="100%" borderThickness="0" selectable="true" wordWrap="true" styleName="smallText" backgroundColor="#cbe4e9" htmlText="{informantOccupations}"/>
+					   		<!--<mx:Text styleName="smallText" htmlText="{informantVitalStats}" -->
+						</mx:VBox>
+					</mx:HBox>
+		    		<mx:TextArea width="100%" height="100%" id="informant_short_bio" text="{informantShortBio}" styleName="basicText" editable="false"/>
+				</mx:VBox>
+				<mx:VBox id="placesBox" label="PLACES" width="100%" height="100%" styleName="canvasTitle">
+					<mx:List width="100%" height="100%" id="informantPlacesList" enabled="true" dataProvider="{placesProvider}" labelField="display_name" styleName="basicText" itemClick="{placeClickHandler(event)}" doubleClickEnabled="true" itemDoubleClick="{placeDoubleClickHandler(event)}" toolTip="{listItemToolTip}"/>					
+				</mx:VBox>
+				<mx:VBox id="storiesBox" label="STORIES TOLD by INFORMANT" width="100%" height="100%" styleName="canvasTitle" updateComplete="scrollToSelectedStory()">
+					<mx:List width="100%" height="100%" id="informantStoryList" selectedIndex="{storySelectedIndex}" enabled="true" dataProvider="{storiesProvider}" labelField="full_name" styleName="basicText" itemClick="{storyClickHandler(event)}" doubleClickEnabled="true" itemDoubleClick="{storyDoubleClickHandler(event)}" toolTip="{listItemToolTip}"/>
+				</mx:VBox>
+		    </mx:Accordion>
+	    </mx:Panel>
+	</mx:HBox>
+	<mx:Spacer id="spacer1" height="2" width="100%" />
+	<mx:HBox width="100%" height="44%" id="textAndIndicesBox">
+		<mx:Panel layout="vertical" width="66%" height="100%" title="English translation of published version: {storyPubInfo} told by {informantData.lastResult.full_name}" id="englishPublicationPanel" styleName="navPanel">
+			<mx:TextArea width="100%" height="100%" id="englishPublication" enabled="true" htmlText="{storyData.english_publication}" wordWrap="true" editable="false" styleName="basicText"/>
+		</mx:Panel>
+		<mx:Panel width="34%" layout="vertical" title="Story indices for {storyPubInfo}" id="indicesPanel" height="100%" shadowDistance="0" styleName="navPanel">
+			<mx:VBox verticalGap="0" verticalAlign="top" height="100%" width="100%" id="indexInfoBox" backgroundColor="#ffffff">
+				<mx:VBox styleName="infoWindowBox" width="100%" height="100%">
+					<mx:TextArea width="100%" height="100%" id="indices" borderThickness="0" htmlText="{indicesText}" wordWrap="true" editable="false" styleName="basicText"/>
+				</mx:VBox>			
+			</mx:VBox>		
+		</mx:Panel>
+	</mx:HBox>
+	<mx:Button label="MANUSCRIPT VERSION / PUBLISHED VERSION / SCHOLARLY ANNOTATION" enabled="true" id="goToStoryDetailsButton" click="storyDetailsClickHandler(event)" width="100%" height="35" styleName="navButton"/>
+
+</mx:Panel>	
+
+</mx:Canvas>

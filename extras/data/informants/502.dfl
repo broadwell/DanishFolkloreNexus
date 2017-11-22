@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<informant person_id="502">
+  <core_informant/>
+  <full_name>L&#xE6;rer J. V. Nissen</full_name>
+  <last_name>Nissen</last_name>
+  <first_name>J. V.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="765" secondary_informant="0">
+      <informant_id>502</informant_id>
+      <publication_info>DS_II_E_125</publication_info>
+      <full_name>502 - 0.00 - DS_II_E_125</full_name>
+      <url>data/stories/765.dfl</url>
+      <place_recorded id="851">Ramten</place_recorded>
+      <places_mentioned/>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>851</place_id>
+      <name>Ramten</name>
+      <display_name>Ramten (stories recorded here)</display_name>
+    </place>
+  </places>
+</informant>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="343">
+  <core_informant/>
+  <full_name>Iver Bundg&#xE5;rd</full_name>
+  <last_name>Bundg&#xE5;rd</last_name>
+  <first_name>Iver</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="543" secondary_informant="0">
+      <informant_id>343</informant_id>
+      <publication_info>DS_V_1507</publication_info>
+      <full_name>343 - 0.00 - DS_V_1507</full_name>
+      <url>data/stories/543.dfl</url>
+      <place_recorded id="248">Havbj&#xE6;rg</place_recorded>
+      <places_mentioned>
+        <place id="311">
+          <name>Jebj&#xE6;rg hede</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>248</place_id>
+      <name>Havbj&#xE6;rg</name>
+      <display_name>Havbj&#xE6;rg (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>311</place_id>
+      <name>Jebj&#xE6;rg hede</name>
+      <display_name>Jebj&#xE6;rg hede (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

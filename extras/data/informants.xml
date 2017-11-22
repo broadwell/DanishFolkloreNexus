@@ -1,0 +1,3832 @@
+<?xml version="1.0"?>
+<informants>
+  <informant person_id="150">
+    <core_informant>1</core_informant>
+    <full_name>Jens (Bitte Jens) Kristensen</full_name>
+    <last_name>Kristensen</last_name>
+    <first_name>Jens</first_name>
+    <gender>m</gender>
+    <image>data/informants/150.jpg</image>
+    <url>data/informants/150.dfl</url>
+    <residence_place place_id="147">
+      <name>Ersted</name>
+      <latitude>56.8247</latitude>
+      <longitude>9.77472</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="241">
+    <core_informant>1</core_informant>
+    <full_name>Jens Peter Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Jens Peter</first_name>
+    <gender>m</gender>
+    <image>data/informants/241.jpg</image>
+    <url>data/informants/241.dfl</url>
+    <residence_place place_id="306">
+      <name>Ilbj&#xE6;rge</name>
+      <latitude>57.4162</latitude>
+      <longitude>10.0744</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="235">
+    <core_informant>1</core_informant>
+    <full_name>Kirsten Marie Pedersdatter</full_name>
+    <last_name>Pedersdatter</last_name>
+    <first_name>Kirsten Marie</first_name>
+    <gender>f</gender>
+    <image>data/informants/235.jpg</image>
+    <url>data/informants/235.dfl</url>
+    <residence_place place_id="280">
+      <name>Hornslet mark</name>
+      <latitude>56.3159</latitude>
+      <longitude>10.304</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="90">
+    <core_informant>1</core_informant>
+    <full_name>(Ane) Margrete Jensdatter</full_name>
+    <last_name>Jensdatter</last_name>
+    <first_name>(Ane) Margrete</first_name>
+    <gender>f</gender>
+    <image>data/informants/90.jpg</image>
+    <url>data/informants/90.dfl</url>
+    <residence_place place_id="405">
+      <name>Mejlby</name>
+      <latitude>56.3007</latitude>
+      <longitude>10.2134</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="123">
+    <core_informant>1</core_informant>
+    <full_name>Peder Johansen</full_name>
+    <last_name>Johansen</last_name>
+    <first_name>Peder</first_name>
+    <gender>m</gender>
+    <image>data/informants/123.jpg</image>
+    <url>data/informants/123.dfl</url>
+    <residence_place place_id="175">
+      <name>Fuldbro m&#xF8;lle</name>
+      <latitude>56.0245</latitude>
+      <longitude>9.8344</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="556">
+    <core_informant/>
+    <full_name>Anders &#xC5;lborg</full_name>
+    <last_name>&#xC5;lborg</last_name>
+    <first_name>Anders</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/556.dfl</url>
+    <residence_place place_id="850">
+      <name>R&#xE6;vhede</name>
+      <latitude>57.1662</latitude>
+      <longitude>9.69007</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="319">
+    <core_informant/>
+    <full_name>Cand. Jur. Frederik Algreen-Ussing</full_name>
+    <last_name>Algreen-Ussing</last_name>
+    <first_name>Frederik</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/319.dfl</url>
+    <residence_place place_id="338">
+      <name>K&#xF8;benhavn</name>
+      <latitude>55.6796</latitude>
+      <longitude>12.6029</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="320">
+    <core_informant/>
+    <full_name>Thomas Andb&#xE6;k</full_name>
+    <last_name>Andb&#xE6;k</last_name>
+    <first_name>Thomas</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/320.dfl</url>
+    <residence_place place_id="845">
+      <name>&#xD8;ster Lem</name>
+      <latitude>56.045</latitude>
+      <longitude>8.4287</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="322">
+    <core_informant/>
+    <full_name>Kirsten Andersdatter</full_name>
+    <last_name>Andersdatter</last_name>
+    <first_name>Kirsten</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/322.dfl</url>
+    <residence_place place_id="77">
+      <name>Borre</name>
+      <latitude>54.9979</latitude>
+      <longitude>12.451</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="321">
+    <core_informant/>
+    <full_name>Bodil Marie Andersdatter</full_name>
+    <last_name>Andersdatter</last_name>
+    <first_name>Bodil Marie</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/321.dfl</url>
+    <residence_place place_id="313">
+      <name>Jerslev</name>
+      <latitude>57.285</latitude>
+      <longitude>10.0923</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="324">
+    <core_informant/>
+    <full_name>Mikkel Andersen</full_name>
+    <last_name>Andersen</last_name>
+    <first_name>Mikkel</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/324.dfl</url>
+    <residence_place place_id="91">
+      <name>Brandstrup</name>
+      <latitude>56.3645</latitude>
+      <longitude>9.50595</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="325">
+    <core_informant/>
+    <full_name>Niels Krist. Andersen</full_name>
+    <last_name>Andersen</last_name>
+    <first_name>Niels Krist.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/325.dfl</url>
+    <residence_place place_id="777">
+      <name>Flade, Mors</name>
+      <latitude>56.8909</latitude>
+      <longitude>8.79596</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="557">
+    <core_informant/>
+    <full_name>Kristen Andersen</full_name>
+    <last_name>Andersen</last_name>
+    <first_name>Kristen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/557.dfl</url>
+    <residence_place place_id="915">
+      <name>Vore</name>
+      <latitude>56.5239</latitude>
+      <longitude>10.2689</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="6">
+    <core_informant/>
+    <full_name>Gerhard Peter Andersen</full_name>
+    <last_name>Andersen</last_name>
+    <first_name>Gerhard Peter</first_name>
+    <gender>m</gender>
+    <url>data/informants/6.dfl</url>
+    <residence_place place_id="384">
+      <name>L&#xF8;rslev</name>
+      <latitude>57.4284</latitude>
+      <longitude>10.0853</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="564">
+    <core_informant/>
+    <full_name>Hans Andersen</full_name>
+    <last_name>Andersen</last_name>
+    <first_name>Hans</first_name>
+    <gender>m</gender>
+    <url>data/informants/564.dfl</url>
+    <residence_place place_id="863">
+      <name>Sinding</name>
+      <latitude>56.2097</latitude>
+      <longitude>9.4657</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="323">
+    <core_informant/>
+    <full_name>Knud Andersen</full_name>
+    <last_name>Andersen</last_name>
+    <first_name>Knud</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/323.dfl</url>
+    <residence_place place_id="835">
+      <name>N&#xF8;rbeg</name>
+      <latitude>56.5389</latitude>
+      <longitude>9.82306</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="326">
+    <core_informant/>
+    <full_name>Anne Andresen</full_name>
+    <last_name>Andresen</last_name>
+    <first_name>Anne</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/326.dfl</url>
+    <residence_place place_id="873">
+      <name>Snogb&#xE6;k, Sundeved</name>
+      <latitude>54.9633</latitude>
+      <longitude>9.70894</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="574">
+    <core_informant/>
+    <full_name> Anonymous</full_name>
+    <last_name>Anonymous</last_name>
+    <first_name/>
+    <gender>m</gender>
+    <url>data/informants/574.dfl</url>
+    <residence_place place_id="488">
+      <name>R&#xF8;dding</name>
+      <latitude>56.6494</latitude>
+      <longitude>8.81116</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="327">
+    <core_informant/>
+    <full_name>J&#xF8;rgen Rasmussen Bak</full_name>
+    <last_name>Bak</last_name>
+    <first_name>J&#xF8;rgen Rasmussen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/327.dfl</url>
+    <residence_place place_id="895">
+      <name>Tulstrup</name>
+      <latitude>56.1104</latitude>
+      <longitude>9.77957</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="25">
+    <core_informant/>
+    <full_name>Jens Nielsen B&#xE6;k</full_name>
+    <last_name>B&#xE6;k</last_name>
+    <first_name>Jens Nielsen</first_name>
+    <gender>m</gender>
+    <url>data/informants/25.dfl</url>
+    <residence_place/>
+  </informant>
+  <informant person_id="344">
+    <core_informant/>
+    <full_name>Jens B&#xE6;rtelsen</full_name>
+    <last_name>B&#xE6;rtelsen</last_name>
+    <first_name>Jens</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/344.dfl</url>
+    <residence_place place_id="914">
+      <name>Vole</name>
+      <latitude>56.1938</latitude>
+      <longitude>9.69566</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="328">
+    <core_informant/>
+    <full_name>L&#xE6;rer V. Bennike</full_name>
+    <last_name>Bennike</last_name>
+    <first_name>V.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/328.dfl</url>
+    <residence_place place_id="900">
+      <name>Vallekilde</name>
+      <latitude>55.5333</latitude>
+      <longitude>8.9554</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="329">
+    <core_informant/>
+    <full_name>L&#xE6;rerinde Ane Birgitte Berg</full_name>
+    <last_name>Berg</last_name>
+    <first_name>Ane Birgitte</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/329.dfl</url>
+    <residence_place place_id="756">
+      <name>Bovlstrup</name>
+      <latitude>55.9424</latitude>
+      <longitude>10.2197</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="330">
+    <core_informant/>
+    <full_name>H. Anton Bering</full_name>
+    <last_name>Bering</last_name>
+    <first_name>H. Anton</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/330.dfl</url>
+    <residence_place place_id="896">
+      <name>Tyholm</name>
+      <latitude>57.0986</latitude>
+      <longitude>9.60315</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="331">
+    <core_informant/>
+    <full_name>L&#xE6;rer Lavst Nikolaj Bertelsen</full_name>
+    <last_name>Bertelsen</last_name>
+    <first_name>Lavst Nikolaj</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/331.dfl</url>
+    <residence_place place_id="846">
+      <name>&#xD8;ster Vandet</name>
+      <latitude>56.9958</latitude>
+      <longitude>8.61685</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="332">
+    <core_informant/>
+    <full_name>Marie Kirstine Birk</full_name>
+    <last_name>Birk</last_name>
+    <first_name>Marie Kirstine</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/332.dfl</url>
+    <residence_place place_id="422">
+      <name>Navtrup</name>
+      <latitude>56.7463</latitude>
+      <longitude>8.9104</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="333">
+    <core_informant/>
+    <full_name>L&#xE6;rer P. Bliksted</full_name>
+    <last_name>Bliksted</last_name>
+    <first_name>P.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/333.dfl</url>
+    <residence_place place_id="794">
+      <name>Hillerslev</name>
+      <latitude>55.2066</latitude>
+      <longitude>10.3496</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="334">
+    <core_informant/>
+    <full_name>Pastor F. C. Bloch</full_name>
+    <last_name>Bloch</last_name>
+    <first_name>F. C.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/334.dfl</url>
+    <residence_place place_id="854">
+      <name>Ringe, Fyn</name>
+      <latitude>55.2403</latitude>
+      <longitude>10.4829</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="335">
+    <core_informant/>
+    <full_name>Harald Boisen</full_name>
+    <last_name>Boisen</last_name>
+    <first_name>Harald</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/335.dfl</url>
+    <residence_place place_id="702">
+      <name>Viksn&#xE6;s</name>
+      <latitude>54.8912</latitude>
+      <longitude>11.6568</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="336">
+    <core_informant/>
+    <full_name>Simon Bojsen</full_name>
+    <last_name>Bojsen</last_name>
+    <first_name>Simon</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/336.dfl</url>
+    <residence_place place_id="751">
+      <name>Billum</name>
+      <latitude>55.616</latitude>
+      <longitude>8.33131</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="338">
+    <core_informant/>
+    <full_name>Ole Bonde</full_name>
+    <last_name>Bonde</last_name>
+    <first_name>Ole</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/338.dfl</url>
+    <residence_place place_id="861">
+      <name>Selsingg&#xE5;rde, Sams&#xF8;</name>
+      <latitude>55.8343</latitude>
+      <longitude>10.5599</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="337">
+    <core_informant/>
+    <full_name>L&#xE6;rerinde Maren Mogensen Bonde</full_name>
+    <last_name>Bonde</last_name>
+    <first_name>Maren Mogensen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/337.dfl</url>
+    <residence_place place_id="902">
+      <name>Veders&#xF8;</name>
+      <latitude>56.2334</latitude>
+      <longitude>8.20006</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="339">
+    <core_informant/>
+    <full_name>L&#xE6;rer O. Chr. Boye</full_name>
+    <last_name>Boye</last_name>
+    <first_name>O. Chr.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/339.dfl</url>
+    <residence_place place_id="685">
+      <name>Vejen</name>
+      <latitude>55.4862</latitude>
+      <longitude>9.13998</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="345">
+    <core_informant/>
+    <full_name>Niels B&#xF8;geskov</full_name>
+    <last_name>B&#xF8;geskov</last_name>
+    <first_name>Niels</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/345.dfl</url>
+    <residence_place place_id="745">
+      <name>Askov</name>
+      <latitude>55.4698</latitude>
+      <longitude>9.09812</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="340">
+    <core_informant/>
+    <full_name>Pastor J. G. O. Brix</full_name>
+    <last_name>Brix</last_name>
+    <first_name>J. G. O.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/340.dfl</url>
+    <residence_place place_id="540">
+      <name>Skj&#xF8;dstrup</name>
+      <latitude>56.2635</latitude>
+      <longitude>10.3033</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="341">
+    <core_informant/>
+    <full_name>Peder Brog&#xE5;rd</full_name>
+    <last_name>Brog&#xE5;rd</last_name>
+    <first_name>Peder</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/341.dfl</url>
+    <residence_place place_id="316">
+      <name>Jetsmark</name>
+      <latitude>57.2099</latitude>
+      <longitude>9.67306</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="565">
+    <core_informant/>
+    <full_name>H Br&#xF8;chner</full_name>
+    <last_name>Br&#xF8;chner</last_name>
+    <first_name>H</first_name>
+    <gender>m</gender>
+    <url>data/informants/565.dfl</url>
+    <residence_place place_id="954">
+      <name>Gangsted</name>
+      <latitude>55.9293</latitude>
+      <longitude>10.0013</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="342">
+    <core_informant/>
+    <full_name>Anders Br&#xF8;sted</full_name>
+    <last_name>Br&#xF8;sted</last_name>
+    <first_name>Anders</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/342.dfl</url>
+    <residence_place place_id="834">
+      <name>N&#xF8;rager</name>
+      <latitude>56.347</latitude>
+      <longitude>10.6365</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="343">
+    <core_informant/>
+    <full_name>Iver Bundg&#xE5;rd</full_name>
+    <last_name>Bundg&#xE5;rd</last_name>
+    <first_name>Iver</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/343.dfl</url>
+    <residence_place place_id="248">
+      <name>Havbj&#xE6;rg</name>
+      <latitude>56.7073</latitude>
+      <longitude>9.11639</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="570">
+    <core_informant/>
+    <full_name>Mads Christensen</full_name>
+    <last_name>Christensen</last_name>
+    <first_name>Mads</first_name>
+    <gender>m</gender>
+    <url>data/informants/570.dfl</url>
+    <residence_place place_id="950">
+      <name>Vester Gr&#xF8;nning</name>
+      <latitude>56.6525</latitude>
+      <longitude>9.0522</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="346">
+    <core_informant/>
+    <full_name>Chr. Adolf Christensen</full_name>
+    <last_name>Christensen</last_name>
+    <first_name>Chr. Adolf</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/346.dfl</url>
+    <residence_place place_id="190">
+      <name>Gjedved</name>
+      <latitude>55.946</latitude>
+      <longitude>9.8582</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="347">
+    <core_informant/>
+    <full_name>Pastor N. P. Christensen</full_name>
+    <last_name>Christensen</last_name>
+    <first_name>N. P.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/347.dfl</url>
+    <residence_place place_id="555">
+      <name>Smidstrup</name>
+      <latitude>55.7805</latitude>
+      <longitude>9.28303</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="349">
+    <core_informant/>
+    <full_name>L&#xE6;rer P. Christensen</full_name>
+    <last_name>Christensen</last_name>
+    <first_name>P.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/349.dfl</url>
+    <residence_place place_id="818">
+      <name>Kvols</name>
+      <latitude>56.5266</latitude>
+      <longitude>9.29151</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="348">
+    <core_informant/>
+    <full_name>Student Nikolaj Christensen</full_name>
+    <last_name>Christensen</last_name>
+    <first_name>Nikolaj</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/348.dfl</url>
+    <residence_place place_id="1">
+      <name>Aaby</name>
+      <latitude>57.1652</latitude>
+      <longitude>9.74127</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="41">
+    <core_informant/>
+    <full_name>P. Chr. Christensen</full_name>
+    <last_name>Christensen</last_name>
+    <first_name>P. Chr.</first_name>
+    <gender>m</gender>
+    <url>data/informants/41.dfl</url>
+    <residence_place place_id="336">
+      <name>Knebel</name>
+      <latitude>56.2137</latitude>
+      <longitude>10.4859</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="350">
+    <core_informant/>
+    <full_name>Niels Clauss&#xF8;n</full_name>
+    <last_name>Clauss&#xF8;n</last_name>
+    <first_name>Niels</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/350.dfl</url>
+    <residence_place place_id="765">
+      <name>Dalby-Stubdrup</name>
+      <latitude>56.3717</latitude>
+      <longitude>10.006</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="351">
+    <core_informant/>
+    <full_name>Sidsel Andersdatter Dahl</full_name>
+    <last_name>Dahl</last_name>
+    <first_name>Sidsel Andersdatter</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/351.dfl</url>
+    <residence_place place_id="877">
+      <name>S&#xF8;nderkj&#xE6;r</name>
+      <latitude>56.2921</latitude>
+      <longitude>8.37482</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="352">
+    <core_informant/>
+    <full_name>K. P. Dalin</full_name>
+    <last_name>Dalin</last_name>
+    <first_name>K. P.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/352.dfl</url>
+    <residence_place place_id="740">
+      <name>&#xC5;le</name>
+      <latitude>55.8876</latitude>
+      <longitude>9.56112</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="353">
+    <core_informant/>
+    <full_name>Else og Maren Dissing</full_name>
+    <last_name>Dissing</last_name>
+    <first_name>Else og Maren</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/353.dfl</url>
+    <residence_place place_id="867">
+      <name>Skallerup, Mors</name>
+      <latitude>56.8535</latitude>
+      <longitude>8.65881</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="354">
+    <core_informant/>
+    <full_name>L&#xE6;rer T&#xF8;ger Dissing</full_name>
+    <last_name>Dissing</last_name>
+    <first_name>T&#xF8;ger</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/354.dfl</url>
+    <residence_place place_id="146">
+      <name>Erslev</name>
+      <latitude>56.3638</latitude>
+      <longitude>10.0746</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="355">
+    <core_informant/>
+    <full_name>Lars Dybdahl</full_name>
+    <last_name>Dybdahl</last_name>
+    <first_name>Lars</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/355.dfl</url>
+    <residence_place place_id="291">
+      <name>Hundborg</name>
+      <latitude>56.9288</latitude>
+      <longitude>8.50629</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="356">
+    <core_informant/>
+    <full_name>Martin Dyrholm</full_name>
+    <last_name>Dyrholm</last_name>
+    <first_name>Martin</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/356.dfl</url>
+    <residence_place place_id="761">
+      <name>Brudager</name>
+      <latitude>55.116</latitude>
+      <longitude>10.6748</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="357">
+    <core_informant/>
+    <full_name>Rasmus Dyrholm</full_name>
+    <last_name>Dyrholm</last_name>
+    <first_name>Rasmus</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/357.dfl</url>
+    <residence_place place_id="753">
+      <name>Bode</name>
+      <latitude>56.478</latitude>
+      <longitude>10.3058</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="358">
+    <core_informant/>
+    <full_name>Niels Ebbesen</full_name>
+    <last_name>Ebbesen</last_name>
+    <first_name>Niels</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/358.dfl</url>
+    <residence_place place_id="32">
+      <name>Andrup</name>
+      <latitude>55.3582</latitude>
+      <longitude>9.3877</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="48">
+    <core_informant/>
+    <full_name>Kristen Ebbesen</full_name>
+    <last_name>Ebbesen</last_name>
+    <first_name>Kristen</first_name>
+    <gender>m</gender>
+    <url>data/informants/48.dfl</url>
+    <residence_place place_id="139">
+      <name>Egtved</name>
+      <latitude>55.6151</latitude>
+      <longitude>9.30973</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="359">
+    <core_informant/>
+    <full_name>Bogtrykker Kr. Eriksen</full_name>
+    <last_name>Eriksen</last_name>
+    <first_name>Kr.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/359.dfl</url>
+    <residence_place place_id="338">
+      <name>K&#xF8;benhavn</name>
+      <latitude>55.6796</latitude>
+      <longitude>12.6029</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="360">
+    <core_informant/>
+    <full_name>Lars Peter Eriksen</full_name>
+    <last_name>Eriksen</last_name>
+    <first_name>Lars Peter</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/360.dfl</url>
+    <residence_place place_id="246">
+      <name>Hassing</name>
+      <latitude>56.8271</latitude>
+      <longitude>8.44792</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="54">
+    <core_informant/>
+    <full_name>Niels Feldballe</full_name>
+    <last_name>Feldballe</last_name>
+    <first_name>Niels</first_name>
+    <gender>m</gender>
+    <url>data/informants/54.dfl</url>
+    <residence_place place_id="652">
+      <name>Torsager</name>
+      <latitude>56.3435</latitude>
+      <longitude>10.4589</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="361">
+    <core_informant/>
+    <full_name>Hanne (Johanne Marie Christine) Fenger</full_name>
+    <last_name>Fenger</last_name>
+    <first_name>Hanne (Johanne Marie Christine)</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/361.dfl</url>
+    <residence_place place_id="916">
+      <name>Vosborg</name>
+      <latitude>56.0874</latitude>
+      <longitude>8.35511</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="362">
+    <core_informant/>
+    <full_name>Hans Pedersen Fladbirk</full_name>
+    <last_name>Fladbirk</last_name>
+    <first_name>Hans Pedersen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/362.dfl</url>
+    <residence_place place_id="875">
+      <name>S&#xF8;heden</name>
+      <latitude>57.3001</latitude>
+      <longitude>10.1857</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="57">
+    <core_informant/>
+    <full_name>Kirsten Marie Frederiksdatter</full_name>
+    <last_name>Frederiksdatter</last_name>
+    <first_name>Kirsten Marie</first_name>
+    <gender>f</gender>
+    <url>data/informants/57.dfl</url>
+    <residence_place place_id="20">
+      <name>Alb&#xE6;k</name>
+      <latitude>57.2336</latitude>
+      <longitude>10.4234</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="363">
+    <core_informant/>
+    <full_name>Kristian Frederiksen</full_name>
+    <last_name>Frederiksen</last_name>
+    <first_name>Kristian</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/363.dfl</url>
+    <residence_place place_id="700">
+      <name>Vidstrup</name>
+      <latitude>57.4994</latitude>
+      <longitude>9.94496</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="364">
+    <core_informant/>
+    <full_name>Lars Frederiksen</full_name>
+    <last_name>Frederiksen</last_name>
+    <first_name>Lars</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/364.dfl</url>
+    <residence_place place_id="758">
+      <name>Bredballe</name>
+      <latitude>55.7155</latitude>
+      <longitude>9.60583</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="569">
+    <core_informant/>
+    <full_name>Klavs Gjerding</full_name>
+    <last_name>Gjerding</last_name>
+    <first_name>Klavs</first_name>
+    <gender>m</gender>
+    <url>data/informants/569.dfl</url>
+    <residence_place/>
+  </informant>
+  <informant person_id="365">
+    <core_informant/>
+    <full_name>Klavs Gjerging</full_name>
+    <last_name>Gjerging</last_name>
+    <first_name>Klavs</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/365.dfl</url>
+    <residence_place/>
+  </informant>
+  <informant person_id="366">
+    <core_informant/>
+    <full_name>Fr&#xF8;ken Katrine Glud</full_name>
+    <last_name>Glud</last_name>
+    <first_name>Katrine</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/366.dfl</url>
+    <residence_place place_id="310">
+      <name>Jebj&#xE6;rg</name>
+      <latitude>56.6709</latitude>
+      <longitude>9.01475</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="367">
+    <core_informant/>
+    <full_name>Cand. Theol. C. F. Grove</full_name>
+    <last_name>Grove</last_name>
+    <first_name>C. F.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/367.dfl</url>
+    <residence_place place_id="830">
+      <name>Marielyst</name>
+      <latitude>55.6874</latitude>
+      <longitude>12.5674</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="369">
+    <core_informant/>
+    <full_name>Andreas Th&#xF8;gersen Gr&#xF8;nborg</full_name>
+    <last_name>Gr&#xF8;nborg</last_name>
+    <first_name>Andreas Th&#xF8;gersen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/369.dfl</url>
+    <residence_place place_id="802">
+      <name>Hvilsh&#xF8;j</name>
+      <latitude>57.2266</latitude>
+      <longitude>10.03</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="368">
+    <core_informant/>
+    <full_name>F. L. Grundtvig</full_name>
+    <last_name>Grundtvig</last_name>
+    <first_name>F. L.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/368.dfl</url>
+    <residence_place place_id="338">
+      <name>K&#xF8;benhavn</name>
+      <latitude>55.6796</latitude>
+      <longitude>12.6029</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="59">
+    <core_informant/>
+    <full_name>Jens Gudesen</full_name>
+    <last_name>Gudesen</last_name>
+    <first_name>Jens</first_name>
+    <gender>m</gender>
+    <url>data/informants/59.dfl</url>
+    <residence_place place_id="811">
+      <name>Kjeldstrup</name>
+      <latitude>56.6818</latitude>
+      <longitude>9.92075</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="566">
+    <core_informant/>
+    <full_name>Gunde Gundesen</full_name>
+    <last_name>Gundesen</last_name>
+    <first_name>Gunde</first_name>
+    <gender>m</gender>
+    <url>data/informants/566.dfl</url>
+    <residence_place place_id="927">
+      <name>Kjelst</name>
+      <latitude>55.5947</latitude>
+      <longitude>8.29601</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="370">
+    <core_informant/>
+    <full_name>Inger Halkj&#xE6;r</full_name>
+    <last_name>Halkj&#xE6;r</last_name>
+    <first_name>Inger</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/370.dfl</url>
+    <residence_place place_id="189">
+      <name>Gjedsted</name>
+      <latitude>56.6974</latitude>
+      <longitude>9.34014</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="61">
+    <core_informant/>
+    <full_name>Mette Marie Hansdatter</full_name>
+    <last_name>Hansdatter</last_name>
+    <first_name>Mette Marie</first_name>
+    <gender>f</gender>
+    <url>data/informants/61.dfl</url>
+    <residence_place place_id="817">
+      <name>Krarup m&#xF8;lle</name>
+      <latitude>56.5707</latitude>
+      <longitude>8.95567</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="381">
+    <core_informant/>
+    <full_name>Peder Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>Peder</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/381.dfl</url>
+    <residence_place place_id="804">
+      <name>Iowa, USA</name>
+      <latitude>41.5888</latitude>
+      <longitude>-93.6203</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="69">
+    <core_informant/>
+    <full_name>S&#xF8;ren Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>S&#xF8;ren</first_name>
+    <gender>m</gender>
+    <url>data/informants/69.dfl</url>
+    <residence_place place_id="870">
+      <name>Skjolde</name>
+      <latitude>55.7986</latitude>
+      <longitude>9.9459</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="65">
+    <core_informant/>
+    <full_name>Jensine Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>Jensine</first_name>
+    <gender>f</gender>
+    <url>data/informants/65.dfl</url>
+    <residence_place place_id="398">
+      <name>Madum s&#xF8;</name>
+      <latitude>56.8064</latitude>
+      <longitude>9.93258</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="374">
+    <core_informant/>
+    <full_name>Hans Peder Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>Hans Peder</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/374.dfl</url>
+    <residence_place place_id="788">
+      <name>Halskov</name>
+      <latitude>54.8021</latitude>
+      <longitude>12.0779</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="68">
+    <core_informant/>
+    <full_name>Mikkel Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>Mikkel</first_name>
+    <gender>m</gender>
+    <url>data/informants/68.dfl</url>
+    <residence_place/>
+  </informant>
+  <informant person_id="377">
+    <core_informant/>
+    <full_name>L&#xE6;rerinde Louise Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>Louise</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/377.dfl</url>
+    <residence_place place_id="799">
+      <name>Hurup</name>
+      <latitude>56.7562</latitude>
+      <longitude>8.42042</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="379">
+    <core_informant/>
+    <full_name>L&#xE6;rer Mads Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>Mads</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/379.dfl</url>
+    <residence_place place_id="772">
+      <name>F&#xE5;rdrup</name>
+      <latitude>55.3208</latitude>
+      <longitude>11.343</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="376">
+    <core_informant/>
+    <full_name>Lorens Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>Lorens</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/376.dfl</url>
+    <residence_place place_id="769">
+      <name>F&#xE6;lsted</name>
+      <latitude>54.9808</latitude>
+      <longitude>9.50396</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="380">
+    <core_informant/>
+    <full_name>L&#xE6;rer N. E. Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>N. E.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/380.dfl</url>
+    <residence_place place_id="77">
+      <name>Borre</name>
+      <latitude>54.9979</latitude>
+      <longitude>12.451</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="383">
+    <core_informant/>
+    <full_name>S&#xF8;ren Lavrsen Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>S&#xF8;ren Lavrsen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/383.dfl</url>
+    <residence_place place_id="414">
+      <name>M&#xF8;ltrup</name>
+      <latitude>56.7777</latitude>
+      <longitude>9.94735</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="375">
+    <core_informant/>
+    <full_name>Friskolel&#xE6;rer J&#xF8;rgen Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>J&#xF8;rgen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/375.dfl</url>
+    <residence_place place_id="899">
+      <name>V&#xE6;rslev</name>
+      <latitude>55.6552</latitude>
+      <longitude>11.2133</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="371">
+    <core_informant/>
+    <full_name>Pastor Constantin Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>Constantin</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/371.dfl</url>
+    <residence_place place_id="806">
+      <name>J&#xE6;rnved</name>
+      <latitude>55.4207</latitude>
+      <longitude>8.79118</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="373">
+    <core_informant/>
+    <full_name>Hans Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>Hans</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/373.dfl</url>
+    <residence_place place_id="841">
+      <name>&#xD8;rridslev</name>
+      <latitude>55.9393</latitude>
+      <longitude>9.93701</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="378">
+    <core_informant/>
+    <full_name>Louise Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>Louise</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/378.dfl</url>
+    <residence_place place_id="799">
+      <name>Hurup</name>
+      <latitude>56.7562</latitude>
+      <longitude>8.42042</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="382">
+    <core_informant/>
+    <full_name>Peder Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>Peder</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/382.dfl</url>
+    <residence_place place_id="824">
+      <name>Lin&#xE5;</name>
+      <latitude>56.1979</latitude>
+      <longitude>9.69543</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="372">
+    <core_informant/>
+    <full_name>L&#xE6;rer H. Hansen</full_name>
+    <last_name>Hansen</last_name>
+    <first_name>H.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/372.dfl</url>
+    <residence_place place_id="795">
+      <name>Hjallese</name>
+      <latitude>55.3596</latitude>
+      <longitude>10.3853</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="384">
+    <core_informant/>
+    <full_name>Landdagsmand Hans Peder Hansen-N&#xF8;rrem&#xF8;lle</full_name>
+    <last_name>Hansen-N&#xF8;rrem&#xF8;lle</last_name>
+    <first_name>Hans Peder</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/384.dfl</url>
+    <residence_place place_id="884">
+      <name>Sundeved</name>
+      <latitude>54.9204</latitude>
+      <longitude>9.82811</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="385">
+    <core_informant/>
+    <full_name>Farversvend C. C. Haug&#xE5;rd</full_name>
+    <last_name>Haug&#xE5;rd</last_name>
+    <first_name>C. C.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/385.dfl</url>
+    <residence_place place_id="11">
+      <name>&#xC5;benr&#xE5;</name>
+      <latitude>55.0505</latitude>
+      <longitude>9.41294</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="386">
+    <core_informant/>
+    <full_name>L&#xE6;rer U. N. Henneberg</full_name>
+    <last_name>Henneberg</last_name>
+    <first_name>U. N.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/386.dfl</url>
+    <residence_place place_id="868">
+      <name>Skals</name>
+      <latitude>56.5522</latitude>
+      <longitude>9.40683</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="387">
+    <core_informant/>
+    <full_name>J&#xF8;rgen Henriksen</full_name>
+    <last_name>Henriksen</last_name>
+    <first_name>J&#xF8;rgen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/387.dfl</url>
+    <residence_place place_id="889">
+      <name>Testrup</name>
+      <latitude>56.987</latitude>
+      <longitude>9.77588</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="388">
+    <core_informant/>
+    <full_name>Forstander Georg Himmelstrup</full_name>
+    <last_name>Himmelstrup</last_name>
+    <first_name>Georg</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/388.dfl</url>
+    <residence_place place_id="780">
+      <name>Galtrup</name>
+      <latitude>56.8459</latitude>
+      <longitude>8.72426</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="389">
+    <core_informant/>
+    <full_name>Margrethe Hoberg</full_name>
+    <last_name>Hoberg</last_name>
+    <first_name>Margrethe</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/389.dfl</url>
+    <residence_place place_id="804">
+      <name>Iowa, USA</name>
+      <latitude>41.5888</latitude>
+      <longitude>-93.6203</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="390">
+    <core_informant/>
+    <full_name>Skovrider Mads Holdt</full_name>
+    <last_name>Holdt</last_name>
+    <first_name>Mads</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/390.dfl</url>
+    <residence_place place_id="847">
+      <name>P&#xE5;b&#xF8;l</name>
+      <latitude>55.8192</latitude>
+      <longitude>8.76849</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="391">
+    <core_informant/>
+    <full_name>Pens. L&#xE6;rer Ove Holm</full_name>
+    <last_name>Holm</last_name>
+    <first_name>Ove</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/391.dfl</url>
+    <residence_place place_id="843">
+      <name>&#xD8;rsted</name>
+      <latitude>56.5533</latitude>
+      <longitude>10.3623</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="392">
+    <core_informant/>
+    <full_name>Uhrmager P. C. Holm</full_name>
+    <last_name>Holm</last_name>
+    <first_name>P. C.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/392.dfl</url>
+    <residence_place place_id="685">
+      <name>Vejen</name>
+      <latitude>55.4862</latitude>
+      <longitude>9.13998</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="393">
+    <core_informant/>
+    <full_name>Peder Holskov</full_name>
+    <last_name>Holskov</last_name>
+    <first_name>Peder</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/393.dfl</url>
+    <residence_place place_id="782">
+      <name>Gjesing</name>
+      <latitude>55.992</latitude>
+      <longitude>10.0247</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="77">
+    <core_informant/>
+    <full_name>S. L. H&#xF8;eg</full_name>
+    <last_name>H&#xF8;eg</last_name>
+    <first_name>S. L.</first_name>
+    <gender>m</gender>
+    <url>data/informants/77.dfl</url>
+    <residence_place place_id="721">
+      <name>Voldum</name>
+      <latitude>56.3664</latitude>
+      <longitude>10.1647</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="395">
+    <core_informant/>
+    <full_name>L&#xE6;rer J. Jakobsen</full_name>
+    <last_name>Jakobsen</last_name>
+    <first_name>J.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/395.dfl</url>
+    <residence_place place_id="405">
+      <name>Mejlby</name>
+      <latitude>56.3007</latitude>
+      <longitude>10.2134</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="396">
+    <core_informant/>
+    <full_name>Peder Lavrids Jakobsen</full_name>
+    <last_name>Jakobsen</last_name>
+    <first_name>Peder Lavrids</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/396.dfl</url>
+    <residence_place place_id="797">
+      <name>H&#xF8;rret skov</name>
+      <latitude>56.0869</latitude>
+      <longitude>10.1985</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="394">
+    <core_informant/>
+    <full_name>Friskolel&#xE6;rer A. E. Jakobsen</full_name>
+    <last_name>Jakobsen</last_name>
+    <first_name>A. E.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/394.dfl</url>
+    <residence_place place_id="842">
+      <name>&#xD8;rritslev</name>
+      <latitude>55.5004</latitude>
+      <longitude>10.2287</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="572">
+    <core_informant/>
+    <full_name>N Jakobsen</full_name>
+    <last_name>Jakobsen</last_name>
+    <first_name>N</first_name>
+    <gender>m</gender>
+    <url>data/informants/572.dfl</url>
+    <residence_place place_id="951">
+      <name>H&#xF8;jby</name>
+      <latitude>55.3333</latitude>
+      <longitude>10.4499</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="398">
+    <core_informant/>
+    <full_name>L&#xE6;rer Johan Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Johan</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/398.dfl</url>
+    <residence_place place_id="412">
+      <name>Mollerup</name>
+      <latitude>56.1561</latitude>
+      <longitude>9.72682</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="110">
+    <core_informant/>
+    <full_name>Lavst Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Lavst</first_name>
+    <gender>m</gender>
+    <url>data/informants/110.dfl</url>
+    <residence_place place_id="813">
+      <name>Kokholm</name>
+      <latitude>56.4779</latitude>
+      <longitude>9.49942</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="401">
+    <core_informant/>
+    <full_name>G&#xE5;rdejer Mikkel Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Mikkel</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/401.dfl</url>
+    <residence_place place_id="786">
+      <name>Grynderup</name>
+      <latitude>56.7097</latitude>
+      <longitude>9.67191</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="402">
+    <core_informant/>
+    <full_name>Dyrl&#xE6;ge P. Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>P.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/402.dfl</url>
+    <residence_place place_id="664">
+      <name>Trunderup</name>
+      <latitude>55.1926</latitude>
+      <longitude>10.5438</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="112">
+    <core_informant/>
+    <full_name>Niels Kristian (Pilmanden) Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Niels Kristian</first_name>
+    <gender>m</gender>
+    <url>data/informants/112.dfl</url>
+    <residence_place place_id="170">
+      <name>Fredbj&#xE6;rg</name>
+      <latitude>56.8085</latitude>
+      <longitude>9.29411</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="106">
+    <core_informant/>
+    <full_name>Jeppe Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Jeppe</first_name>
+    <gender>m</gender>
+    <url>data/informants/106.dfl</url>
+    <residence_place place_id="19">
+      <name>&#xC5;kj&#xE6;r</name>
+      <latitude>56.1089</latitude>
+      <longitude>9.86729</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="104">
+    <core_informant/>
+    <full_name>Jens Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Jens</first_name>
+    <gender>m</gender>
+    <url>data/informants/104.dfl</url>
+    <residence_place place_id="190">
+      <name>Gjedved</name>
+      <latitude>55.946</latitude>
+      <longitude>9.8582</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="108">
+    <core_informant/>
+    <full_name>Kristen Peder Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Kristen Peder</first_name>
+    <gender>m</gender>
+    <url>data/informants/108.dfl</url>
+    <residence_place place_id="374">
+      <name>Linderumg&#xE5;rds mark</name>
+      <latitude>57.4374</latitude>
+      <longitude>10.1654</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="400">
+    <core_informant/>
+    <full_name>L&#xE6;rer Kr. Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Kr.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/400.dfl</url>
+    <residence_place place_id="907">
+      <name>Vester Vedsted</name>
+      <latitude>55.2919</latitude>
+      <longitude>8.68282</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="403">
+    <core_informant/>
+    <full_name>L&#xE6;rer P. K. Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>P. K.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/403.dfl</url>
+    <residence_place place_id="747">
+      <name>&#xC5;sted</name>
+      <latitude>56.7718</latitude>
+      <longitude>8.9895</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="111">
+    <core_informant/>
+    <full_name>Niels ((Jens Jensen?)) Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Niels</first_name>
+    <gender>m</gender>
+    <url>data/informants/111.dfl</url>
+    <residence_place place_id="783">
+      <name>Glenstrup</name>
+      <latitude>56.5842</latitude>
+      <longitude>9.85317</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="405">
+    <core_informant/>
+    <full_name>Svend Peter Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Svend Peter</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/405.dfl</url>
+    <residence_place place_id="670">
+      <name>Tvilum</name>
+      <latitude>56.2516</latitude>
+      <longitude>9.68702</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="397">
+    <core_informant/>
+    <full_name>Jens Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Jens</first_name>
+    <gender>m</gender>
+    <url>data/informants/397.dfl</url>
+    <residence_place place_id="853">
+      <name>Refshaleg&#xE5;rd</name>
+      <latitude>56.19</latitude>
+      <longitude>9.38267</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="404">
+    <core_informant/>
+    <full_name>Poul Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Poul</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/404.dfl</url>
+    <residence_place place_id="897">
+      <name>Udbyovre</name>
+      <latitude>56.6501</latitude>
+      <longitude>10.2114</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="399">
+    <core_informant/>
+    <full_name>Ungkarl Karl Kristian Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Karl Kristian</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/399.dfl</url>
+    <residence_place place_id="214">
+      <name>Gudum</name>
+      <latitude>56.5203</latitude>
+      <longitude>8.46656</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="406">
+    <core_informant/>
+    <full_name>Svend Peter Jensen</full_name>
+    <last_name>Jensen</last_name>
+    <first_name>Svend Peter</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/406.dfl</url>
+    <residence_place place_id="914">
+      <name>Vole</name>
+      <latitude>56.1938</latitude>
+      <longitude>9.69566</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="568">
+    <core_informant/>
+    <full_name>Peder  Jensen Skr&#xE6;dder</full_name>
+    <last_name>Jensen Skr&#xE6;dder</last_name>
+    <first_name>Peder </first_name>
+    <gender>m</gender>
+    <url>data/informants/568.dfl</url>
+    <residence_place place_id="436">
+      <name>N&#xF8;rre Vissing</name>
+      <latitude>56.1249</latitude>
+      <longitude>9.84764</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="407">
+    <core_informant/>
+    <full_name>Forstander J. Jeppesen</full_name>
+    <last_name>Jeppesen</last_name>
+    <first_name>J.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/407.dfl</url>
+    <residence_place place_id="878">
+      <name>Staby</name>
+      <latitude>56.2645</latitude>
+      <longitude>8.24156</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="408">
+    <core_informant/>
+    <full_name>Morten Jeppesen</full_name>
+    <last_name>Jeppesen</last_name>
+    <first_name>Morten</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/408.dfl</url>
+    <residence_place place_id="894">
+      <name>Tovstrup</name>
+      <latitude>56.7353</latitude>
+      <longitude>8.95168</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="409">
+    <core_informant/>
+    <full_name>Kristen Jepsen</full_name>
+    <last_name>Jepsen</last_name>
+    <first_name>Kristen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/409.dfl</url>
+    <residence_place place_id="855">
+      <name>R&#xF8;dhus, Hune</name>
+      <latitude>57.2177</latitude>
+      <longitude>9.54674</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="410">
+    <core_informant/>
+    <full_name>Ungkarl Mads Jepsen</full_name>
+    <last_name>Jepsen</last_name>
+    <first_name>Mads</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/410.dfl</url>
+    <residence_place place_id="759">
+      <name>Bredstrup</name>
+      <latitude>55.5947</latitude>
+      <longitude>9.66543</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="411">
+    <core_informant/>
+    <full_name>Chr. Jespersen</full_name>
+    <last_name>Jespersen</last_name>
+    <first_name>Chr.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/411.dfl</url>
+    <residence_place place_id="838">
+      <name>&#xD8; Marie</name>
+      <latitude>55.1438</latitude>
+      <longitude>9.01853</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="415">
+    <core_informant/>
+    <full_name>Niels Johansen</full_name>
+    <last_name>Johansen</last_name>
+    <first_name>Niels</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/415.dfl</url>
+    <residence_place place_id="338">
+      <name>K&#xF8;benhavn</name>
+      <latitude>55.6796</latitude>
+      <longitude>12.6029</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="412">
+    <core_informant/>
+    <full_name>L&#xE6;rer Diderik Johansen</full_name>
+    <last_name>Johansen</last_name>
+    <first_name>Diderik</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/412.dfl</url>
+    <residence_place place_id="905">
+      <name>Vester Egede</name>
+      <latitude>55.2654</latitude>
+      <longitude>11.9643</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="413">
+    <core_informant/>
+    <full_name>Marie Johansen</full_name>
+    <last_name>Johansen</last_name>
+    <first_name>Marie</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/413.dfl</url>
+    <residence_place place_id="754">
+      <name>B&#xF8;ffelkobbel</name>
+      <latitude>54.9133</latitude>
+      <longitude>9.70452</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="414">
+    <core_informant/>
+    <full_name>Niels Johansen</full_name>
+    <last_name>Johansen</last_name>
+    <first_name>Niels</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/414.dfl</url>
+    <residence_place place_id="886">
+      <name>Svendborg</name>
+      <latitude>55.0658</latitude>
+      <longitude>10.6229</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="124">
+    <core_informant/>
+    <full_name>Marie Jonsen</full_name>
+    <last_name>Jonsen</last_name>
+    <first_name>Marie</first_name>
+    <gender>f</gender>
+    <url>data/informants/124.dfl</url>
+    <residence_place place_id="137">
+      <name>Egholt</name>
+      <latitude>55.5306</latitude>
+      <longitude>9.28247</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="416">
+    <core_informant/>
+    <full_name>Niels Jonsen</full_name>
+    <last_name>Jonsen</last_name>
+    <first_name>Niels</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/416.dfl</url>
+    <residence_place place_id="749">
+      <name>B&#xE6;kke</name>
+      <latitude>55.5718</latitude>
+      <longitude>9.14238</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="419">
+    <core_informant/>
+    <full_name>Fr&#xF8;ken Jutta J&#xF8;rgensen</full_name>
+    <last_name>J&#xF8;rgensen</last_name>
+    <first_name>Jutta</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/419.dfl</url>
+    <residence_place place_id="810">
+      <name>Kistrup, Assens</name>
+      <latitude>56.5207</latitude>
+      <longitude>9.41881</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="422">
+    <core_informant/>
+    <full_name>Knud J&#xF8;rgensen</full_name>
+    <last_name>J&#xF8;rgensen</last_name>
+    <first_name>Knud</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/422.dfl</url>
+    <residence_place place_id="835">
+      <name>N&#xF8;rbeg</name>
+      <latitude>56.5389</latitude>
+      <longitude>9.82306</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="128">
+    <core_informant/>
+    <full_name>Jakob J&#xF8;rgensen</full_name>
+    <last_name>J&#xF8;rgensen</last_name>
+    <first_name>Jakob</first_name>
+    <gender>m</gender>
+    <url>data/informants/128.dfl</url>
+    <residence_place place_id="775">
+      <name>Firg&#xE5;rde</name>
+      <latitude>56.0878</latitude>
+      <longitude>9.80719</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="418">
+    <core_informant/>
+    <full_name>Anders J&#xF8;rgensen</full_name>
+    <last_name>J&#xF8;rgensen</last_name>
+    <first_name>Anders</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/418.dfl</url>
+    <residence_place place_id="874">
+      <name>S&#xF8;by</name>
+      <latitude>56.5307</latitude>
+      <longitude>9.11125</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="130">
+    <core_informant/>
+    <full_name>S&#xF8;ren J&#xF8;rgensen</full_name>
+    <last_name>J&#xF8;rgensen</last_name>
+    <first_name>S&#xF8;ren</first_name>
+    <gender>m</gender>
+    <url>data/informants/130.dfl</url>
+    <residence_place place_id="768">
+      <name>Engesvang</name>
+      <latitude>56.171</latitude>
+      <longitude>9.3528</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="421">
+    <core_informant/>
+    <full_name>Redakt&#xF8;r Karl P. J. J&#xF8;rgensen</full_name>
+    <last_name>J&#xF8;rgensen</last_name>
+    <first_name>Karl P. J.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/421.dfl</url>
+    <residence_place place_id="341">
+      <name>Kolding</name>
+      <latitude>55.4919</latitude>
+      <longitude>9.49149</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="420">
+    <core_informant/>
+    <full_name>J&#xF8;rgen J&#xF8;rgensen</full_name>
+    <last_name>J&#xF8;rgensen</last_name>
+    <first_name>J&#xF8;rgen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/420.dfl</url>
+    <residence_place place_id="805">
+      <name>J&#xE6;rnelund</name>
+      <latitude>55.4256</latitude>
+      <longitude>8.80278</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="423">
+    <core_informant/>
+    <full_name>L&#xE6;rer S. J&#xF8;rgensen</full_name>
+    <last_name>J&#xF8;rgensen</last_name>
+    <first_name>S.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/423.dfl</url>
+    <residence_place place_id="810">
+      <name>Kistrup, Assens</name>
+      <latitude>56.5207</latitude>
+      <longitude>9.41881</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="562">
+    <core_informant/>
+    <full_name>Peter (PLJ) Juhl</full_name>
+    <last_name>Juhl</last_name>
+    <first_name>Peter</first_name>
+    <gender>m</gender>
+    <url>data/informants/562.dfl</url>
+    <residence_place place_id="338">
+      <name>K&#xF8;benhavn</name>
+      <latitude>55.6796</latitude>
+      <longitude>12.6029</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="417">
+    <core_informant/>
+    <full_name>Ane Bolette Justsdatter</full_name>
+    <last_name>Justsdatter</last_name>
+    <first_name>Ane Bolette</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/417.dfl</url>
+    <residence_place place_id="803">
+      <name>Imer, Klim</name>
+      <latitude>57.1112</latitude>
+      <longitude>9.16663</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="424">
+    <core_informant/>
+    <full_name>Marie Kalmar</full_name>
+    <last_name>Kalmar</last_name>
+    <first_name>Marie</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/424.dfl</url>
+    <residence_place place_id="892">
+      <name>Tislum</name>
+      <latitude>57.4453</latitude>
+      <longitude>10.2667</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="425">
+    <core_informant/>
+    <full_name>Hans Kirk</full_name>
+    <last_name>Kirk</last_name>
+    <first_name>Hans</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/425.dfl</url>
+    <residence_place place_id="488">
+      <name>R&#xF8;dding</name>
+      <latitude>56.6494</latitude>
+      <longitude>8.81116</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="427">
+    <core_informant/>
+    <full_name>L&#xE6;rer Severin Kj&#xE6;r</full_name>
+    <last_name>Kj&#xE6;r</last_name>
+    <first_name>Severin</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/427.dfl</url>
+    <residence_place place_id="815">
+      <name>Kongsted</name>
+      <latitude>55.2488</latitude>
+      <longitude>12.0436</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="428">
+    <core_informant/>
+    <full_name>Marie Kirstine Kj&#xE6;rg&#xE5;rd</full_name>
+    <last_name>Kj&#xE6;rg&#xE5;rd</last_name>
+    <first_name>Marie Kirstine</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/428.dfl</url>
+    <residence_place place_id="898">
+      <name>Ulfborg</name>
+      <latitude>56.2723</latitude>
+      <longitude>8.31756</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="426">
+    <core_informant/>
+    <full_name>Jens Kjellerup</full_name>
+    <last_name>Kjellerup</last_name>
+    <first_name>Jens</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/426.dfl</url>
+    <residence_place place_id="800">
+      <name>Hvidbj&#xE6;rg hede</name>
+      <latitude>56.5669</latitude>
+      <longitude>8.92571</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="430">
+    <core_informant/>
+    <full_name>Kristen Knudsen</full_name>
+    <last_name>Knudsen</last_name>
+    <first_name>Kristen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/430.dfl</url>
+    <residence_place place_id="869">
+      <name>Skibsby</name>
+      <latitude>57.4833</latitude>
+      <longitude>10.0215</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="429">
+    <core_informant/>
+    <full_name>Frederik Knudsen</full_name>
+    <last_name>Knudsen</last_name>
+    <first_name>Frederik</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/429.dfl</url>
+    <residence_place place_id="738">
+      <name>Agerskov, Bording</name>
+      <latitude>56.1452</latitude>
+      <longitude>9.2799</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="433">
+    <core_informant/>
+    <full_name>Ane Sofie Kristensdatter</full_name>
+    <last_name>Kristensdatter</last_name>
+    <first_name>Ane Sofie</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/433.dfl</url>
+    <residence_place place_id="316">
+      <name>Jetsmark</name>
+      <latitude>57.2099</latitude>
+      <longitude>9.67306</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="431">
+    <core_informant/>
+    <full_name>Ane Marie Kristensdatter</full_name>
+    <last_name>Kristensdatter</last_name>
+    <first_name>Ane Marie</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/431.dfl</url>
+    <residence_place place_id="8">
+      <name>Aarhus</name>
+      <latitude>56.159</latitude>
+      <longitude>10.2072</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="144">
+    <core_informant/>
+    <full_name>Johanne Marie Kristensdatter</full_name>
+    <last_name>Kristensdatter</last_name>
+    <first_name>Johanne Marie</first_name>
+    <gender>f</gender>
+    <url>data/informants/144.dfl</url>
+    <residence_place place_id="313">
+      <name>Jerslev</name>
+      <latitude>57.285</latitude>
+      <longitude>10.0923</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="432">
+    <core_informant/>
+    <full_name>Ane Marie Kristensdatter</full_name>
+    <last_name>Kristensdatter</last_name>
+    <first_name>Ane Marie</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/432.dfl</url>
+    <residence_place place_id="452">
+      <name>&#xD8;rum</name>
+      <latitude>56.4841</latitude>
+      <longitude>9.62445</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="434">
+    <core_informant/>
+    <full_name>Dortea Kristensdatter</full_name>
+    <last_name>Kristensdatter</last_name>
+    <first_name>Dortea</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/434.dfl</url>
+    <residence_place place_id="785">
+      <name>Gr&#xF8;nneb&#xE6;k</name>
+      <latitude>55.3644</latitude>
+      <longitude>9.1719</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="436">
+    <core_informant/>
+    <full_name>Sigurd J. Kristensen</full_name>
+    <last_name>Kristensen</last_name>
+    <first_name>Sigurd J.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/436.dfl</url>
+    <residence_place place_id="190">
+      <name>Gjedved</name>
+      <latitude>55.946</latitude>
+      <longitude>9.8582</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="318">
+    <core_informant/>
+    <full_name>Evald Kristensen</full_name>
+    <last_name>Kristensen</last_name>
+    <first_name>Evald</first_name>
+    <gender>m</gender>
+    <url>data/informants/318.dfl</url>
+    <residence_place/>
+  </informant>
+  <informant person_id="435">
+    <core_informant/>
+    <full_name>Peder Justesen Kristensen</full_name>
+    <last_name>Kristensen</last_name>
+    <first_name>Peder Justesen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/435.dfl</url>
+    <residence_place place_id="112">
+      <name>Dalby Nedre</name>
+      <latitude>56.6379</latitude>
+      <longitude>10.2226</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="439">
+    <core_informant/>
+    <full_name>Tellef Kristensen</full_name>
+    <last_name>Kristensen</last_name>
+    <first_name>Tellef</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/439.dfl</url>
+    <residence_place place_id="904">
+      <name>Vendsted, &#xC5;bybro</name>
+      <latitude>57.1613</latitude>
+      <longitude>9.70719</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="438">
+    <core_informant/>
+    <full_name>T. Kr. Kristensen</full_name>
+    <last_name>Kristensen</last_name>
+    <first_name>T. Kr.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/438.dfl</url>
+    <residence_place place_id="866">
+      <name>Skallerup, Hj&#xF8;rring</name>
+      <latitude>57.4795</latitude>
+      <longitude>9.85687</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="437">
+    <core_informant/>
+    <full_name>L&#xE6;rer T. Kristensen</full_name>
+    <last_name>Kristensen</last_name>
+    <first_name>T.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/437.dfl</url>
+    <residence_place place_id="857">
+      <name>R&#xF8;nslund</name>
+      <latitude>55.9405</latitude>
+      <longitude>9.32256</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="151">
+    <core_informant/>
+    <full_name>Jokum Kristensen</full_name>
+    <last_name>Kristensen</last_name>
+    <first_name>Jokum</first_name>
+    <gender>m</gender>
+    <url>data/informants/151.dfl</url>
+    <residence_place place_id="510">
+      <name>S&#xE6;sing</name>
+      <latitude>57.3728</latitude>
+      <longitude>10.1742</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="567">
+    <core_informant/>
+    <full_name>Kristian Kristensen Norge</full_name>
+    <last_name>Kristensen Norge</last_name>
+    <first_name>Kristian</first_name>
+    <gender>m</gender>
+    <url>data/informants/567.dfl</url>
+    <residence_place place_id="928">
+      <name>G&#xF8;ttrup</name>
+      <latitude>57.0551</latitude>
+      <longitude>9.21304</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="440">
+    <core_informant/>
+    <full_name>Maren Kristiansdatter</full_name>
+    <last_name>Kristiansdatter</last_name>
+    <first_name>Maren</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/440.dfl</url>
+    <residence_place place_id="885">
+      <name>Sundstrup</name>
+      <latitude>56.6073</latitude>
+      <longitude>9.30243</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="442">
+    <core_informant/>
+    <full_name>Petrine Kristiansen</full_name>
+    <last_name>Kristiansen</last_name>
+    <first_name>Petrine</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/442.dfl</url>
+    <residence_place place_id="412">
+      <name>Mollerup</name>
+      <latitude>56.1561</latitude>
+      <longitude>9.72682</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="441">
+    <core_informant/>
+    <full_name>Niels Kristiansen</full_name>
+    <last_name>Kristiansen</last_name>
+    <first_name>Niels</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/441.dfl</url>
+    <residence_place place_id="914">
+      <name>Vole</name>
+      <latitude>56.1938</latitude>
+      <longitude>9.69566</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="158">
+    <core_informant/>
+    <full_name>Bertil (B&#xE6;rtel) Krog</full_name>
+    <last_name>Krog</last_name>
+    <first_name>Bertil (B&#xE6;rtel)</first_name>
+    <gender>m</gender>
+    <url>data/informants/158.dfl</url>
+    <residence_place place_id="695">
+      <name>Vester Hassing</name>
+      <latitude>57.0652</latitude>
+      <longitude>10.1201</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="443">
+    <core_informant/>
+    <full_name>Maler Rasmus H. Kruse</full_name>
+    <last_name>Kruse</last_name>
+    <first_name>Rasmus H.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/443.dfl</url>
+    <residence_place place_id="763">
+      <name>Dalager</name>
+      <latitude>56.8285</latitude>
+      <longitude>9.02887</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="444">
+    <core_informant/>
+    <full_name>L&#xE6;rer Th. Kruse</full_name>
+    <last_name>Kruse</last_name>
+    <first_name>Th.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/444.dfl</url>
+    <residence_place place_id="784">
+      <name>Greve</name>
+      <latitude>55.5975</latitude>
+      <longitude>12.2408</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="445">
+    <core_informant/>
+    <full_name>Peder Ladefoged</full_name>
+    <last_name>Ladefoged</last_name>
+    <first_name>Peder</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/445.dfl</url>
+    <residence_place place_id="743">
+      <name>&#xC5;rup</name>
+      <latitude>56.759</latitude>
+      <longitude>9.41644</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="448">
+    <core_informant/>
+    <full_name>Karl Larsen</full_name>
+    <last_name>Larsen</last_name>
+    <first_name>Karl</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/448.dfl</url>
+    <residence_place place_id="816">
+      <name>Kornerup</name>
+      <latitude>55.6339</latitude>
+      <longitude>11.9826</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="447">
+    <core_informant/>
+    <full_name>Hans Kristian Larsen</full_name>
+    <last_name>Larsen</last_name>
+    <first_name>Hans Kristian</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/447.dfl</url>
+    <residence_place place_id="869">
+      <name>Skibsby</name>
+      <latitude>57.4833</latitude>
+      <longitude>10.0215</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="446">
+    <core_informant/>
+    <full_name>L&#xE6;rer C. M. Larsen</full_name>
+    <last_name>Larsen</last_name>
+    <first_name>C. M.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/446.dfl</url>
+    <residence_place place_id="839">
+      <name>Ommel, &#xC6;r&#xF8;</name>
+      <latitude>54.8735</latitude>
+      <longitude>10.4898</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="449">
+    <core_informant/>
+    <full_name>Kristian Larsen</full_name>
+    <last_name>Larsen</last_name>
+    <first_name>Kristian</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/449.dfl</url>
+    <residence_place place_id="774">
+      <name>Finderup</name>
+      <latitude>55.5023</latitude>
+      <longitude>11.3091</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="451">
+    <core_informant/>
+    <full_name>Fru Stine Lauritsen</full_name>
+    <last_name>Lauritsen</last_name>
+    <first_name>Stine</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/451.dfl</url>
+    <residence_place place_id="742">
+      <name>Amerika</name>
+      <latitude>41.8819</latitude>
+      <longitude>-87.6278</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="450">
+    <core_informant/>
+    <full_name>L&#xE6;rer A. P. Lauritsen</full_name>
+    <last_name>Lauritsen</last_name>
+    <first_name>A. P.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/450.dfl</url>
+    <residence_place place_id="881">
+      <name>Strandby</name>
+      <latitude>56.7872</latitude>
+      <longitude>9.21668</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="452">
+    <core_informant/>
+    <full_name>Dorte Lavrsdatter</full_name>
+    <last_name>Lavrsdatter</last_name>
+    <first_name>Dorte</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/452.dfl</url>
+    <residence_place place_id="793">
+      <name>Hesselbakke</name>
+      <latitude>57.4645</latitude>
+      <longitude>10.2516</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="453">
+    <core_informant/>
+    <full_name>L&#xE6;rer L. P. Lavrsen</full_name>
+    <last_name>Lavrsen</last_name>
+    <first_name>L. P.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/453.dfl</url>
+    <residence_place place_id="791">
+      <name>Havlykke</name>
+      <latitude>54.8328</latitude>
+      <longitude>11.4289</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="454">
+    <core_informant/>
+    <full_name>L&#xE6;rer Th. Leth</full_name>
+    <last_name>Leth</last_name>
+    <first_name>Th.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/454.dfl</url>
+    <residence_place place_id="858">
+      <name>Sale</name>
+      <latitude>56.2812</latitude>
+      <longitude>9.82669</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="455">
+    <core_informant/>
+    <full_name>Fr&#xF8;ken Elise Lindberg</full_name>
+    <last_name>Lindberg</last_name>
+    <first_name>Elise</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/455.dfl</url>
+    <residence_place place_id="770">
+      <name>Falster</name>
+      <latitude>54.8162</latitude>
+      <longitude>11.9077</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="456">
+    <core_informant/>
+    <full_name>Fru Anna Christ. Ludvigsen</full_name>
+    <last_name>Ludvigsen</last_name>
+    <first_name>Anna Christ.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/456.dfl</url>
+    <residence_place place_id="766">
+      <name>D&#xF8;strup</name>
+      <latitude>55.1182</latitude>
+      <longitude>8.80444</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="459">
+    <core_informant/>
+    <full_name>Niels Johannes Lund</full_name>
+    <last_name>Lund</last_name>
+    <first_name>Niels Johannes</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/459.dfl</url>
+    <residence_place place_id="37">
+      <name>Astrup</name>
+      <latitude>57.4803</latitude>
+      <longitude>10.097</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="457">
+    <core_informant/>
+    <full_name>Seminarist F. P. J. Lund</full_name>
+    <last_name>Lund</last_name>
+    <first_name>F. P. J.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/457.dfl</url>
+    <residence_place place_id="911">
+      <name>Vinten-Enner</name>
+      <latitude>55.908</latitude>
+      <longitude>9.74228</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="458">
+    <core_informant/>
+    <full_name>Hans Lund</full_name>
+    <last_name>Lund</last_name>
+    <first_name>Hans</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/458.dfl</url>
+    <residence_place place_id="398">
+      <name>Madum s&#xF8;</name>
+      <latitude>56.8064</latitude>
+      <longitude>9.93258</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="460">
+    <core_informant/>
+    <full_name>Fr&#xF8;ken Sofie Lund</full_name>
+    <last_name>Lund</last_name>
+    <first_name>Sofie</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/460.dfl</url>
+    <residence_place place_id="602">
+      <name>St&#xF8;vring</name>
+      <latitude>56.8872</latitude>
+      <longitude>9.84135</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="461">
+    <core_informant/>
+    <full_name>Poul Jeppesen Lystb&#xE6;k</full_name>
+    <last_name>Lystb&#xE6;k</last_name>
+    <first_name>Poul Jeppesen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/461.dfl</url>
+    <residence_place place_id="893">
+      <name>Torsted, Tim</name>
+      <latitude>56.2077</latitude>
+      <longitude>8.41856</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="462">
+    <core_informant/>
+    <full_name>Pastor J. H. Madelung</full_name>
+    <last_name>Madelung</last_name>
+    <first_name>J. H.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/462.dfl</url>
+    <residence_place place_id="865">
+      <name>Sj&#xF8;rring, Tisted</name>
+      <latitude>56.9591</latitude>
+      <longitude>8.59015</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="464">
+    <core_informant/>
+    <full_name>Marianne Madsdatter</full_name>
+    <last_name>Madsdatter</last_name>
+    <first_name>Marianne</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/464.dfl</url>
+    <residence_place place_id="752">
+      <name>Bj&#xE6;rgby</name>
+      <latitude>56.8683</latitude>
+      <longitude>8.73114</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="463">
+    <core_informant/>
+    <full_name>Ane Marie Madsdatter</full_name>
+    <last_name>Madsdatter</last_name>
+    <first_name>Ane Marie</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/463.dfl</url>
+    <residence_place place_id="760">
+      <name>Brovst</name>
+      <latitude>57.0943</latitude>
+      <longitude>9.509</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="465">
+    <core_informant/>
+    <full_name>E. F. Madsen</full_name>
+    <last_name>Madsen</last_name>
+    <first_name>E. F.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/465.dfl</url>
+    <residence_place place_id="827">
+      <name>Magleby</name>
+      <latitude>54.9861</latitude>
+      <longitude>12.4919</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="466">
+    <core_informant/>
+    <full_name>L&#xE6;rer Jens Madsen</full_name>
+    <last_name>Madsen</last_name>
+    <first_name>Jens</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/466.dfl</url>
+    <residence_place place_id="767">
+      <name>Ellund</name>
+      <latitude>54.7955</latitude>
+      <longitude>9.31526</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="182">
+    <core_informant/>
+    <full_name>Niels Madsen</full_name>
+    <last_name>Madsen</last_name>
+    <first_name>Niels</first_name>
+    <gender>m</gender>
+    <url>data/informants/182.dfl</url>
+    <residence_place place_id="93">
+      <name>Bratten</name>
+      <latitude>57.5169</latitude>
+      <longitude>10.4602</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="467">
+    <core_informant/>
+    <full_name>L&#xE6;rer P. K. Madsen</full_name>
+    <last_name>Madsen</last_name>
+    <first_name>P. K.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/467.dfl</url>
+    <residence_place place_id="878">
+      <name>Staby</name>
+      <latitude>56.2645</latitude>
+      <longitude>8.24156</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="468">
+    <core_informant/>
+    <full_name>Tue Madsen</full_name>
+    <last_name>Madsen</last_name>
+    <first_name>Tue</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/468.dfl</url>
+    <residence_place place_id="825">
+      <name>Lindeballe</name>
+      <latitude>55.7706</latitude>
+      <longitude>9.24203</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="470">
+    <core_informant/>
+    <full_name>S&#xF8;ren Mand</full_name>
+    <last_name>Mand</last_name>
+    <first_name>S&#xF8;ren</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/470.dfl</url>
+    <residence_place place_id="887">
+      <name>Tanderup</name>
+      <latitude>55.841</latitude>
+      <longitude>10.5563</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="469">
+    <core_informant/>
+    <full_name>Hans Jensen Mand</full_name>
+    <last_name>Mand</last_name>
+    <first_name>Hans Jensen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/469.dfl</url>
+    <residence_place place_id="849">
+      <name>Pilemark, Sams&#xF8;</name>
+      <latitude>55.8412</latitude>
+      <longitude>10.601</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="187">
+    <core_informant/>
+    <full_name>Jens Mark</full_name>
+    <last_name>Mark</last_name>
+    <first_name>Jens</first_name>
+    <gender>m</gender>
+    <url>data/informants/187.dfl</url>
+    <residence_place place_id="720">
+      <name>Vokslev</name>
+      <latitude>56.9665</latitude>
+      <longitude>9.68121</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="472">
+    <core_informant/>
+    <full_name>Student Frederik Melbye</full_name>
+    <last_name>Melbye</last_name>
+    <first_name>Frederik</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/472.dfl</url>
+    <residence_place place_id="338">
+      <name>K&#xF8;benhavn</name>
+      <latitude>55.6796</latitude>
+      <longitude>12.6029</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="473">
+    <core_informant/>
+    <full_name>Pastor M. Melbye</full_name>
+    <last_name>Melbye</last_name>
+    <first_name>M.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/473.dfl</url>
+    <residence_place place_id="746">
+      <name>Asperup</name>
+      <latitude>55.4822</latitude>
+      <longitude>9.90727</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="189">
+    <core_informant/>
+    <full_name>A. J. Meldgaard</full_name>
+    <last_name>Meldgaard</last_name>
+    <first_name>A. J.</first_name>
+    <gender>m</gender>
+    <url>data/informants/189.dfl</url>
+    <residence_place place_id="59">
+      <name>Bjedstrup</name>
+      <latitude>56.0663</latitude>
+      <longitude>9.85405</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="474">
+    <core_informant/>
+    <full_name>Kristen Meldg&#xE5;rd</full_name>
+    <last_name>Meldg&#xE5;rd</last_name>
+    <first_name>Kristen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/474.dfl</url>
+    <residence_place place_id="888">
+      <name>Tapdrup</name>
+      <latitude>56.4389</latitude>
+      <longitude>9.48691</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="191">
+    <core_informant/>
+    <full_name>Else Marie Mikaelsdatter</full_name>
+    <last_name>Mikaelsdatter</last_name>
+    <first_name>Else Marie</first_name>
+    <gender>f</gender>
+    <url>data/informants/191.dfl</url>
+    <residence_place place_id="205">
+      <name>Grindsted</name>
+      <latitude>57.1472</latitude>
+      <longitude>10.0459</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="475">
+    <core_informant/>
+    <full_name>Karen Marie Mikkelsen</full_name>
+    <last_name>Mikkelsen</last_name>
+    <first_name>Karen Marie</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/475.dfl</url>
+    <residence_place place_id="879">
+      <name>Sterreg&#xE5;rd</name>
+      <latitude>55.1041</latitude>
+      <longitude>10.4317</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="476">
+    <core_informant/>
+    <full_name>Fr&#xF8;ken Anna Moltke</full_name>
+    <last_name>Moltke</last_name>
+    <first_name>Anna</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/476.dfl</url>
+    <residence_place place_id="848">
+      <name>Palsg&#xE5;rd</name>
+      <latitude>55.6785</latitude>
+      <longitude>11.4822</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="205">
+    <core_informant/>
+    <full_name>Jens Kr. Kristensen (Mossi-Jens) Mosen</full_name>
+    <last_name>Mosen</last_name>
+    <first_name>Jens Kr. Kristensen</first_name>
+    <gender>m</gender>
+    <url>data/informants/205.dfl</url>
+    <residence_place place_id="455">
+      <name>&#xD8;ster Br&#xF8;nderslev</name>
+      <latitude>57.2481</latitude>
+      <longitude>9.99782</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="478">
+    <core_informant/>
+    <full_name>L&#xE6;rer M. M&#xF8;ller</full_name>
+    <last_name>M&#xF8;ller</last_name>
+    <first_name>M.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/478.dfl</url>
+    <residence_place place_id="823">
+      <name>Lime</name>
+      <latitude>56.3889</latitude>
+      <longitude>10.2484</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="481">
+    <core_informant/>
+    <full_name>Pastor Otto M&#xF8;ller</full_name>
+    <last_name>M&#xF8;ller</last_name>
+    <first_name>Otto</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/481.dfl</url>
+    <residence_place place_id="787">
+      <name>Gylling</name>
+      <latitude>55.89</latitude>
+      <longitude>10.1699</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="482">
+    <core_informant/>
+    <full_name>Fru Signe Christensen M&#xF8;ller</full_name>
+    <last_name>M&#xF8;ller</last_name>
+    <first_name>Signe Christensen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/482.dfl</url>
+    <residence_place place_id="762">
+      <name>Charlottenlund</name>
+      <latitude>55.751</latitude>
+      <longitude>12.5855</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="479">
+    <core_informant/>
+    <full_name>Niels M&#xF8;ller</full_name>
+    <last_name>M&#xF8;ller</last_name>
+    <first_name>Niels</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/479.dfl</url>
+    <residence_place place_id="864">
+      <name>Sjellerup</name>
+      <latitude>55.0005</latitude>
+      <longitude>9.86173</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="480">
+    <core_informant/>
+    <full_name>Seminarist Niels Kr. M&#xF8;ller</full_name>
+    <last_name>M&#xF8;ller</last_name>
+    <first_name>Niels Kr.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/480.dfl</url>
+    <residence_place place_id="773">
+      <name>F&#xE5;rup</name>
+      <latitude>56.3633</latitude>
+      <longitude>9.54445</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="477">
+    <core_informant/>
+    <full_name>L&#xE6;rer P. K. Munch</full_name>
+    <last_name>Munch</last_name>
+    <first_name>P. K.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/477.dfl</url>
+    <residence_place place_id="833">
+      <name>Nimtoft</name>
+      <latitude>56.4107</latitude>
+      <longitude>10.563</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="483">
+    <core_informant/>
+    <full_name>Ane Katrine Nielsdatter</full_name>
+    <last_name>Nielsdatter</last_name>
+    <first_name>Ane Katrine</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/483.dfl</url>
+    <residence_place place_id="776">
+      <name>Fjellerup</name>
+      <latitude>56.5089</latitude>
+      <longitude>10.5861</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="498">
+    <core_informant/>
+    <full_name>Morten Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Morten</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/498.dfl</url>
+    <residence_place place_id="58">
+      <name>Bj&#xE6;rggrav</name>
+      <latitude>56.4904</latitude>
+      <longitude>9.89689</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="486">
+    <core_informant/>
+    <full_name>Seminarist Chr. Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Chr.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/486.dfl</url>
+    <residence_place place_id="808">
+      <name>Jelling</name>
+      <latitude>55.7541</latitude>
+      <longitude>9.41612</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="484">
+    <core_informant/>
+    <full_name>Ane Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Ane</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/484.dfl</url>
+    <residence_place place_id="377">
+      <name>Lisbj&#xE6;rg terp</name>
+      <latitude>56.216</latitude>
+      <longitude>10.1905</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="497">
+    <core_informant/>
+    <full_name>Maren Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Maren</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/497.dfl</url>
+    <residence_place place_id="763">
+      <name>Dalager</name>
+      <latitude>56.8285</latitude>
+      <longitude>9.02887</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="487">
+    <core_informant/>
+    <full_name>L&#xE6;rer H. P. Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>H. P.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/487.dfl</url>
+    <residence_place place_id="860">
+      <name>Sejling</name>
+      <latitude>56.2176</latitude>
+      <longitude>9.52005</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="217">
+    <core_informant/>
+    <full_name>Kristen Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Kristen</first_name>
+    <gender>m</gender>
+    <url>data/informants/217.dfl</url>
+    <residence_place place_id="831">
+      <name>Mosehusene, Jetsmark</name>
+      <latitude>56.5276</latitude>
+      <longitude>9.92211</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="499">
+    <core_informant/>
+    <full_name>L&#xE6;rer O. V. Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>O. V.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/499.dfl</url>
+    <residence_place place_id="856">
+      <name>Romdrup-Klarup</name>
+      <latitude>57.0015</latitude>
+      <longitude>10.0385</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="501">
+    <core_informant/>
+    <full_name>Seminarist Peder Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Peder</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/501.dfl</url>
+    <residence_place place_id="226">
+      <name>Hald</name>
+      <latitude>56.6018</latitude>
+      <longitude>9.19759</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="494">
+    <core_informant/>
+    <full_name>Graver M. Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>M.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/494.dfl</url>
+    <residence_place place_id="297">
+      <name>Hvidbj&#xE6;rg</name>
+      <latitude>56.651</latitude>
+      <longitude>8.5316</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="493">
+    <core_informant/>
+    <full_name>Lars Kristian Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Lars Kristian</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/493.dfl</url>
+    <residence_place place_id="901">
+      <name>Vangeskrog</name>
+      <latitude>57.2615</latitude>
+      <longitude>10.1662</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="488">
+    <core_informant/>
+    <full_name>Sognefoged Jens Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Jens</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/488.dfl</url>
+    <residence_place place_id="821">
+      <name>Lem</name>
+      <latitude>56.591</latitude>
+      <longitude>8.78439</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="212">
+    <core_informant/>
+    <full_name>A. C. Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>A. C.</first_name>
+    <gender>m</gender>
+    <url>data/informants/212.dfl</url>
+    <residence_place place_id="828">
+      <name>Malle, L&#xF8;gst&#xF8;r</name>
+      <latitude>56.9205</latitude>
+      <longitude>9.23955</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="490">
+    <core_informant/>
+    <full_name>J&#xF8;rgen Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>J&#xF8;rgen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/490.dfl</url>
+    <residence_place place_id="876">
+      <name>S&#xF8;llinge</name>
+      <latitude>55.2856</latitude>
+      <longitude>10.5368</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="495">
+    <core_informant/>
+    <full_name>M. Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>M.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/495.dfl</url>
+    <residence_place place_id="814">
+      <name>Kongerslev</name>
+      <latitude>56.8837</latitude>
+      <longitude>10.1119</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="485">
+    <core_informant/>
+    <full_name>L&#xE6;rer Anton Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Anton</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/485.dfl</url>
+    <residence_place place_id="832">
+      <name>Munkebj&#xE6;rgby</name>
+      <latitude>55.5074</latitude>
+      <longitude>11.5257</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="492">
+    <core_informant/>
+    <full_name>Lars Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Lars</first_name>
+    <gender>m</gender>
+    <url>data/informants/492.dfl</url>
+    <residence_place place_id="910">
+      <name>Vinkel</name>
+      <latitude>56.4211</latitude>
+      <longitude>9.4982</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="496">
+    <core_informant/>
+    <full_name>L&#xE6;rer M. C. Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>M. C.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/496.dfl</url>
+    <residence_place place_id="750">
+      <name>B&#xE6;lum</name>
+      <latitude>56.8287</latitude>
+      <longitude>10.1161</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="489">
+    <core_informant/>
+    <full_name>L&#xE6;rer Joh. Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Joh.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/489.dfl</url>
+    <residence_place place_id="852">
+      <name>Randrup</name>
+      <latitude>56.7499</latitude>
+      <longitude>8.31272</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="500">
+    <core_informant/>
+    <full_name>Peder Nielsen</full_name>
+    <last_name>Nielsen</last_name>
+    <first_name>Peder</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/500.dfl</url>
+    <residence_place place_id="903">
+      <name>Vejl&#xF8;</name>
+      <latitude>55.1776</latitude>
+      <longitude>11.7535</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="502">
+    <core_informant/>
+    <full_name>L&#xE6;rer J. V. Nissen</full_name>
+    <last_name>Nissen</last_name>
+    <first_name>J. V.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/502.dfl</url>
+    <residence_place place_id="851">
+      <name>Ramten</name>
+      <latitude>56.4379</latitude>
+      <longitude>10.6294</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="503">
+    <core_informant/>
+    <full_name>L&#xE6;rerinde Maren Noesg&#xE5;rd</full_name>
+    <last_name>Noesg&#xE5;rd</last_name>
+    <first_name>Maren</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/503.dfl</url>
+    <residence_place place_id="796">
+      <name>Holev</name>
+      <latitude>55.4094</latitude>
+      <longitude>10.5088</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="504">
+    <core_informant/>
+    <full_name>L&#xE6;rer C. C. N&#xF8;rg&#xE5;rd</full_name>
+    <last_name>N&#xF8;rg&#xE5;rd</last_name>
+    <first_name>C. C.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/504.dfl</url>
+    <residence_place place_id="872">
+      <name>Snedsted</name>
+      <latitude>56.8954</latitude>
+      <longitude>8.52354</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="225">
+    <core_informant/>
+    <full_name>Rasmus N&#xF8;rregaard</full_name>
+    <last_name>N&#xF8;rregaard</last_name>
+    <first_name>Rasmus</first_name>
+    <gender>m</gender>
+    <url>data/informants/225.dfl</url>
+    <residence_place place_id="137">
+      <name>Egholt</name>
+      <latitude>55.5306</latitude>
+      <longitude>9.28247</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="505">
+    <core_informant/>
+    <full_name>L&#xE6;rer N. P. Olsen</full_name>
+    <last_name>Olsen</last_name>
+    <first_name>N. P.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/505.dfl</url>
+    <residence_place place_id="861">
+      <name>Selsingg&#xE5;rde, Sams&#xF8;</name>
+      <latitude>55.8343</latitude>
+      <longitude>10.5599</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="506">
+    <core_informant/>
+    <full_name>L&#xE6;rer Rasmus Olsen</full_name>
+    <last_name>Olsen</last_name>
+    <first_name>Rasmus</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/506.dfl</url>
+    <residence_place place_id="908">
+      <name>Viemose, Kalvhave</name>
+      <latitude>55.0164</latitude>
+      <longitude>12.1399</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="507">
+    <core_informant/>
+    <full_name>Morten Overg&#xE5;rd</full_name>
+    <last_name>Overg&#xE5;rd</last_name>
+    <first_name>Morten</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/507.dfl</url>
+    <residence_place place_id="812">
+      <name>Kjelstrup, Tisted</name>
+      <latitude>56.9967</latitude>
+      <longitude>8.75359</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="509">
+    <core_informant/>
+    <full_name>Kristiane Pedersdatter</full_name>
+    <last_name>Pedersdatter</last_name>
+    <first_name>Kristiane</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/509.dfl</url>
+    <residence_place place_id="819">
+      <name>Kvotrup, Mundelstrup</name>
+      <latitude>56.2162</latitude>
+      <longitude>10.0814</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="563">
+    <core_informant/>
+    <full_name>Dorthea Pedersdatter</full_name>
+    <last_name>Pedersdatter</last_name>
+    <first_name>Dorthea</first_name>
+    <gender>f</gender>
+    <url>data/informants/563.dfl</url>
+    <residence_place place_id="923">
+      <name>Skj&#xE6;ve</name>
+      <latitude>57.288</latitude>
+      <longitude>10.3106</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="508">
+    <core_informant/>
+    <full_name>Else Marie Pedersdatter</full_name>
+    <last_name>Pedersdatter</last_name>
+    <first_name>Else Marie</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/508.dfl</url>
+    <residence_place place_id="737">
+      <name>Abildg&#xE5;rd, Navtrup</name>
+      <latitude>56.7444</latitude>
+      <longitude>8.90908</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="513">
+    <core_informant/>
+    <full_name>L&#xE6;rer Johannes Gr&#xF8;nb&#xE6;k Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Johannes Gr&#xF8;nb&#xE6;k</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/513.dfl</url>
+    <residence_place place_id="62">
+      <name>Blegind</name>
+      <latitude>56.0699</latitude>
+      <longitude>10.0732</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="510">
+    <core_informant/>
+    <full_name>Dyrl&#xE6;ge Andreas Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Andreas</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/510.dfl</url>
+    <residence_place place_id="859">
+      <name>Sams&#xF8;</name>
+      <latitude>55.8278</latitude>
+      <longitude>10.5869</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="514">
+    <core_informant/>
+    <full_name>G&#xE5;rdejer L. Chr. Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>L. Chr.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/514.dfl</url>
+    <residence_place place_id="871">
+      <name>Skj&#xF8;rtholt</name>
+      <latitude>57.4244</latitude>
+      <longitude>10.358</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="517">
+    <core_informant/>
+    <full_name>L&#xE6;rer N. Kr. Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>N. Kr.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/517.dfl</url>
+    <residence_place place_id="786">
+      <name>Grynderup</name>
+      <latitude>56.7097</latitude>
+      <longitude>9.67191</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="511">
+    <core_informant/>
+    <full_name>Hans Kristian Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Hans Kristian</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/511.dfl</url>
+    <residence_place place_id="790">
+      <name>Haslund</name>
+      <latitude>56.419</latitude>
+      <longitude>10.0253</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="516">
+    <core_informant/>
+    <full_name>Mathias Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Mathias</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/516.dfl</url>
+    <residence_place place_id="741">
+      <name>Allerup, Varde</name>
+      <latitude>55.4478</latitude>
+      <longitude>8.61389</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="238">
+    <core_informant/>
+    <full_name>Henrik Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Henrik</first_name>
+    <gender>m</gender>
+    <url>data/informants/238.dfl</url>
+    <residence_place place_id="829">
+      <name>Maribo</name>
+      <latitude>54.7743</latitude>
+      <longitude>11.5091</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="559">
+    <core_informant/>
+    <full_name>Kristen Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Kristen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/559.dfl</url>
+    <residence_place place_id="234">
+      <name>Hals</name>
+      <latitude>56.9952</latitude>
+      <longitude>10.3066</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="573">
+    <core_informant/>
+    <full_name>Lars Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Lars</first_name>
+    <gender>m</gender>
+    <url>data/informants/573.dfl</url>
+    <residence_place place_id="379">
+      <name>L&#xF8;gst&#xF8;r</name>
+      <latitude>56.9673</latitude>
+      <longitude>9.26375</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="240">
+    <core_informant/>
+    <full_name>Jens Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Jens</first_name>
+    <gender>m</gender>
+    <url>data/informants/240.dfl</url>
+    <residence_place place_id="807">
+      <name>J&#xE6;vngryde</name>
+      <latitude>56.1125</latitude>
+      <longitude>9.81866</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="515">
+    <core_informant/>
+    <full_name>Lars Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Lars</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/515.dfl</url>
+    <residence_place place_id="820">
+      <name>Langemark, Sams&#xF8;</name>
+      <latitude>55.8479</latitude>
+      <longitude>10.6226</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="558">
+    <core_informant/>
+    <full_name>Niels Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Niels</first_name>
+    <gender>m</gender>
+    <url>data/informants/558.dfl</url>
+    <residence_place place_id="880">
+      <name>Stj&#xE6;r</name>
+      <latitude>56.1167</latitude>
+      <longitude>9.95282</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="512">
+    <core_informant/>
+    <full_name>Stationsforstander Herman Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Herman</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/512.dfl</url>
+    <residence_place place_id="789">
+      <name>Hammerum</name>
+      <latitude>56.1371</latitude>
+      <longitude>9.06182</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="245">
+    <core_informant/>
+    <full_name>Kristen Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>Kristen</first_name>
+    <gender>m</gender>
+    <url>data/informants/245.dfl</url>
+    <residence_place place_id="673">
+      <name>Ugilt</name>
+      <latitude>57.4252</latitude>
+      <longitude>10.1369</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="518">
+    <core_informant/>
+    <full_name>S&#xF8;ren Pedersen</full_name>
+    <last_name>Pedersen</last_name>
+    <first_name>S&#xF8;ren</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/518.dfl</url>
+    <residence_place place_id="798">
+      <name>Hosby</name>
+      <latitude>55.7472</latitude>
+      <longitude>10.0121</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="519">
+    <core_informant/>
+    <full_name>L&#xE6;rer H. Petersen</full_name>
+    <last_name>Petersen</last_name>
+    <first_name>H.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/519.dfl</url>
+    <residence_place place_id="771">
+      <name>F&#xE5;rb&#xE6;k</name>
+      <latitude>56.3891</latitude>
+      <longitude>8.99743</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="522">
+    <core_informant/>
+    <full_name>Martinus Poulsen</full_name>
+    <last_name>Poulsen</last_name>
+    <first_name>Martinus</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/522.dfl</url>
+    <residence_place place_id="889">
+      <name>Testrup</name>
+      <latitude>56.987</latitude>
+      <longitude>9.77588</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="258">
+    <core_informant/>
+    <full_name>Elisabet Poulsen</full_name>
+    <last_name>Poulsen</last_name>
+    <first_name>Elisabet</first_name>
+    <gender>f</gender>
+    <url>data/informants/258.dfl</url>
+    <residence_place place_id="652">
+      <name>Torsager</name>
+      <latitude>56.3435</latitude>
+      <longitude>10.4589</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="520">
+    <core_informant/>
+    <full_name>L&#xE6;rer A. C. Poulsen</full_name>
+    <last_name>Poulsen</last_name>
+    <first_name>A. C.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/520.dfl</url>
+    <residence_place place_id="111">
+      <name>Dalby</name>
+      <latitude>55.4662</latitude>
+      <longitude>9.49367</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="521">
+    <core_informant/>
+    <full_name>Redakt&#xF8;r Anders H. Poulsen</full_name>
+    <last_name>Poulsen</last_name>
+    <first_name>Anders H.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/521.dfl</url>
+    <residence_place place_id="822">
+      <name>Lervad</name>
+      <latitude>55.4558</latitude>
+      <longitude>8.95968</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="523">
+    <core_informant/>
+    <full_name>Maren Primdal</full_name>
+    <last_name>Primdal</last_name>
+    <first_name>Maren</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/523.dfl</url>
+    <residence_place place_id="422">
+      <name>Navtrup</name>
+      <latitude>56.7463</latitude>
+      <longitude>8.9104</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="526">
+    <core_informant/>
+    <full_name>L&#xE6;rer S. P. Rasmussen</full_name>
+    <last_name>Rasmussen</last_name>
+    <first_name>S. P.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/526.dfl</url>
+    <residence_place place_id="744">
+      <name>&#xC5;s, Tvingstrup</name>
+      <latitude>55.9163</latitude>
+      <longitude>9.97233</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="525">
+    <core_informant/>
+    <full_name>Professor H. V. Rasmussen</full_name>
+    <last_name>Rasmussen</last_name>
+    <first_name>H. V.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/525.dfl</url>
+    <residence_place place_id="338">
+      <name>K&#xF8;benhavn</name>
+      <latitude>55.6796</latitude>
+      <longitude>12.6029</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="524">
+    <core_informant/>
+    <full_name>Friskolel&#xE6;rer Chr. Rasmussen</full_name>
+    <last_name>Rasmussen</last_name>
+    <first_name>Chr.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/524.dfl</url>
+    <residence_place place_id="840">
+      <name>Ormitslev</name>
+      <latitude>55.3518</latitude>
+      <longitude>11.2424</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="527">
+    <core_informant/>
+    <full_name>Ane Kirstine Refsg&#xE5;rd</full_name>
+    <last_name>Refsg&#xE5;rd</last_name>
+    <first_name>Ane Kirstine</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/527.dfl</url>
+    <residence_place place_id="488">
+      <name>R&#xF8;dding</name>
+      <latitude>56.6494</latitude>
+      <longitude>8.81116</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="528">
+    <core_informant/>
+    <full_name>Jens Rod</full_name>
+    <last_name>Rod</last_name>
+    <first_name>Jens</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/528.dfl</url>
+    <residence_place place_id="863">
+      <name>Sinding</name>
+      <latitude>56.2097</latitude>
+      <longitude>9.4657</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="529">
+    <core_informant/>
+    <full_name>Konsul A. H. Schade</full_name>
+    <last_name>Schade</last_name>
+    <first_name>A. H.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/529.dfl</url>
+    <residence_place place_id="837">
+      <name>Nykj&#xF8;bing, Mors</name>
+      <latitude>56.7946</latitude>
+      <longitude>8.85868</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="530">
+    <core_informant/>
+    <full_name>Provst C. Schade</full_name>
+    <last_name>Schade</last_name>
+    <first_name>C.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/530.dfl</url>
+    <residence_place place_id="837">
+      <name>Nykj&#xF8;bing, Mors</name>
+      <latitude>56.7946</latitude>
+      <longitude>8.85868</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="531">
+    <core_informant/>
+    <full_name>Villads Skov</full_name>
+    <last_name>Skov</last_name>
+    <first_name>Villads</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/531.dfl</url>
+    <residence_place place_id="557">
+      <name>Snejbj&#xE6;rg</name>
+      <latitude>56.1353</latitude>
+      <longitude>8.9051</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="532">
+    <core_informant/>
+    <full_name>L&#xE6;rer Kr. Skovmand</full_name>
+    <last_name>Skovmand</last_name>
+    <first_name>Kr.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/532.dfl</url>
+    <residence_place place_id="844">
+      <name>&#xD8;st Marie, Bornholm</name>
+      <latitude>55.1435</latitude>
+      <longitude>9.01851</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="533">
+    <core_informant/>
+    <full_name>G&#xE5;rdejer Mads Kristensen Skriver</full_name>
+    <last_name>Skriver</last_name>
+    <first_name>Mads Kristensen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/533.dfl</url>
+    <residence_place place_id="412">
+      <name>Mollerup</name>
+      <latitude>56.1561</latitude>
+      <longitude>9.72682</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="535">
+    <core_informant/>
+    <full_name>Peder Jensen Smed</full_name>
+    <last_name>Smed</last_name>
+    <first_name>Peder Jensen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/535.dfl</url>
+    <residence_place place_id="881">
+      <name>Strandby</name>
+      <latitude>56.7872</latitude>
+      <longitude>9.21668</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="534">
+    <core_informant/>
+    <full_name>Jens Smed</full_name>
+    <last_name>Smed</last_name>
+    <first_name>Jens</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/534.dfl</url>
+    <residence_place place_id="807">
+      <name>J&#xE6;vngryde</name>
+      <latitude>56.1125</latitude>
+      <longitude>9.81866</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="281">
+    <core_informant/>
+    <full_name>Laust Sommer</full_name>
+    <last_name>Sommer</last_name>
+    <first_name>Laust</first_name>
+    <gender>m</gender>
+    <url>data/informants/281.dfl</url>
+    <residence_place place_id="369">
+      <name>Lille Taaning</name>
+      <latitude>56.0136</latitude>
+      <longitude>9.84015</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="539">
+    <core_informant/>
+    <full_name>L&#xE6;rer J. S&#xF8;e</full_name>
+    <last_name>S&#xF8;e</last_name>
+    <first_name>J.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/539.dfl</url>
+    <residence_place place_id="214">
+      <name>Gudum</name>
+      <latitude>56.5203</latitude>
+      <longitude>8.46656</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="283">
+    <core_informant/>
+    <full_name>Kirsten Marie S&#xF8;rensdatter</full_name>
+    <last_name>S&#xF8;rensdatter</last_name>
+    <first_name>Kirsten Marie</first_name>
+    <gender>f</gender>
+    <url>data/informants/283.dfl</url>
+    <residence_place place_id="208">
+      <name>Gr&#xF8;nfeld</name>
+      <latitude>56.2539</latitude>
+      <longitude>10.5528</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="541">
+    <core_informant/>
+    <full_name>Journalist Mikkel S&#xF8;rensen</full_name>
+    <last_name>S&#xF8;rensen</last_name>
+    <first_name>Mikkel</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/541.dfl</url>
+    <residence_place place_id="792">
+      <name>Herskind</name>
+      <latitude>56.1855</latitude>
+      <longitude>9.96324</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="540">
+    <core_informant/>
+    <full_name>Karl S&#xF8;rensen</full_name>
+    <last_name>S&#xF8;rensen</last_name>
+    <first_name>Karl</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/540.dfl</url>
+    <residence_place place_id="906">
+      <name>Vester T&#xF8;rslev</name>
+      <latitude>56.5967</latitude>
+      <longitude>9.90039</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="536">
+    <core_informant/>
+    <full_name>L&#xE6;rer K. N. Stegger</full_name>
+    <last_name>Stegger</last_name>
+    <first_name>K. N.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/536.dfl</url>
+    <residence_place place_id="396">
+      <name>Lystrup</name>
+      <latitude>56.2294</latitude>
+      <longitude>10.2374</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="537">
+    <core_informant/>
+    <full_name>Hanne Storg&#xE5;rd</full_name>
+    <last_name>Storg&#xE5;rd</last_name>
+    <first_name>Hanne</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/537.dfl</url>
+    <residence_place place_id="488">
+      <name>R&#xF8;dding</name>
+      <latitude>56.6494</latitude>
+      <longitude>8.81116</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="538">
+    <core_informant/>
+    <full_name>Hjalmar Svendsen</full_name>
+    <last_name>Svendsen</last_name>
+    <first_name>Hjalmar</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/538.dfl</url>
+    <residence_place place_id="809">
+      <name>Kirke Skjensved</name>
+      <latitude>55.5244</latitude>
+      <longitude>12.1193</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="542">
+    <core_informant/>
+    <full_name>Branddirekt&#xF8;r N. J. Termansen</full_name>
+    <last_name>Termansen</last_name>
+    <first_name>N. J.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/542.dfl</url>
+    <residence_place place_id="781">
+      <name>Gammelby</name>
+      <latitude>55.5172</latitude>
+      <longitude>9.09125</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="543">
+    <core_informant/>
+    <full_name>Johanne Marie Thomasdatter</full_name>
+    <last_name>Thomasdatter</last_name>
+    <first_name>Johanne Marie</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/543.dfl</url>
+    <residence_place place_id="891">
+      <name>Tirstrup</name>
+      <latitude>56.3004</latitude>
+      <longitude>10.6864</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="544">
+    <core_informant/>
+    <full_name>C. S&#xF8;rensen Thomaskj&#xE6;r</full_name>
+    <last_name>Thomaskj&#xE6;r</last_name>
+    <first_name>C. S&#xF8;rensen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/544.dfl</url>
+    <residence_place place_id="912">
+      <name>Virklund</name>
+      <latitude>56.1303</latitude>
+      <longitude>9.55943</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="545">
+    <core_informant/>
+    <full_name>Fr&#xF8;ken E. Thomsen</full_name>
+    <last_name>Thomsen</last_name>
+    <first_name>E.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/545.dfl</url>
+    <residence_place place_id="694">
+      <name>Vester Br&#xF8;nderslev</name>
+      <latitude>57.2583</latitude>
+      <longitude>9.95093</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="306">
+    <core_informant/>
+    <full_name>Rasmus Thomsen</full_name>
+    <last_name>Thomsen</last_name>
+    <first_name>Rasmus</first_name>
+    <gender>m</gender>
+    <url>data/informants/306.dfl</url>
+    <residence_place place_id="301">
+      <name>Hvilsager</name>
+      <latitude>56.3687</latitude>
+      <longitude>10.351</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="546">
+    <core_informant/>
+    <full_name>Karen Toxv&#xE6;rd</full_name>
+    <last_name>Toxv&#xE6;rd</last_name>
+    <first_name>Karen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/546.dfl</url>
+    <residence_place place_id="862">
+      <name>Sillestrup</name>
+      <latitude>54.7238</latitude>
+      <longitude>11.9657</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="547">
+    <core_informant/>
+    <full_name>H&#xF8;jskoleforstander E. Trier</full_name>
+    <last_name>Trier</last_name>
+    <first_name>E.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/547.dfl</url>
+    <residence_place place_id="900">
+      <name>Vallekilde</name>
+      <latitude>55.5333</latitude>
+      <longitude>8.9554</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="549">
+    <core_informant/>
+    <full_name>Jens Jensen V&#xE5;nde</full_name>
+    <last_name>V&#xE5;nde</last_name>
+    <first_name>Jens Jensen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/549.dfl</url>
+    <residence_place place_id="826">
+      <name>L&#xF8;t, Lendum</name>
+      <latitude>57.4112</latitude>
+      <longitude>10.3005</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="550">
+    <core_informant/>
+    <full_name>Niels Nielsen V&#xE6;ver</full_name>
+    <last_name>V&#xE6;ver</last_name>
+    <first_name>Niels Nielsen</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/550.dfl</url>
+    <residence_place place_id="111">
+      <name>Dalby</name>
+      <latitude>55.4662</latitude>
+      <longitude>9.49367</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="548">
+    <core_informant/>
+    <full_name>Johan Vorm</full_name>
+    <last_name>Vorm</last_name>
+    <first_name>Johan</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/548.dfl</url>
+    <residence_place place_id="883">
+      <name>Sundby</name>
+      <latitude>56.881</latitude>
+      <longitude>8.67674</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="551">
+    <core_informant/>
+    <full_name>L&#xE6;rer Christian Weiss</full_name>
+    <last_name>Weiss</last_name>
+    <first_name>Christian</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/551.dfl</url>
+    <residence_place place_id="890">
+      <name>Tingerup</name>
+      <latitude>56.4389</latitude>
+      <longitude>9.48691</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="552">
+    <core_informant/>
+    <full_name>Kontorist F. Wennerwald</full_name>
+    <last_name>Wennerwald</last_name>
+    <first_name>F.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/552.dfl</url>
+    <residence_place place_id="829">
+      <name>Maribo</name>
+      <latitude>54.7743</latitude>
+      <longitude>11.5091</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="553">
+    <core_informant/>
+    <full_name>H&#xF8;jskoleforstander J. L. West</full_name>
+    <last_name>West</last_name>
+    <first_name>J. L.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/553.dfl</url>
+    <residence_place place_id="913">
+      <name>Voldby</name>
+      <latitude>56.4632</latitude>
+      <longitude>10.8684</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="554">
+    <core_informant/>
+    <full_name>J. L. West</full_name>
+    <last_name>West</last_name>
+    <first_name>J. L.</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/554.dfl</url>
+    <residence_place place_id="913">
+      <name>Voldby</name>
+      <latitude>56.4632</latitude>
+      <longitude>10.8684</longitude>
+    </residence_place>
+  </informant>
+  <informant person_id="555">
+    <core_informant/>
+    <full_name>Ole Worm</full_name>
+    <last_name>Worm</last_name>
+    <first_name>Ole</first_name>
+    <gender>N/A</gender>
+    <url>data/informants/555.dfl</url>
+    <residence_place/>
+  </informant>
+</informants>

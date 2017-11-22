@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<informant person_id="569">
+  <core_informant/>
+  <full_name>Klavs Gjerding</full_name>
+  <last_name>Gjerding</last_name>
+  <first_name>Klavs</first_name>
+  <gender>m</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="860" secondary_informant="0">
+      <informant_id>569</informant_id>
+      <publication_info>DS_I_1154</publication_info>
+      <full_name>569 - 0.00 - DS_I_1154</full_name>
+      <url>data/stories/860.dfl</url>
+      <places_mentioned>
+        <place id="574">
+          <name>Sorteh&#xF8;j</name>
+        </place>
+        <place id="4">
+          <name>Aalborg</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>4</place_id>
+      <name>Aalborg</name>
+      <display_name>Aalborg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>574</place_id>
+      <name>Sorteh&#xF8;j</name>
+      <display_name>Sorteh&#xF8;j (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

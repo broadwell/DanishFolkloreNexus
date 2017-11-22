@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<informant person_id="394">
+  <core_informant/>
+  <full_name>Friskolel&#xE6;rer A. E. Jakobsen</full_name>
+  <last_name>Jakobsen</last_name>
+  <first_name>A. E.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="454" secondary_informant="0">
+      <informant_id>394</informant_id>
+      <publication_info>DS_I_1051</publication_info>
+      <full_name>394 - 0.00 - DS_I_1051</full_name>
+      <url>data/stories/454.dfl</url>
+      <place_recorded id="842">&#xD8;rritslev</place_recorded>
+      <places_mentioned/>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>842</place_id>
+      <name>&#xD8;rritslev</name>
+      <display_name>&#xD8;rritslev (stories recorded here)</display_name>
+    </place>
+  </places>
+</informant>

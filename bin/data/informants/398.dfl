@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="398">
+  <core_informant/>
+  <full_name>L&#xE6;rer Johan Jensen</full_name>
+  <last_name>Jensen</last_name>
+  <first_name>Johan</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="583" secondary_informant="0">
+      <informant_id>398</informant_id>
+      <publication_info>DS_I_1383</publication_info>
+      <full_name>398 - 0.00 - DS_I_1383</full_name>
+      <url>data/stories/583.dfl</url>
+      <place_recorded id="412">Mollerup</place_recorded>
+      <places_mentioned>
+        <place id="1032">
+          <name>Stovbak</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>412</place_id>
+      <name>Mollerup</name>
+      <display_name>Mollerup (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>1032</place_id>
+      <name>Stovbak</name>
+      <display_name>Stovbak (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

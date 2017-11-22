@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:custom="components.*"
+	xmlns:acomp="com.hillelcoren.components.*"
+	themeColor="#450415"
+	creationComplete="initializeData()">
+	
+<mx:Style source="danish.css"/>
+
+<!-- AS3 code -->	
+<mx:Script>
+<![CDATA[
+	import mx.collections.ArrayCollection;
+	import mx.core.Application;
+	import com.esri.ags.Graphic;
+	// DEBUGGING
+	import mx.controls.Alert;
+	// MENU STUFF
+	import mx.events.ListEvent;
+	import flash.net.navigateToURL;
+
+	import mx.rpc.events.ResultEvent;
+	import mx.rpc.events.FaultEvent;
+
+    private var markerColors:Object = Application.application.markerColors;
+
+    private var storiesMarkers:Object = new Object();
+    private var placesMentionedMarkers:Object = new Object();
+	private var allPlaceMarkers:Array = new Array();
+    private var collectionPlaces:Object = new Object();
+    private var storyTextsProvider:XMLList;
+    [Bindable] private var storySearchProvider:ArrayCollection;
+//    [Bindable] private var continueSearch:Boolean = true;
+    [Bindable] private var allStories:XMLList;
+    [Bindable] private var matchingStories:XML;
+    [Bindable] private var totalStories:Number;
+    [Bindable] private var storiesSearched:Number;
+    [Bindable] public var searchType:String;
+    [Bindable] private var storiesMatched:Number = 0;
+    [Bindable] private var listItemToolTip:String = "Double click to open a new window about this item.";
+
+	private function initializeData():void {
+		
+		//searchType = this.parameters.searchID;
+
+		if (!searchType)
+			searchType = "Danish";
+			
+		if (searchType == "English") {
+			englishRadio.selected = true;
+		} else if (searchType == "Danish") {
+			danishRadio.selected = true;
+		} else {
+			annotationRadio.selected = true;
+		}
+		
+		matchingStories = <stories></stories>;
+		
+		resetMap();
+
+		if ((Application.application.storiesData.lastResult != null) &&
+			Application.application.storiesData.hasOwnProperty("story")) {
+			storiesData = Application.application.storiesData;
+			storiesDataHandler();
+		} else {
+			storiesData.send();
+		}
+
+		if (Application.application.storySearch.hasOwnProperty("story")) {
+			storySearchProvider = ArrayCollection(Application.application.storySearch.story_search.story);
+		} else {
+			storySearch.send();
+		}
+
+		if ((Application.application.storyTexts.lastResult != null) &&
+			Application.application.storyTexts.hasOwnProperty("full_name")) {
+			storyTextsProvider = Application.application.storyTexts;
+			finishInit();
+		} else {
+			storyTexts.send();
+		}
+		
+	}
+	
+	private function finishInit():void {
+		
+		if ((Application.application.placesData.lastResult != null) &&
+			Application.application.placesData.hasOwnProperty("place")) {
+			placesData = Application.application.placesData;
+		} else {
+			placesData.send();
+		}
+		
+		searchButton.enabled = true;
+	}
+	
+		//story event handler which sets the url for the story, sends the request and alters the application state
+	private function storyClickHandler(event:ListEvent):void {
+		if (event.currentTarget.selectedItem.hasOwnProperty("place_recorded")) {
+			// Toggle the tooltip for the place where the story was collected
+			var placeRecordedID:String = event.currentTarget.selectedItem.place_recorded.@id;
+		
+			var placeRecordedName:String = event.currentTarget.selectedItem.place_recorded;
+		
+			var lon:Number = placesData.lastResult.place.(@place_id==placeRecordedID).longitude;
+			var lat:Number = placesData.lastResult.place.(@place_id==placeRecordedID).latitude;
+		
+			var text:String = event.currentTarget.selectedItem.publication_info + " recorded at " + placeRecordedName; 
+		
+			danishmap.toggleTextAtCoords(lon, lat, text, markerColors["story"]);
+		}
+	}
+	
+	private function storyDoubleClickHandler(event:ListEvent):void {
+		Application.application.loadNewTab("Story", event.currentTarget.selectedItem.@story_id);
+   	}
+
+/*
+   	private function requestStory(storyID:String):void {
+   		if (Application.application.storyCache.hasOwnProperty(storyID)) {
+   			storyDataHandler(Application.application.storyCache[storyID]);
+   			//storyDataHandler(false, Application.application.storyCache[storyID]);
+   		} else {
+   			searchStory.url = "data/stories/" + storyID + ".xml";
+   			searchStory.send();
+   		}
+   	}
+*/	
+	private function storiesDataHandler():void {
+		allStories = storiesData.lastResult.story;
+		totalStories = allStories.length();
+		
+		metadataSearchButton.enabled = true;
+	}
+	
+	private function storyTextsHandler(event:ResultEvent):void {
+		storyTextsProvider = new XMLList(event.currentTarget.lastResult).story;
+		Application.application.storyTexts = event.currentTarget.lastResult.story.copy();
+		finishInit();
+	}
+	
+	private function storySearchHandler(event:ResultEvent):void {
+		//Alert.show("value of result is " + event.result.story_search.story.toString());
+		storySearchProvider = ArrayCollection(event.result.story_search.story);
+		//Alert.show("storySearchProvider is " + storySearchProvider.toString());
+		Application.application.storySearch = event.result.story_search.copy();
+		//Alert.show("got this far");
+	}
+
+/*
+	private function storyDataHandler(cachedStoryData:Object=null):void {
+		var placeRecordedID:String;
+		var toolTip:String;
+		var storySingularOrPlural:String;
+		var g:Graphic;
+		var storyID:String;
+		var storyData:Object;
+		
+		if (cachedStoryData == null) {
+			storyID = searchStory.lastResult.@story_id;
+			Application.application.storyCache[storyID] = searchStory.lastResult;
+			storyData = searchStory.lastResult;
+		} else {
+			storyData = cachedStoryData;
+			storyID = storyData.@story_id;
+		}
+
+		if (!continueSearch)
+			return;
+			
+	}
+*/
+
+	private function resetMap():void {
+		danishmap.clearAllTextMarkers();
+		collectionPlaces = {};
+		danishmap.removeMarkers(storiesMarkers);
+    	storiesMarkers = {};
+		danishmap.removeMarkers(placesMentionedMarkers);
+    	placesMentionedMarkers = {};	
+		danishmap.resetExtent();
+		
+		allPlaceMarkers = new Array();
+	
+	}
+
+	private function doSearch():void {
+
+		var placeRecordedID:String;
+		var toolTip:String;
+		var storySingularOrPlural:String;
+		var storyData:Object;
+		var g:Graphic;
+		var storyID:String;
+		
+		//continueSearch = true;
+		//stopButton.enabled = true;
+		matchingStories = <stories></stories>;
+				
+		resetMap();
+		
+		mapButton.visible = false;
+//		progBar.visible = true;
+//		stopButton.visible = true;
+		storiesMatched=0;
+		storiesSearched=0;
+//		progBar.label = "Progress: " + storiesSearched.toString() + " of " + totalStories.toString() + " stories searched";
+	/*	
+		for (var s:int=0;(continueSearch && s<allStories.length());s++) {
+			requestStory(allStories[s].@story_id);
+		}
+		*/
+		for (var i:int=0;s<storyTextsProvider.length();i++) {
+			
+			storyData = storyTextsProvider[i];
+		
+		var result:Array;
+		var pattern:RegExp = new RegExp("(?P<before>.{0,20})(?P<match>" + searchField.text + ")(?P<after>.{0,20})", "ig");
+		
+		if ((danishRadio.selected && (((result=pattern.exec(storyData.danish_publication)) != null) || ((result=pattern.exec(storyData.danish_manuscript)) != null)))
+		|| (englishRadio.selected && (((result=pattern.exec(storyData.english_publication)) != null) || ((result=pattern.exec(storyData.english_manuscript)) != null)))
+		|| (annotationRadio.selected && ((result=pattern.exec(storyData.annotation)) != null))) {
+		
+			matchingStories.appendChild(allStories.(@story_id==storyData.@story_id).copy());
+			storiesMatched++;
+
+			if (storiesMatched==1)
+				storiesPanel.title = "Matching stories (" + storiesMatched + " story found)";
+			else
+				storiesPanel.title = "Matching stories (" + storiesMatched + " stories found)";
+				
+			var preString:String = "   ";
+			var postString:String = "";
+
+			matchingStories.story.(@story_id==storyData.@story_id).full_name = "";
+			
+			if (result.before.length == 20)
+				preString = "   ...";
+				
+			if (result.after.length == 20)
+				postString = "...";
+			
+			matchingStories.story.(@story_id==storyData.@story_id).full_name = storyData.full_name + preString + result.before + '<b>' + result.match + '</b>' + result.after + postString;
+
+			/* Not all stories in the data set have a place recorded */
+			if (allStories.(@story_id==storyData.@story_id).hasOwnProperty("place_recorded")) {
+
+				placeRecordedID = allStories.(@story_id==storyData.@story_id).place_recorded.@id;
+			
+				/* Draw markers for the story's collection place first */
+				if (collectionPlaces.hasOwnProperty(placeRecordedID)) {
+					collectionPlaces[placeRecordedID] = collectionPlaces[placeRecordedID] + 1;
+					storySingularOrPlural = "stories";
+				} else {
+					collectionPlaces[placeRecordedID] = 1;
+					storySingularOrPlural = "story";
+				}
+			
+				toolTip = placesData.lastResult.place.(@place_id==placeRecordedID).name + ": " + collectionPlaces[placeRecordedID] + " matching " + storySingularOrPlural + " collected here";		
+				if (collectionPlaces[placeRecordedID] == 1) {
+				
+					g = danishmap.drawSimpleMarkerAtCoords(placesData.lastResult.place.(@place_id==placeRecordedID).longitude, 
+													       placesData.lastResult.place.(@place_id==placeRecordedID).latitude,
+													       markerColors["story"], toolTip, placeRecordedID, "Place", true);
+					storiesMarkers[placeRecordedID] = g;
+					allPlaceMarkers.push(g);
+				} else {
+					storiesMarkers[placeRecordedID].toolTip = toolTip;
+				}
+			}
+			
+			/* Now handle the places mentioned in the story */
+			var placesMentionedInStory:XMLList = allStories.(@story_id==storyData.@story_id).places_mentioned.place;
+			
+			for (var s:int=0;s<placesMentionedInStory.length();s++) {
+			
+				/* Don't overwrite a red collection point */
+				if (storiesMarkers.hasOwnProperty(placesMentionedInStory[s].@place_id)) {
+					storiesMarkers[placesMentionedInStory[s].@place_id].toolTip += ", also mentioned in " + storyData.publication_info;
+				} else {
+					if (!(placesMentionedMarkers.hasOwnProperty(placesMentionedInStory[s].@place_id))) {
+						toolTip = placesMentionedInStory[s].place_name + ": mentioned in " + storyData.publication_info;
+						
+						g = danishmap.drawSimpleMarkerAtCoords(placesData.lastResult.place.(@place_id==placesMentionedInStory[s].@place_id).longitude,
+															   placesData.lastResult.place.(@place_id==placesMentionedInStory[s].@place_id).latitude,
+															   markerColors["place"], toolTip, placesMentionedInStory[s].@place_id);
+									   
+						placesMentionedMarkers[placesMentionedInStory[s].@place_id] = g;
+						allPlaceMarkers.push(g);
+					} else {
+						placesMentionedMarkers[placesMentionedInStory[s].@place_id].toolTip += ", " + storyData.publication_info;
+					}
+				}
+			}
+		
+		}
+			
+		storiesSearched++;
+//		progBar.setProgress(storiesSearched, totalStories);
+//		progBar.label = "Progress: " + storiesSearched.toString() + " of " + totalStories.toString() + " stories searched";	
+		
+		if (storiesSearched==totalStories) {
+			storiesSearched=0;
+			
+			if (storiesMatched > 0)
+				mapButton.visible = true;
+			else
+				storiesPanel.title = "Matching stories (none found)";
+				
+//			stopButton.enabled = false;
+			
+			// PMB XXX This doesn't work unless some big event happens, usually must be user-generated (like pressing the zoom button)
+			//danishmap.zoomInOnMarkersArray(allPlaceMarkers, 1.6)
+		}
+	}
+			
+	}
+	
+	/*private function stopSearch():void {
+		continueSearch = false;
+		stopButton.enabled = false;	
+	}*/
+	
+	private function zipServiceFault(event:FaultEvent):void {
+		
+		var url:String = event.currentTarget.url.toString();
+		
+		if ((url.indexOf(".zip") !== -1) || (url.indexOf(".dfl") !== -1)) {
+			url = url.replace('.zip', '');
+			url = url.replace('.dfl', '');
+			event.currentTarget.url = url + '.xml';
+			event.currentTarget.send();
+		}
+		
+	}
+	
+	private function openAutoCompleteStory():void {
+		var selectedStoryLabel:String = metadataSearch.selectedItems[0].toString();
+		//Alert.show("selected story label is " + selectedStoryLabel);
+		var searchStoryID:String = allStories.(search_string == selectedStoryLabel).@story_id;
+		
+		/*
+		var storyIDPattern:RegExp = new RegExp("^.*(?P<sID>\([0-9]+\)).*", "i");
+		var result:Array = storyIDPattern.exec(selectedStoryLabel);
+		var searchStoryID:String = result.sID;
+		Alert.show("search story ID is " + searchStoryID);*/
+		
+		if (searchStoryID != "")
+			Application.application.loadNewTab("Story", searchStoryID);	
+	}
+
+	//-------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------//
+	]]>
+</mx:Script>
+
+<mx:Component id="searchResultItemRenderer">
+	<mx:Label paddingBottom="0" paddingTop="0" htmlText="{data.full_name}" selectable="false" />
+</mx:Component>
+
+<!-- requests for initial values to populate the lists -->
+
+<custom:ZIPService id="storiesData" resultFormat="e4x" url="data/stories.dfl" result="storiesDataHandler()"/>
+<custom:ZIPService id="placesData" resultFormat="e4x" url="data/places.dfl"/>
+<!-- <mx:HTTPService id="searchStory" resultFormat="e4x" url="{}" result="storyDataHandler()"/> -->
+<custom:ZIPService id="storyTexts" resultFormat="e4x" url="data/story_texts.dfl" result="storyTextsHandler(event)" fault="zipServiceFault(event)"/>
+<custom:ZIPService id="storySearch" url="data/story_search.dfl" result="storySearchHandler(event)"/>
+
+
+<!-- layout -->
+<mx:Panel width="100%" height="100%" layout="vertical" cornerRadius="6" borderStyle="solid" borderThickness="1" id="mainPanel" backgroundAlpha="0.42" title="DANISH FOLKLORE STORY SEARCH" styleName="sectionTitle" paddingTop="0">
+	<mx:HBox height="10%" verticalAlign="top" horizontalAlign="left" verticalGap="1" styleName="menuBar" width="100%" borderStyle="solid" borderColor="#bcbcbc" borderThickness="1" cornerRadius="4" left="1" top="1" right="1" bottom="1">
+		
+	  <mx:VBox verticalAlign="top" horizontalAlign="left" height="100%" width="60%">
+
+   		<!-- <mx:HRule width="100%"/> -->
+   		
+		<mx:HBox verticalAlign="middle" width="100%">
+   			<mx:Text styleName="basicText" text="Texts to search: " />
+        	<mx:RadioButton groupName="textType" id="danishRadio" label="Danish manuscripts and published versions"/>
+   			<mx:RadioButton groupName="textType" id="englishRadio" label="English translations"/>
+      		<mx:RadioButton groupName="textType" id="annotationRadio" label="Story annotations"/>
+   		</mx:HBox>
+   		
+   		<mx:HBox verticalAlign="middle" width="100%">
+   			<mx:Text styleName="basicText" text="Search string: " />
+   			<mx:TextInput id="searchField" text="" enter="{doSearch()}" />
+   			<mx:Button label="Search" id="searchButton" enabled="false" click="{doSearch()}" styleName="navButton" />
+   			<!--<mx:Button label="Stop search" id="stopButton" click="{stopSearch()}" enabled="false" styleName="navButton"/>-->
+   			
+   			<!-- <mx:ProgressBar id="progBar" labelPlacement="bottom" themeColor="#F20D7A"
+            minimum="0" visible="false" maximum="{totalStories}" label="" paddingLeft="5" paddingRight="5"
+            direction="right" mode="manual" width="250" fontSize="12" verticalGap="0"/> -->
+            
+            <mx:Button label="Fit map to results" id="mapButton" click="{danishmap.zoomInOnMarkersStrict(allPlaceMarkers, 1.6)}" visible="false" styleName="navButton" />
+   		</mx:HBox>
+	  </mx:VBox>
+	  
+	  <mx:VRule shadowColor="#bcbcbc" height="100%" />
+	  
+	  <mx:VBox height="100%" verticalAlign="middle" horizontalAlign="left" width="40%">
+	  	  <mx:Label text="Choose a story to open:" styleName="basicText" fontWeight="bold" />
+	  	  <mx:HBox verticalAlign="middle">
+	  	  	<acomp:AutoComplete id="metadataSearch" dataProvider="{storySearchProvider}" matchType="anyPart" allowMultipleSelection="false" prompt="Start typing a story number, informant or publication string" autoSelectEnabled="true" width="325" dropDownWidth="325" backspaceAction="remove" selectedItemStyleName="underline"/>
+			<mx:Button id="metadataSearchButton" enabled="false" label="Open" click="openAutoCompleteStory()" styleName="navButton" />
+		  </mx:HBox>
+	  </mx:VBox>
+		 
+   		<!-- <mx:HRule width="100%"/> -->
+   	</mx:HBox>
+   	
+   	<mx:VBox width="100%" height="90%">
+   
+		<mx:HBox width="100%" height="100%">
+   
+        	<custom:danishmap id="danishmap" maxHeight="800" maxWidth="800" width="50%" height="100%" scaleX="1" scaleY="1">
+	    	</custom:danishmap>
+	    	
+	    	<mx:Spacer width="1%"/>
+   
+			<mx:Panel title="Matching stories" width="50%" height="100%" id="storiesPanel" styleName="sectionTitle" shadowDistance="0">
+				<mx:List x="0" y="0" width="100%" horizontalScrollPolicy="auto" id="storiesList" height="100%" dataProvider="{matchingStories.story}" itemRenderer="{searchResultItemRenderer}" enabled="true" styleName="basicText" itemClick="{storyClickHandler(event)}" doubleClickEnabled="true" itemDoubleClick="{storyDoubleClickHandler(event)}" toolTip="{listItemToolTip}"/>
+<!--				<mx:List x="0" y="0" width="100%" horizontalScrollPolicy="auto" id="storiesList" height="100%" dataProvider="{matchingStories.story}" labelField="full_name" enabled="true" styleName="basicText" itemClick="{storyClickHandler(event)}" doubleClickEnabled="true" itemDoubleClick="{storyDoubleClickHandler(event)}" toolTip="{listItemToolTip}"/> -->
+			</mx:Panel>
+		
+		</mx:HBox>
+   
+   </mx:VBox>
+
+</mx:Panel>
+	
+</mx:Canvas>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TextArea xmlns:mx="http://www.adobe.com/2006/mxml" text="{data.fieldtrip_name}" verticalScrollPolicy="auto" textAlign="center" paddingTop="0" paddingBottom="0" editable="false" selectable="false" height="100%" backgroundColor="#ffffff">
+<mx:Script>
+<![CDATA[
+	import mx.core.Application;
+	import mx.controls.TextArea;
+	import mx.controls.listClasses.*;
+						
+	override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void {
+	 							     
+		super.updateDisplayList(unscaledWidth, unscaledHeight);
+			 
+		//figure out if this itemRenderer is selected
+		if (ListBase(this.owner).isItemSelected(data)) {
+
+			if (this.parentDocument.fieldtripSelected[data.@fieldtrip_id]) {
+    			setStyle("backgroundColor", 0xe78599);
+    		} else {
+    			setStyle("backgroundColor", null);
+			}
+		} else { 	 						
+			if (this.parentDocument.fieldtripSelected[data.@fieldtrip_id]) {
+    			setStyle("backgroundColor", 0xe78599);
+			}  else {
+	 	 		setStyle("backgroundColor", null);
+			}
+		}
+	}
+]]>
+</mx:Script>
+</mx:TextArea>

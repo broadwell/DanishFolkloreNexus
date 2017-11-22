@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<informant person_id="537">
+  <core_informant/>
+  <full_name>Hanne Storg&#xE5;rd</full_name>
+  <last_name>Storg&#xE5;rd</last_name>
+  <first_name>Hanne</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="527" secondary_informant="0">
+      <informant_id>537</informant_id>
+      <publication_info>DS_V_715</publication_info>
+      <full_name>537 - 0.00 - DS_V_715</full_name>
+      <url>data/stories/527.dfl</url>
+      <place_recorded id="488">R&#xF8;dding</place_recorded>
+      <places_mentioned>
+        <place id="290">
+          <name>Hummelg&#xE5;rd</name>
+        </place>
+        <place id="354">
+          <name>Krejbj&#xE6;rg</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>488</place_id>
+      <name>R&#xF8;dding</name>
+      <display_name>R&#xF8;dding (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>354</place_id>
+      <name>Krejbj&#xE6;rg</name>
+      <display_name>Krejbj&#xE6;rg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>290</place_id>
+      <name>Hummelg&#xE5;rd</name>
+      <display_name>Hummelg&#xE5;rd (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

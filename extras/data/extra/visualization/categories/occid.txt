@@ -1,0 +1,86 @@
+occupation_id	name
+1	aftægtskone
+2	aftægtsmand
+3	almisselem
+4	amtsrådsmedlem
+5	Anders Højbjærgs kone
+6	bane formand
+7	bissekræmmer
+8	C. A. Kondrups kone
+9	Cand. Theol.
+10	Clog maker
+11	dyrlæge
+12	enke
+13	fader var lærer
+14	fattighuslem
+15	fattiglem
+16	felbereder
+17	field worker
+18	fisker
+19	forhen. Ridedreng
+20	forstander
+21	Fru
+22	gaardmand
+23	gårdejer
+24	Gårdmand
+25	gårdmand (forhenværende gårdejer)
+26	gårdmandsdatter
+27	gårdmandskone
+28	gårdmandssøn
+29	Guddum fattiggård
+30	Housewife
+31	Husejer
+32	huskone
+33	husmand
+34	Husmand og signetstikker
+35	husmandsdatter
+36	husmoder
+37	Hustru
+38	indsidder
+39	Iver Bundgård Skades hustru
+40	J.P. Larsens hustru
+41	jomfru
+42	jordemoder
+43	Journeyman miller
+44	Kirkestilling ved Slagelse
+45	Kjæltringsfolket
+46	klog mand
+47	klogmand
+48	Købmand
+49	Købmands kone
+50	Kone
+51	kostebinder
+52	Lærer
+53	Lærer (pens)
+54	Lærer; mange år biskolelærer ved Sunds 4 biskoler
+55	Lærers kone
+56	Lars Jensens kone
+57	madam
+58	mejerist
+59	Møller
+60	Niels Pedersens kone
+61	par gamle mænd
+62	pastor
+63	Pensioner
+64	Pjaltekræmmer
+65	Præst
+66	Ridedreng
+67	røgter
+68	skovfoged
+69	skrædder
+70	small holder
+71	Smed
+72	Smed og et par andre mænd
+73	Snedker
+74	sognefoged
+75	søn ejede Rask Mølle
+76	spillemand (omvandrende)
+77	stationsforstander
+78	Sygpige
+79	Tømrer
+80	træskomand
+81	Turner
+82	Uddeler
+83	wheatbread woman
+84	ungkarl
+85	Gartner

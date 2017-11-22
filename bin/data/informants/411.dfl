@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="411">
+  <core_informant/>
+  <full_name>Chr. Jespersen</full_name>
+  <last_name>Jespersen</last_name>
+  <first_name>Chr.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="485" secondary_informant="0">
+      <informant_id>411</informant_id>
+      <publication_info>DS_V_809</publication_info>
+      <full_name>411 - 0.00 - DS_V_809</full_name>
+      <url>data/stories/485.dfl</url>
+      <place_recorded id="838">&#xD8; Marie</place_recorded>
+      <places_mentioned>
+        <place id="76">
+          <name>Bornholm</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>838</place_id>
+      <name>&#xD8; Marie</name>
+      <display_name>&#xD8; Marie (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>76</place_id>
+      <name>Bornholm</name>
+      <display_name>Bornholm (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

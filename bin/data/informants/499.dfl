@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="499">
+  <core_informant/>
+  <full_name>L&#xE6;rer O. V. Nielsen</full_name>
+  <last_name>Nielsen</last_name>
+  <first_name>O. V.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="845" secondary_informant="0">
+      <informant_id>499</informant_id>
+      <publication_info>DS_IV_1289</publication_info>
+      <full_name>499 - 0.00 - DS_IV_1289</full_name>
+      <url>data/stories/845.dfl</url>
+      <place_recorded id="856">Romdrup-Klarup</place_recorded>
+      <places_mentioned>
+        <place id="982">
+          <name>Harbo&#xF8;re</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>856</place_id>
+      <name>Romdrup-Klarup</name>
+      <display_name>Romdrup-Klarup (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>982</place_id>
+      <name>Harbo&#xF8;re</name>
+      <display_name>Harbo&#xF8;re (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

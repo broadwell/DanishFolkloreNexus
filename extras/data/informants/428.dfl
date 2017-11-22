@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="428">
+  <core_informant/>
+  <full_name>Marie Kirstine Kj&#xE6;rg&#xE5;rd</full_name>
+  <last_name>Kj&#xE6;rg&#xE5;rd</last_name>
+  <first_name>Marie Kirstine</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="838" secondary_informant="0">
+      <informant_id>428</informant_id>
+      <publication_info>DS_III_2296</publication_info>
+      <full_name>428 - 0.00 - DS_III_2296</full_name>
+      <url>data/stories/838.dfl</url>
+      <place_recorded id="898">Ulfborg</place_recorded>
+      <places_mentioned>
+        <place id="898">
+          <name>Ulfborg</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>898</place_id>
+      <name>Ulfborg</name>
+      <display_name>Ulfborg (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>898</place_id>
+      <name>Ulfborg</name>
+      <display_name>Ulfborg (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

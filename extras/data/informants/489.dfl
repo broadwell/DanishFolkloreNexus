@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="489">
+  <core_informant/>
+  <full_name>L&#xE6;rer Joh. Nielsen</full_name>
+  <last_name>Nielsen</last_name>
+  <first_name>Joh.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="582" secondary_informant="0">
+      <informant_id>489</informant_id>
+      <publication_info>DS_V_1307</publication_info>
+      <full_name>489 - 0.00 - DS_V_1307</full_name>
+      <url>data/stories/582.dfl</url>
+      <place_recorded id="852">Randrup</place_recorded>
+      <places_mentioned>
+        <place id="1031">
+          <name>Lyngs</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>852</place_id>
+      <name>Randrup</name>
+      <display_name>Randrup (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>1031</place_id>
+      <name>Lyngs</name>
+      <display_name>Lyngs (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<tango_tree>
+  <node label="indices">
+    <node label="Actions or events" level="parent">
+      <node id="80" label="Church ceremony" level="child"/>
+      <node id="81" label="Conjuring" level="child"/>
+      <node id="82" label="Dancing" level="child"/>
+      <node id="83" label="Death" level="child"/>
+      <node id="84" label="Disease" level="child"/>
+      <node id="85" label="Drowning" level="child"/>
+      <node id="86" label="Feast / Celebration" level="child"/>
+      <node id="87" label="Gambling" level="child"/>
+      <node id="88" label="Haunting" level="child"/>
+      <node id="89" label="Injury" level="child"/>
+      <node id="90" label="Kidnapping" level="child"/>
+      <node id="91" label="Midwifery" level="child"/>
+      <node id="92" label="Murder" level="child"/>
+      <node id="93" label="Music" level="child"/>
+      <node id="94" label="Oath" level="child"/>
+      <node id="132" label="Pregnancy and birth" level="child"/>
+      <node id="95" label="Punishment" level="child"/>
+      <node id="133" label="Seduction" level="child"/>
+      <node id="96" label="Suicide" level="child"/>
+      <node id="97" label="Theft" level="child"/>
+      <node id="98" label="Transaction" level="child"/>
+      <node id="99" label="Witchcraft" level="child"/>
+      <node id="100" label="Work" level="child"/>
+    </node>
+    <node label="Animals" level="parent">
+      <node id="69" label="Cat" level="child"/>
+      <node id="70" label="Cow" level="child"/>
+      <node id="71" label="Dog" level="child"/>
+      <node id="72" label="Farm animal" level="child"/>
+      <node id="73" label="Hare" level="child"/>
+      <node id="74" label="Horse" level="child"/>
+      <node id="135" label="Insects" level="child"/>
+      <node id="79" label="None / Unspecified" level="child"/>
+      <node id="75" label="Ox" level="child"/>
+      <node id="76" label="Serpent / Snake" level="child"/>
+      <node id="77" label="Sheep" level="child"/>
+      <node id="78" label="Swine" level="child"/>
+      <node id="136" label="Wild" level="child"/>
+    </node>
+    <node label="People" level="parent">
+      <node id="1" label="Aristocrat / Royal" level="child"/>
+      <node id="2" label="Bailiff" level="child"/>
+      <node id="3" label="Beggar / Poor person" level="child"/>
+      <node id="4" label="Boy" level="child"/>
+      <node id="5" label="Children" level="child"/>
+      <node id="6" label="Cunning Folk" level="child"/>
+      <node id="7" label="Farmer" level="child"/>
+      <node id="9" label="Farmhand / Shepherd" level="child"/>
+      <node id="8" label="Farmwife" level="child"/>
+      <node id="10" label="Foreigner" level="child"/>
+      <node id="11" label="Girl" level="child"/>
+      <node id="12" label="Man" level="child"/>
+      <node id="13" label="Midwife" level="child"/>
+      <node id="14" label="Minister" level="child"/>
+      <node id="16" label="Parish Clerk" level="child"/>
+      <node id="17" label="Robber / Thief" level="child"/>
+      <node id="18" label="Sailor / Fisherman" level="child"/>
+      <node id="19" label="Soldier" level="child"/>
+      <node id="20" label="Strong Man / Hero" level="child"/>
+      <node id="24" label="Unspecified" level="child"/>
+      <node id="21" label="Wanderer" level="child"/>
+      <node id="22" label="Witch" level="child"/>
+      <node id="23" label="Woman" level="child"/>
+    </node>
+    <node label="Places" level="parent">
+      <node id="25" label="Barn" level="child"/>
+      <node id="26" label="Bridge" level="child"/>
+      <node id="27" label="Cemetery" level="child"/>
+      <node id="28" label="Church" level="child"/>
+      <node id="29" label="Farm" level="child"/>
+      <node id="30" label="Field" level="child"/>
+      <node id="31" label="Forest / Woods" level="child"/>
+      <node id="32" label="Heath" level="child"/>
+      <node id="33" label="Inn" level="child"/>
+      <node id="34" label="Manor / Castle" level="child"/>
+      <node id="35" label="Market" level="child"/>
+      <node id="36" label="Meadow" level="child"/>
+      <node id="37" label="Mill" level="child"/>
+      <node id="38" label="Mound" level="child"/>
+      <node id="39" label="Ocean / Sea" level="child"/>
+      <node id="40" label="Pond / Lake" level="child"/>
+      <node id="41" label="Road" level="child"/>
+      <node id="42" label="Stream / River" level="child"/>
+      <node id="43" label="Swamp" level="child"/>
+      <node id="44" label="Town / Village" level="child"/>
+    </node>
+    <node label="Resolution" level="parent">
+      <node id="129" label="Ambiguous" level="child"/>
+      <node id="128" label="Negative" level="child"/>
+      <node id="130" label="None / Unspecified" level="child"/>
+      <node id="127" label="Positive" level="child"/>
+    </node>
+    <node label="Stylistics" level="parent">
+      <node id="131" label="Direct Conversation" level="child"/>
+    </node>
+    <node label="Supernatural Beings" level="parent">
+      <node id="56" label="Changeling" level="child"/>
+      <node id="57" label="Devil" level="child"/>
+      <node id="137" label="Dragon" level="child"/>
+      <node id="58" label="Elf" level="child"/>
+      <node id="59" label="Ghost / Revenant" level="child"/>
+      <node id="60" label="Giant" level="child"/>
+      <node id="134" label="Lindorm / Basilisk" level="child"/>
+      <node id="61" label="Mare" level="child"/>
+      <node id="62" label="Merfolk" level="child"/>
+      <node id="63" label="Mound folk" level="child"/>
+      <node id="64" label="Nightraven" level="child"/>
+      <node id="65" label="Nisse" level="child"/>
+      <node id="66" label="Troll" level="child"/>
+      <node id="68" label="Unspecified" level="child"/>
+      <node id="67" label="Werewolf" level="child"/>
+    </node>
+    <node label="Time, Season, Weather" level="parent">
+      <node id="120" label="Christmas" level="child"/>
+      <node id="122" label="Easter" level="child"/>
+      <node id="111" label="Evening" level="child"/>
+      <node id="117" label="Fall" level="child"/>
+      <node id="107" label="Friday" level="child"/>
+      <node id="118" label="Holiday" level="child"/>
+      <node id="113" label="Midnight" level="child"/>
+      <node id="103" label="Monday" level="child"/>
+      <node id="125" label="Moon" level="child"/>
+      <node id="109" label="Morning" level="child"/>
+      <node id="121" label="New Years" level="child"/>
+      <node id="112" label="Night " level="child"/>
+      <node id="110" label="Noon" level="child"/>
+      <node id="124" label="Rain" level="child"/>
+      <node id="108" label="Saturday" level="child"/>
+      <node id="119" label="Skt. Hans" level="child"/>
+      <node id="123" label="Snow" level="child"/>
+      <node id="114" label="Spring" level="child"/>
+      <node id="115" label="Summer" level="child"/>
+      <node id="102" label="Sunday" level="child"/>
+      <node id="106" label="Thursday" level="child"/>
+      <node id="116" label="Winter" level="child"/>
+    </node>
+    <node label="Tools, Items and Conveyances" level="parent">
+      <node id="46" label="Bell" level="child"/>
+      <node id="47" label="Boat" level="child"/>
+      <node id="48" label="Books" level="child"/>
+      <node id="49" label="Food and Drink" level="child"/>
+      <node id="50" label="Metal" level="child"/>
+      <node id="51" label="Plow" level="child"/>
+      <node id="52" label="Tools" level="child"/>
+      <node id="53" label="Treasure / Money" level="child"/>
+      <node id="55" label="Unspecified" level="child"/>
+      <node id="54" label="Wagon" level="child"/>
+    </node>
+  </node>
+</tango_tree>

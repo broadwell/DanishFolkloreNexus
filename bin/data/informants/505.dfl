@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<informant person_id="505">
+  <core_informant/>
+  <full_name>L&#xE6;rer N. P. Olsen</full_name>
+  <last_name>Olsen</last_name>
+  <first_name>N. P.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="494" secondary_informant="0">
+      <informant_id>505</informant_id>
+      <publication_info>DS_II_B_146</publication_info>
+      <full_name>505 - 0.00 - DS_II_B_146</full_name>
+      <url>data/stories/494.dfl</url>
+      <place_recorded id="861">Selsingg&#xE5;rde, Sams&#xF8;</place_recorded>
+      <places_mentioned>
+        <place id="339">
+          <name>Kolby</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="735" secondary_informant="0">
+      <informant_id>505</informant_id>
+      <publication_info>DS_II_E_91</publication_info>
+      <full_name>505 - 0.00 - DS_II_E_91</full_name>
+      <url>data/stories/735.dfl</url>
+      <place_recorded id="861">Selsingg&#xE5;rde, Sams&#xF8;</place_recorded>
+      <places_mentioned>
+        <place id="859">
+          <name>Sams&#xF8;</name>
+        </place>
+        <place id="958">
+          <name>Lindholm</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>861</place_id>
+      <name>Selsingg&#xE5;rde, Sams&#xF8;</name>
+      <display_name>Selsingg&#xE5;rde, Sams&#xF8; (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>958</place_id>
+      <name>Lindholm</name>
+      <display_name>Lindholm (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>859</place_id>
+      <name>Sams&#xF8;</name>
+      <display_name>Sams&#xF8; (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>339</place_id>
+      <name>Kolby</name>
+      <display_name>Kolby (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:esri="http://www.esri.com/2008/ags" xmlns:s3="com.esri.s3.*" xmlns:new_esri="com.esri.*"
+		   xmlns:custom="components.*" borderColor="#7e7d6c" themeColor="#450415" cornerRadius="2" backgroundColor="#7f7f7f"
+		   borderStyle="solid" borderThickness="1" styleName="sectionTitle" fontWeight="bold" initialize="initializeMap()">
+<!-- creationComplete="addOnlineLayers()" -->
+<mx:Style source="../danish.css"/>
+
+<!-- AS3 code for map -->
+<mx:Script>
+<![CDATA[
+	import com.esri.ags.Graphic;
+	import com.esri.ags.SpatialReference;
+	import com.esri.ags.events.LayerEvent;
+	import com.esri.ags.geometry.Extent;
+	import com.esri.ags.geometry.Geometry;
+	import com.esri.ags.geometry.MapPoint;
+	import com.esri.ags.geometry.Multipoint;
+	import com.esri.ags.geometry.Polyline;
+	import com.esri.ags.layers.ArcGISDynamicMapServiceLayer;
+	import com.esri.ags.layers.ArcGISTiledMapServiceLayer;
+	import com.esri.ags.symbol.InfoSymbol;
+	import com.esri.ags.symbol.PictureMarkerSymbol;
+	import com.esri.ags.symbol.SimpleLineSymbol;
+	import com.esri.ags.symbol.SimpleMarkerSymbol;
+	import com.esri.ags.symbol.TextSymbol;
+	import com.esri.ags.utils.GraphicUtil;
+	import com.esri.ags.utils.WebMercatorUtil;
+	import com.esri.shp.ShpReader;
+	import com.nochump.util.zip.ZipFile;
+	
+	import flash.net.navigateToURL;
+	
+	import mx.collections.ArrayCollection;
+	import mx.controls.Alert;
+	import mx.core.Application;
+	import mx.rpc.soap.LoadEvent;
+	
+	[Bindable] private var activeTextMarkers:Object = {};
+	
+	//[Bindable] private var wgs84:SpatialReference = new SpatialReference(4326);
+	[Bindable] private var wgs84:SpatialReference = new SpatialReference(7483);
+//	[Bindable] private var jutland:Extent = Extent(WebMercatorUtil.geographicToWebMercator(new Extent(9.23, 55.08, 10.13, 58.08, wgs84)));
+//	[Bindable] private var denmark:Extent = Extent(WebMercatorUtil.geographicToWebMercator(new Extent(7.6, 54.26, 13.5, 58.08, wgs84)));
+	[Bindable] private var greaterDenmark:Extent = Extent(WebMercatorUtil.geographicToWebMercator(new Extent(6.3237, 53.532, 15.5, 57.938, wgs84)));
+	[Bindable] private var denmark:Extent = Extent(WebMercatorUtil.geographicToWebMercator(new Extent(6.3237, 54.707566, 13.62958, 57.8524, wgs84)));
+	
+	[Bindable] private var networkOnline:Boolean = true;
+	
+	[Bindable] private var currentStreetLayer:ArcGISTiledMapServiceLayer = null;
+	[Bindable] private var currentAerialLayer:ArcGISTiledMapServiceLayer = null;
+	
+	[Bindable] private var selectedLayer:int = 1;
+
+	private var fieldtripPathGraphics:Object = new Object();
+			
+	private var markerColors:Object = Application.application.markerColors;
+	
+	private var fieldtripPathNames:Object = new Object();
+	/*
+	private var fieldtripPaths:Object = { "1" : "feb_1887",
+										  "2" : "feb_1888",
+										  "3" : "jan_1894",
+										  "4" : "july_1894",
+										  "5" : "june_1889",
+										  "6" : "may_1888",
+										  "7" : "may_1890",
+										  "8" : "may_1898",
+										  "9" : "oct_1889",
+										  "10" : "oct_1892",
+										  "11" : "oct_1893",
+										  "12" : "aug_1895_photo1",
+										  "13" : "aug_1895_photo2",
+										  "14" : "aug_1895_photo3",
+										  "15" : "sept_1895_photo4",
+										  "16" : "sept_1895_photo5" };
+	*/
+
+	private function initializeMap():void {
+	
+		//Alert.show("checking for fieldtrips data in danishmap: " + Application.application.fieldtripsData.lastResult.toString());
+		if ((Application.application.fieldtripsData.lastResult != null) &&
+			Application.application.fieldtripsData.lastResult.hasOwnProperty("fieldtrip")) {
+			fieldtripsData = Application.application.fieldtripsData;
+			fieldtripsDataHandler();
+		} else {
+			fieldtripsData.send();
+		}	
+		
+	}
+	
+	private function addOnlineLayers():void {
+
+		var esriStreetLayer:ArcGISTiledMapServiceLayer = new ArcGISTiledMapServiceLayer("http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer");
+		esriStreetLayer.id = "esriStreetLayer";
+		esriStreetLayer.addEventListener(LayerEvent.LOAD_ERROR, onlineMapErrorHandler);
+		esriStreetLayer.addEventListener(IOErrorEvent.IO_ERROR, onlineMapErrorHandler)
+		map.addLayer(esriStreetLayer, 1);
+		
+		currentStreetLayer = esriStreetLayer;
+
+		var esriAerialLayer:ArcGISTiledMapServiceLayer = new ArcGISTiledMapServiceLayer("http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer");
+		esriStreetLayer.id = "esriAerialLayer";
+		esriAerialLayer.addEventListener(LayerEvent.LOAD_ERROR, aerialToStreet);
+		esriAerialLayer.addEventListener(IOErrorEvent.IO_ERROR, aerialToStreet);
+		map.addLayer(esriAerialLayer, 2);
+		
+		currentAerialLayer = esriAerialLayer;
+		
+		currentAerialLayer.visible = false;
+		
+	}
+	
+	private function fieldtripsDataHandler():void {
+		
+		for (var i:int=0; i<fieldtripsData.lastResult.fieldtrip.length(); i++) {
+			if (fieldtripsData.lastResult.fieldtrip[i].@fieldtrip_id > 0) {
+				fieldtripPathNames[fieldtripsData.lastResult.fieldtrip[i].@fieldtrip_id] = fieldtripsData.lastResult.fieldtrip[i].shapefile;
+			}
+		}
+		
+	}
+	
+	private function fieldtripPathLoadHandler(fieldtripID:String, fieldtripName:String, event:Event):void {
+		
+		var pathLoader:URLLoader = event.target as URLLoader;
+		
+		var fieldtripPathFilename:String = fieldtripPathNames[fieldtripID];
+		
+		//Alert.show("Loading fieldtrip path file " + fieldtripPathFilename + " for fieldtrip ID " + fieldtripID);
+		
+		const zipFile:ZipFile = new ZipFile(pathLoader.data);
+
+		/* There should only be one shapefile in the zip archive */
+		const pathData:ByteArray = zipFile.getInput(zipFile.entries[0]);
+		//const pathData:ByteArray = pathLoader.data;
+		
+		Application.application.fieldtripFileCache[fieldtripPathFilename] = pathData;
+
+		var pathGraphic:Graphic = buildFieldtripPath(fieldtripPathFilename);
+
+		pathGraphic.toolTip = fieldtripName;
+
+		var pathAttributes:Object = new Object();
+		pathAttributes["targetID"] = fieldtripID;
+		pathGraphic.attributes = pathAttributes;
+		
+		graphicsLayer.add(pathGraphic);
+		
+		pathGraphic.addEventListener(MouseEvent.DOUBLE_CLICK, pathDoubleClickHandler);
+		
+		Application.application.fieldtripPathCache[fieldtripPathFilename] = pathGraphic;
+		
+		if (!fieldtripPathGraphics.hasOwnProperty(fieldtripPathFilename)) {
+			fieldtripPathGraphics[fieldtripPathFilename] = new Array();
+			fieldtripPathGraphics[fieldtripPathFilename].push(pathGraphic);
+		} else
+			fieldtripPathGraphics[fieldtripPathFilename].push(pathGraphic);
+		
+	}	
+	
+	private function pathDoubleClickHandler(event:MouseEvent):void {
+
+		if (event.currentTarget.attributes.hasOwnProperty("targetID")) {
+			var targetID:String = event.currentTarget.attributes["targetID"];
+
+			Application.application.loadNewTab("Fieldtrip", targetID);
+		
+		}
+		
+	}
+	
+	private function errorHandler(e:IOErrorEvent):void {
+    	Alert.show("Error loading a fieldtrip file");
+ 	}
+
+	/* PMB need to add more parameters for line style, color, etc - maybe use topographic line */	
+	private function buildFieldtripPath(fieldtripPathName:String):Graphic {
+
+		var shpByteArray:ByteArray = Application.application.fieldtripFileCache[fieldtripPathName];
+
+        var shpReader:ShpReader = new ShpReader(shpByteArray);
+
+        var pathPolyline:Polyline = new Polyline();
+
+        while (shpReader.hasMore()) {
+        	
+        	var pathParts:ArrayCollection = shpReader.readShpParts();
+        
+       	 for (var pp:int=0; pp<pathParts.length; pp++) {
+                	
+				var pathPointsArray:Array = pathParts[pp];
+				
+				var pathSegment:Array = new Array();
+					
+            	for (var p:int=0;p<pathPointsArray.length;p = p + 2) {
+                    	
+            		var easting:Number = pathPointsArray[p];
+                	var northing:Number = pathPointsArray[p+1];
+                    	
+                	var pathPoint:MapPoint = UTMtoLatLon(northing, easting);
+                    	
+                	pathSegment.push(pathPoint);
+            	}           	
+            	pathPolyline.addPath(pathSegment);     	
+        	}
+        }
+
+		var sls:SimpleLineSymbol = new SimpleLineSymbol("solid", markerColors["fieldtrip"], 1, 2);
+		WebMercatorUtil.geographicToWebMercator(pathPolyline, true);
+		var g:Graphic = new Graphic(pathPolyline, sls);	
+
+		return g;
+	}
+	
+	public function recenterMapAtCoords(lon:Number, lat:Number):void {
+		
+		var mp:MapPoint = new MapPoint(lon, lat);
+		WebMercatorUtil.geographicToWebMercator(mp, true);		
+		map.centerAt(mp);
+		
+	}
+
+	public function drawSimpleMarkerAtCoords(lon:Number, lat:Number, color:Number, toolTipText:String="", targetID:String="-1", targetType:String="Place", bringToTop:Boolean=false, shape:String="circle"):Graphic {
+
+		var sms:SimpleMarkerSymbol = new SimpleMarkerSymbol(shape, 7, color);
+
+		var mp:MapPoint = new MapPoint(lon, lat);
+		
+		WebMercatorUtil.geographicToWebMercator(mp, true);
+		
+		var g:Graphic = new Graphic(mp, sms);
+
+		if (toolTipText)
+			g.toolTip = toolTipText;
+
+		
+		g.autoMoveToTop = bringToTop;
+		
+		var markerAttributes:Object = {};
+		
+		if (targetType == "Place") {
+			markerAttributes["targetURL"] = "place";
+			markerAttributes["targetType"] = "Place";
+		} else if (targetType == "informant") {
+			markerAttributes["targetURL"] = "informant";
+			markerAttributes["targetType"] = "Informant";
+		}
+			
+		markerAttributes["targetID"] = targetID;
+		
+		g.attributes = markerAttributes;
+
+		graphicsLayer.add(g);
+		
+		g.addEventListener(MouseEvent.CLICK, markerClickHandler);
+		g.addEventListener(MouseEvent.DOUBLE_CLICK, markerDoubleClickHandler);
+		
+		return g;
+		
+	}
+	
+	private function markerClickHandler(event:MouseEvent):void {
+		
+		var markerPoint:MapPoint = MapPoint(WebMercatorUtil.webMercatorToGeographic(event.currentTarget.geometry));
+		
+		var lon:Number = markerPoint.x;
+		var lat:Number = markerPoint.y;
+		
+		if (event.currentTarget.toolTip) {
+			toggleTextAtCoords(lon, lat, event.currentTarget.toolTip, event.currentTarget.symbol.color);
+		}
+	}
+	
+	private function markerDoubleClickHandler(event:MouseEvent):void {
+		
+		var targetID:String = event.currentTarget.attributes["targetID"];
+		var targetType:String = event.currentTarget.attributes["targetType"];
+		
+		if (targetID != "-1") {
+		
+			Application.application.loadNewTab(targetType, targetID);
+		
+		}
+
+	}
+
+public function drawPopupMarkerAtCoords(lon:Number, lat:Number, imagePath:String, imageLabel:String, toolTipText:String="", targetID:String="-1"):Graphic {
+
+	var mp:MapPoint = new MapPoint(lon, lat);
+	WebMercatorUtil.geographicToWebMercator(mp, true);
+		
+	var attributes:Object = new Object();
+	
+	attributes.myImageURL = imagePath;
+	attributes.myTitle = imageLabel;
+	attributes.myLatitude = lat;
+	attributes.myLongitude = lon;
+	
+	if (targetID) {
+		attributes.targetType = "Informant";
+		attributes.targetID = targetID;
+	}	
+
+	var g:Graphic = new Graphic(mp, informantSymbol, attributes);
+
+	if (toolTipText)
+		g.toolTip = toolTipText;
+
+	graphicsLayer.add(g);
+	
+	return g;
+
+}
+	
+	public function removeMarkers(graphics:Object):void {
+		for (var s:String in graphics) {
+			graphicsLayer.remove(graphics[s]);
+		}
+	}
+	
+	public function removeMarkersArray(graphics:Array):void {
+		for (var i:int=0; i<graphics.length; i++) {
+			graphicsLayer.remove(graphics[i]);
+		}
+	}
+	
+	public function removeGraphic(graphic:Graphic):void {
+		graphicsLayer.remove(graphic);
+	}
+	
+	public function toggleTextAtCoords(lon:Number, lat:Number, text:String="", bgColor:uint=0xffffff, force:String="toggle"):void {
+		var combinedCoords:String = lon.toString() + '|' + lat.toString();
+		
+		if (activeTextMarkers[combinedCoords] == null) {
+			if ((force == "toggle") || (force == "on")) {
+				activeTextMarkers[combinedCoords] = displayTextAtCoords(lon, lat, text, bgColor);
+			}
+		} else {
+			if ((force == "on") || ((force == "toggle") && (activeTextMarkers[combinedCoords].symbol.text != text))) {
+				removeTextMarker(combinedCoords);
+				activeTextMarkers[combinedCoords] = displayTextAtCoords(lon, lat, text, bgColor);
+			} else if ((force == "toggle") || (force == "off")) {
+				removeTextMarker(combinedCoords);
+			}
+		}
+	}
+	
+	private function removeTextMarker(combinedCoords:String):void {
+			graphicsLayer.remove(activeTextMarkers[combinedCoords]);
+			activeTextMarkers[combinedCoords] = null;
+			delete activeTextMarkers[combinedCoords];
+	}
+	
+	private function displayTextAtCoords(lon:Number, lat:Number, text:String="", bgColor:uint=0xffffff):Graphic {
+
+		var ts:TextSymbol = new TextSymbol(text, null, 0xffffff, true, 0x000000, true, bgColor, "start", 0, -.2, -10.7);
+		
+		var mp:MapPoint = new MapPoint(lon, lat);
+		WebMercatorUtil.geographicToWebMercator(mp, true);		
+		
+		var g:Graphic = new Graphic(mp, ts);
+		
+		graphicsLayer.add(g);
+		
+		if (!(map.extent.expand(.9).contains(mp))) {
+			map.centerAt(mp);
+		}
+
+		return g;
+	}
+	
+	public function clearAllTextMarkers():void {
+		
+		for (var combinedCoords:String in activeTextMarkers) {
+			removeTextMarker(combinedCoords);
+		}
+		
+	}
+	
+	public function zoomInOnMarkersCollection(graphicsArray:Array, expansionRatio:Number=1.3):void {
+		var mp:Multipoint = new Multipoint();
+		for (var a:int=0;a<graphicsArray.length;a++) {
+			var graphics:Object = graphicsArray[a];
+			for (var i:String in graphics) {
+				var p:MapPoint = new MapPoint(graphics[i].geometry.x, graphics[i].geometry.y);
+				mp.addPoint(p);
+			}			
+		}
+		zoomInOnMultipoint(mp, expansionRatio);
+	}
+
+	public function zoomInOnMarkers(graphics:Object, expansionRatio:Number=1.3):void {
+		var mp:Multipoint = new Multipoint();
+		for (var i:String in graphics) {
+			var p:MapPoint = new MapPoint(graphics[i].geometry.x, graphics[i].geometry.y);
+			mp.addPoint(p);
+		}
+		zoomInOnMultipoint(mp, expansionRatio);
+
+	}
+	
+	public function zoomInOnMarkersStrict(graphics:Array, expansionRatio:Number=1.3):void {
+		var newExtent:Extent = GraphicUtil.getGraphicsExtent(graphics);
+		map.extent = newExtent.expand(expansionRatio);		
+	}
+	
+	public function zoomInOnMarkersArray(graphics:Array, expansionRatio:Number=1.3):void {
+		var mp:Multipoint = new Multipoint();
+		for (var i:int=0; i<graphics.length; i++) {
+			var p:MapPoint = new MapPoint(graphics[i].geometry.x, graphics[i].geometry.y);
+			mp.addPoint(p);
+		}
+		zoomInOnMultipoint(mp, expansionRatio);
+	}
+	
+	public function zoomInOnMultipoint(mp:Multipoint, expansionRatio:Number):void {
+		if (mp.points == null)
+			return;
+		if (mp.points.length > 1) {
+			if ((mp.extent.width == 0) || (mp.extent.height == 0)) {
+				resetExtent();
+			} else {
+			//Alert.show("xmin " + mp.extent.xmin + " xmax " + mp.extent.xmax + " ymin " + mp.extent.ymin + " ymax " + mp.extent.ymax + " width " + mp.extent.width + " height " + mp.extent.height);
+				mp.extent.xmax = Math.min(mp.extent.xmax, denmark.xmax);
+				mp.extent.xmin = Math.max(mp.extent.xmin, denmark.xmin);
+				mp.extent.ymax = Math.min(mp.extent.ymax, denmark.ymax);
+				mp.extent.ymin = Math.max(mp.extent.ymin, denmark.ymin);
+				if (mp.extent.containsExtent(denmark)) {
+					map.extent = denmark.expand(expansionRatio);
+					//map.extent = mp.extent;
+				} else {
+					map.extent = mp.extent.expand(expansionRatio);
+				}
+			}
+		} else if ((mp.points.length == 1)) {
+			map.centerAt(mp.points[0]);
+			//recenterMap(mp.points[0].x, mp.points[0].y);
+		}
+	}
+	
+	public function expandToMarkersArray(graphics:Array, expansionRatio:Number=1.3):void {
+		var mp:Multipoint = new Multipoint();
+		for (var i:int=0; i<graphics.length; i++) {
+			var p:MapPoint = new MapPoint(graphics[i].geometry.x, graphics[i].geometry.y);
+			mp.addPoint(p);
+		}
+		map.extent = map.extent.union(mp.extent).expand(expansionRatio);
+	}
+	
+	public function drawPolylineFromMarkers(graphics:Array):Graphic {
+		var pl:Polyline = new Polyline();
+		var pointsArray:Array = new Array();
+		
+		for (var i:int=0; i<graphics.length; i++) {
+			var p:MapPoint = new MapPoint(graphics[i].geometry.x, graphics[i].geometry.y);
+			pointsArray[i] = p;
+		}
+		pl.addPath(pointsArray);
+		
+		var sls:SimpleLineSymbol = new SimpleLineSymbol("solid", markerColors["fieldtrip"]);
+		
+		var g:Graphic = new Graphic(pl, sls);
+		
+		graphicsLayer.add(g);
+		
+		return g;
+	}
+	
+	public function showFieldtripPath(fieldtripID:String, fieldtripName:String=""):void {
+		var fieldtripPathFilename:String = fieldtripPathNames[fieldtripID];
+		
+		if (!(Application.application.fieldtripPathCache.hasOwnProperty(fieldtripPathFilename))) {
+			
+			var directFieldtripPathLoader:URLLoader = new URLLoader();
+		
+			directFieldtripPathLoader.dataFormat = URLLoaderDataFormat.BINARY;
+			var shpRequest:URLRequest = new URLRequest("data/fieldtrip_layers/" + fieldtripPathFilename.replace('.shp','.dfl'));
+			//var shpRequest:URLRequest = new URLRequest("data/fieldtrip_layers/" + fieldtripPathFilename + '.zip');
+
+			/* Have to make this function a first-class object so the handler can get the fieldtrip ID */
+        	directFieldtripPathLoader.addEventListener(Event.COMPLETE,
+        		function (event:Event):void {
+        			fieldtripPathLoadHandler(fieldtripID, fieldtripName, event);
+        		}
+        	); 
+        
+       		directFieldtripPathLoader.addEventListener(IOErrorEvent.IO_ERROR, errorHandler);
+
+			try {
+        		directFieldtripPathLoader.load(shpRequest);
+        	} catch (error:SecurityError) {
+            	trace("A SecurityError has occurred.");
+        	}
+			
+		} else {
+			
+			var pathGraphic:Graphic = new Graphic();
+
+			pathGraphic.geometry = Application.application.fieldtripPathCache[fieldtripPathFilename].geometry;
+			pathGraphic.symbol = Application.application.fieldtripPathCache[fieldtripPathFilename].symbol;
+			pathGraphic.attributes = Application.application.fieldtripPathCache[fieldtripPathFilename].attributes;
+			
+			pathGraphic.toolTip = fieldtripName;
+
+			var pathAttributes:Object = new Object();
+			pathAttributes["targetID"] = fieldtripID;
+			pathGraphic.attributes = pathAttributes;
+
+			graphicsLayer.add(pathGraphic);
+			
+			pathGraphic.addEventListener(MouseEvent.DOUBLE_CLICK, pathDoubleClickHandler);
+
+			if (!fieldtripPathGraphics.hasOwnProperty(fieldtripPathFilename)) {
+				fieldtripPathGraphics[fieldtripPathFilename] = new Array();
+				fieldtripPathGraphics[fieldtripPathFilename].push(pathGraphic);
+			} else
+				fieldtripPathGraphics[fieldtripPathFilename].push(pathGraphic);
+		}
+	}
+	
+	public function hideFieldtripPath(fieldtripID:String):void {
+
+		var fieldtripPathFilename:String = fieldtripPathNames[fieldtripID];
+		while (fieldtripPathGraphics[fieldtripPathFilename].length > 0) {
+			removeGraphic(fieldtripPathGraphics[fieldtripPathFilename].pop());
+		}
+		
+	}
+	
+	public function resetExtent():void{
+		if (map.extent != denmark)
+			map.extent = denmark;
+	}
+
+private function rad2deg(radians:Number):Number {
+	return radians * (180/Math.PI);
+}
+
+public function UTMtoLatLon(northing:Number, easting:Number, zone:int=32):MapPoint {
+// $f = Northing
+// $f1 = Easting
+// $zone: UTM ZONE (Danmark = 32)
+
+var d:Number = 0.99960000000000004; // scale along long0
+var d1:Number = 6378137; // Polar Radius
+var d2:Number = 0.0066943799999999998;
+
+var d4:Number = (1 - Math.sqrt(1 - d2)) / (1 + Math.sqrt(1 - d2));
+var d15:Number = easting - 500000;
+var d16:Number = northing;
+var d11:Number = ((zone - 1) * 6 - 180) + 3;
+var d3:Number = d2 / (1 - d2);
+var d10:Number = d16 / d;
+var d12:Number = d10 / (d1 * (1 - d2 / 4 - (3 * d2 * d2) / 64 - (5 * Math.pow(d2,3) ) / 256));
+var d14:Number = d12 + ((3 * d4) / 2 - (27 * Math.pow(d4,3) ) / 32) * Math.sin(2 * d12) + ((21 * d4 * d4) / 16 - (55 * Math.pow(d4,4) ) / 32) * Math.sin(4 * d12) + ((151 * Math.pow(d4,3) ) / 96) * Math.sin(6 * d12);
+var d13:Number = rad2deg(d14); // PMB XXX need code to convert radians to degrees
+var d5:Number = d1 / Math.sqrt(1 - d2 * Math.sin(d14) * Math.sin(d14));
+var d6:Number = Math.tan(d14) * Math.tan(d14);
+var d7:Number = d3 * Math.cos(d14) * Math.cos(d14);
+var d8:Number = (d1 * (1 - d2)) / Math.pow(1 - d2 * Math.sin(d14) * Math.sin(d14), 1.5);
+var d9:Number = d15 / (d5 * d);
+var d17:Number = d14 - ((d5 * Math.tan(d14)) / d8) * (((d9 * d9) / 2 - (((5 + 3 * d6 + 10 * d7) - 4 * d7 * d7 - 9 * d3) * Math.pow(d9,4) ) / 24) + (((61 + 90 * d6 + 298 * d7 + 45 * d6 * d6) - 252 * d3 - 3 * d7 * d7) * Math.pow(d9,6) ) / 720);
+d17 = rad2deg(d17); // XXX
+var d18:Number = ((d9 - ((1 + 2 * d6 + d7) * Math.pow(d9,3) ) / 6) + (((((5 - 2 * d7) + 28 * d6) - 3 * d7 * d7) + 8 * d3 + 24 * d6 * d6) * Math.pow(d9,5) ) / 120) / Math.cos(d14);
+d18 = d11 + rad2deg(d18); // XXX
+
+var mp:MapPoint = new MapPoint(d18, d17);
+return mp;
+
+}
+
+private function mapChange():void {
+	
+	if (bb.selectedIndex == 1)
+		selectedLayer = 1;
+	else
+		selectedLayer = 0;
+
+	if (networkOnline) {
+		if ((selectedLayer == 0) && (map.level > 13)) {
+			selectedLayer = 1;
+		}
+		
+		if (selectedLayer == 0) {
+			currentAerialLayer.visible = true;
+			currentStreetLayer.visible = false;
+		} else {
+			currentStreetLayer.visible = true;
+			currentAerialLayer.visible = false;
+		}
+	} else {
+		if (!map.extent.intersects(greaterDenmark)) {
+			if (map.level > 7)
+				map.level = 7;
+		}		
+	}
+
+	if (map.level > 13)
+		historicalLayer.visible = false;
+	else if (map.level <= 13)
+		historicalLayer.visible = true;
+
+}
+
+private function aerialToStreet(event:Event):void {
+	selectedLayer = 1;
+	mapChange();
+}
+
+private function onlineMapErrorHandler(event:Event):void {
+// PMB uncomment for published version
+	goOffline();
+}
+	
+private function osmErrorHandler(event:Event):void {
+	//osmStreetLayer.enabled = false;
+	/* SDSC's cloud service can't serve tiles to Flash from a hosted site.
+	* Client hosts are fine, though. */
+	//osmStreetLayer.url="http://osm-danishfolklore.s3.amazonaws.com/MapServer";
+	osmStreetLayer.url="https://cloud.sdsc.edu/v1/AUTH_dfl/osm-danishfolklore/MapServer"
+}
+
+private function historicalMapErrorHandler(event:Event):void {
+	/* SDSC's cloud service can't serve tiles to Flash from a hosted site.
+	 * Client hosts are fine, though. */
+	//historicalLayer.url="http://etk-monochrome.s3.amazonaws.com/MapServer"
+	historicalLayer.url="https://cloud.sdsc.edu/v1/AUTH_dfl/etk-monochrome/MapServer";
+	
+}
+
+private function goOffline():void {
+
+	networkOnline = false;
+
+	map.removeLayer(currentStreetLayer);
+	currentStreetLayer = null;
+	map.removeLayer(currentAerialLayer);
+	currentAerialLayer = null;
+	
+	if (historicalLayer.url != "tiles/Denmark/MapServer") {
+		historicalLayer.visible = false;
+	}
+	//map.removeLayer(historicalLayer);
+
+	goOnlineButton.visible = true;
+	bb.getChildAt(0).visible = false;
+
+	selectedLayer = 1;
+
+	map.lods = offlineLODs;
+
+	loadErrorMsg.visible = false;
+
+	// PMB uncomment for published version
+	osmStreetLayer.visible = true;
+	
+	osmAttrib.visible = true;
+
+}
+
+private function goOnline():void {
+	
+	networkOnline = true;
+	
+	osmAttrib.visible = false;
+	
+	goOnlineButton.visible = false;
+	bb.getChildAt(0).visible = true;
+	
+	// PMB uncomment for published version
+	osmStreetLayer.visible = false;
+	
+	map.lods = onlineLODs;
+	
+	loadErrorMsg.visible = false;
+	
+	addOnlineLayers();
+	
+	historicalLayer.visible = true;
+
+	mapChange();
+
+}
+
+	
+]]>
+</mx:Script>
+
+<custom:ZIPService id="fieldtripsData" resultFormat="e4x" url="data/fieldtrips.dfl" result="fieldtripsDataHandler()"/>
+
+<esri:InfoSymbol id="informantSymbol">
+	<esri:infoRenderer>
+	<mx:Component>
+	<mx:HBox doubleClickEnabled="true"
+		doubleClick="doubleClickHandler()"
+		rollOver="rollOverHandler()"
+		rollOut="rollOutHandler()"
+        currentState="nameState">
+    	<mx:Script>
+    	<![CDATA[
+    		//import mx.controls.Alert;
+    		import mx.core.Application;
+    		
+    		private function doubleClickHandler():void {
+    			if (data.hasOwnProperty("targetID")) {
+    				Application.application.loadNewTab("Informant", data.targetID);
+    			}
+    		}
+        	private function rollOverHandler():void {
+        		if (currentState == "nameState")
+        			currentState="rollOverState";
+            }
+            private function rollOutHandler():void {
+            	if (currentState == "rollOverState")
+            		currentState="nameState";
+            }
+            private function openPopup():void {
+            	currentState="detailState";
+            }
+        	private function closePopup():void {
+        		currentState="nameState";
+        	}   
+    	]]>
+    	</mx:Script>
+		<mx:states>
+    		<mx:State name="rollOverState">
+     			<mx:AddChild relativeTo="{labelBox}" position="firstChild">
+    				<mx:Button id="popupExpandButton" right="1" styleName="InfoExpandButton" click="openPopup()"/>
+    			</mx:AddChild>
+    		</mx:State>
+    		<mx:State name="detailState">
+    			<mx:AddChild relativeTo="{mainVBox}" position="firstChild">
+    				<mx:Image id="informantImage" width="200" height="200" source="{data.myImageURL}"/>
+            	</mx:AddChild>
+    			<mx:AddChild relativeTo="{labelBox}" position="firstChild">
+    				<mx:Button id="popupCloseButton" right="1" styleName="InfoCloseButton" click="closePopup()"/>
+    			</mx:AddChild>
+            </mx:State>
+            <mx:State name="nameState">
+        	
+            </mx:State>
+    	</mx:states>
+		<mx:transitions>
+			<mx:Transition fromState="rollOverState" toState="*">
+            	<mx:Resize target="{this}" duration="200"/>
+            </mx:Transition>
+			<mx:Transition fromState="detailState" toState="*">
+            	<mx:Resize target="{this}" duration="200"/>
+            </mx:Transition>
+			<mx:Transition fromState="nameState" toState="*">
+            	<mx:Resize target="{this}" duration="200"/>
+            </mx:Transition>
+        </mx:transitions>
+		<mx:VBox id="mainVBox">
+			<mx:HBox id="labelBox" width="100%">
+    			<mx:Label text="{data.myTitle}"/>
+    		</mx:HBox>
+		</mx:VBox>
+	</mx:HBox>
+</mx:Component>
+</esri:infoRenderer>
+</esri:InfoSymbol>
+
+	<mx:Array id="onlineLODs">
+		<esri:LOD level="0" resolution="156543.033928" scale="591657527.591555" />
+		<esri:LOD level="1" resolution="78271.5169639999" scale="295828763.795777" />
+		<esri:LOD level="2" resolution="39135.7584820001" scale="147914381.897889" />
+		<esri:LOD level="3" resolution="19567.8792409999" scale="73957190.948944" />
+		<esri:LOD level="4" resolution="9783.93962049996" scale="36978595.474472" />
+		<esri:LOD level="5" resolution="4891.96981024998" scale="18489297.737236" />
+		<esri:LOD level="6" resolution="2445.98490512499" scale="9244648.868618" />
+		<esri:LOD level="7" resolution="1222.99245256249" scale="4622324.434309 " />
+		<esri:LOD level="8" resolution="611.49622628138" scale="2311162.217155" />
+		<esri:LOD level="9" resolution="305.748113140558" scale="1155581.108577" />
+		<esri:LOD level="10" resolution="152.874056570411" scale="577790.554289" />
+		<esri:LOD level="11" resolution="76.4370282850732" scale="288895.277144" />
+		<esri:LOD level="12" resolution="38.2185141425366" scale="144447.638572" />
+		<esri:LOD level="13" resolution="19.1092570712683" scale="72223.819286" />
+		<esri:LOD level="14" resolution="9.55462853563415" scale="36111.909643" />
+		<esri:LOD level="15" resolution="4.77731426794937" scale="18055.954822" />
+<!--		<esri:LOD level="16" resolution="2.388657133974685" scale="9027.977411" /> -->
+	</mx:Array>
+	
+	<mx:Array id="offlineLODs">
+		<esri:LOD level="0" resolution="156543.033928" scale="591657527.591555" />
+		<esri:LOD level="1" resolution="78271.5169639999" scale="295828763.795777" />
+		<esri:LOD level="2" resolution="39135.7584820001" scale="147914381.897889" />
+		<esri:LOD level="3" resolution="19567.8792409999" scale="73957190.948944" />
+		<esri:LOD level="4" resolution="9783.93962049996" scale="36978595.474472" />
+		<esri:LOD level="5" resolution="4891.96981024998" scale="18489297.737236" />
+		<esri:LOD level="6" resolution="2445.98490512499" scale="9244648.868618" />
+		<esri:LOD level="7" resolution="1222.99245256249" scale="4622324.434309 " />
+		<esri:LOD level="8" resolution="611.49622628138" scale="2311162.217155" />
+		<esri:LOD level="9" resolution="305.748113140558" scale="1155581.108577" />
+		<esri:LOD level="10" resolution="152.874056570411" scale="577790.554289" />
+		<esri:LOD level="11" resolution="76.4370282850732" scale="288895.277144" />
+		<esri:LOD level="12" resolution="38.2185141425366" scale="144447.638572" />
+		<esri:LOD level="13" resolution="19.1092570712683" scale="72223.819286" />
+	</mx:Array>
+
+<esri:Map zoomEnd="mapChange()" panEnd="mapChange()" lods="{onlineLODs}" extent="{denmark}" crosshairVisible="false" id="map" logoVisible="false" openHandCursorVisible="false">
+
+	<esri:layers>
+
+<s3:S3ArcGISTiledMapServiceLayer id="osmStreetLayer" loadError="osmErrorHandler(event)" ioError="osmErrorHandler(event)"
+		visible="false"
+		url="tiles/OSM/MapServer" />
+		<!-- url="http://osm-danishfolklore.s3.amazonaws.com/MapServer" -->
+		<!-- loadError="loadErrorMsg.visible = true" ioError="loadErrorMsg.visible = true" -->
+<!--<new_esri:NewArcGISTiledMapServiceLayer id="lowboardsLayer" loadError="onlineMapErrorHandler(event)" ioError="onlineMapErrorHandler(event)"
+	    visible="{bb.selectedIndex==1}"
+		url="http://marinus.library.ucla.edu:6080/arcgis/rest/services/Scandinavian_hGIS/DK_lowboards/MapServer" /> -->
+<esri:ArcGISTiledMapServiceLayer id="esriStreetLayer" loadError="onlineMapErrorHandler(event)" ioError="onlineMapErrorHandler(event)"
+	    visible="{bb.selectedIndex==1}"
+		url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer" />
+<esri:ArcGISTiledMapServiceLayer id="esriAerialLayer" loadError="aerialToStreet(event)" ioError="aerialToStreet(event)"
+	    visible="{bb.selectedIndex==0}"
+	    url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" />
+		<!-- PMB should be tiles/Denmark/MapServer for published version -->
+<s3:S3ArcGISTiledMapServiceLayer id="historicalLayer"
+		url="tiles/Denmark/MapServer"
+		visible="true"
+		loadError="historicalMapErrorHandler(event)" ioError="historicalMapErrorHandler(event)"
+        alpha="{historicalAlpha.value}" />
+        <!-- PMB replace above for published version -->
+        <!-- url="https://cloud.sdsc.edu/v1/AUTH_dfl/etk-monochrome/MapServer" -->
+        <!-- url="http://etk-monochrome.s3.amazonaws.com/MapServer" -->
+		<!-- url="../data/tiles/Denmark/MapServer" FOR PUBLISHER EVALUATION -->
+
+<esri:GraphicsLayer id="graphicsLayer"/>
+
+	</esri:layers>
+		
+</esri:Map>
+
+<s3:OSMAttribution id="osmAttrib" horizontalCenter="0" bottom="0" left="0" visible="false" />
+
+<mx:VBox right="5" top="5" verticalGap="2" horizontalAlign="right" verticalAlign="middle">
+	
+	<mx:HBox id="mapControls" horizontalGap="2" horizontalAlign="right" verticalAlign="middle">
+
+		<mx:ToggleButtonBar id="bb" horizontalGap="2" selectedIndex="{selectedLayer}" themeColor="#e78599" itemClick="mapChange()">
+			<mx:dataProvider>
+				<mx:Array>
+					<mx:String>Modern Aerial</mx:String>
+					<mx:String>Modern Street</mx:String>
+				</mx:Array>
+			</mx:dataProvider>
+		</mx:ToggleButtonBar>
+
+		<mx:HBox horizontalGap="0" verticalAlign="top" borderStyle="outset" borderColor="#5E5E5E" themeColor="#d00c33" cornerRadius="0" backgroundColor="#DCDCDC" alpha="0.52">
+			<mx:Label styleName="smallText" text="Historical:" />
+			<mx:HSlider id="historicalAlpha" width="50" minimum="0.0" maximum="1.0" value="0.0" liveDragging="true" borderColor="#2A2C2C"/>
+		</mx:HBox>
+
+	</mx:HBox>
+
+	<mx:HBox horizontalAlign="right" verticalAlign="middle" horizontalGap="2" verticalGap="2">
+		<mx:HBox id="loadErrorMsg" visible="false" verticalAlign="bottom" right="0" bottom="0" borderStyle="outset" borderColor="#5E5E5E" themeColor="#d00c33" cornerRadius="0" backgroundColor="#D00C33" alpha="0.52" click="loadErrorMsg.visible=false" toolTip="Click to dismiss this message.">
+			<mx:Label text="MAP DATA ERROR" styleName="smallText" textAlign="center" />
+		</mx:HBox>
+		<mx:Button id="goOnlineButton" visible="false" label="Go online" click="goOnline()" styleName="navButton" />
+	</mx:HBox>
+	
+</mx:VBox>
+
+</mx:Canvas>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<informant person_id="564">
+  <core_informant/>
+  <full_name>Hans Andersen</full_name>
+  <last_name>Andersen</last_name>
+  <first_name>Hans</first_name>
+  <gender>m</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations>
+    <occupation occupation_id="52">L&#xE6;rer</occupation>
+  </occupations>
+  <stories>
+    <story story_id="900" secondary_informant="0">
+      <informant_id>564</informant_id>
+      <publication_info>DS_V_820</publication_info>
+      <full_name>564 - 0.00 - DS_V_820</full_name>
+      <url>data/stories/900.dfl</url>
+      <place_recorded id="863">Sinding</place_recorded>
+      <places_mentioned>
+        <place id="349">
+          <name>Kragelund</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>863</place_id>
+      <name>Sinding</name>
+      <display_name>Sinding (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>349</place_id>
+      <name>Kragelund</name>
+      <display_name>Kragelund (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<informant person_id="477">
+  <core_informant/>
+  <full_name>L&#xE6;rer P. K. Munch</full_name>
+  <last_name>Munch</last_name>
+  <first_name>P. K.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="653" secondary_informant="0">
+      <informant_id>477</informant_id>
+      <publication_info>DS_II_J_70</publication_info>
+      <full_name>477 - 0.00 - DS_II_J_70</full_name>
+      <url>data/stories/653.dfl</url>
+      <place_recorded id="833">Nimtoft</place_recorded>
+      <places_mentioned>
+        <place id="386">
+          <name>L&#xF8;venholms skov</name>
+        </place>
+        <place id="427">
+          <name>N&#xF6;rager</name>
+        </place>
+        <place id="668">
+          <name>Tustrup mark</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>833</place_id>
+      <name>Nimtoft</name>
+      <display_name>Nimtoft (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>668</place_id>
+      <name>Tustrup mark</name>
+      <display_name>Tustrup mark (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>427</place_id>
+      <name>N&#xF6;rager</name>
+      <display_name>N&#xF6;rager (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>386</place_id>
+      <name>L&#xF8;venholms skov</name>
+      <display_name>L&#xF8;venholms skov (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

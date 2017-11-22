@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<informant person_id="158">
+  <core_informant/>
+  <full_name>Bertil (B&#xE6;rtel) Krog</full_name>
+  <last_name>Krog</last_name>
+  <first_name>Bertil (B&#xE6;rtel)</first_name>
+  <gender>m</gender>
+  <birth_date>0000-00-00</birth_date>
+  <death_date>0000-00-00</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="564" secondary_informant="0">
+      <informant_id>158</informant_id>
+      <publication_info>DS_V_47</publication_info>
+      <full_name>158 - 0.00 - DS_V_47</full_name>
+      <url>data/stories/564.dfl</url>
+      <place_recorded id="695">Vester Hassing</place_recorded>
+      <places_mentioned>
+        <place id="287">
+          <name>Hovg&#xE5;rds m&#xF8;lle</name>
+        </place>
+        <place id="440">
+          <name>N&#xF8;rre Sundby</name>
+        </place>
+        <place id="382">
+          <name>L&#xF8;kken</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>695</place_id>
+      <name>Vester Hassing</name>
+      <display_name>Vester Hassing (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>382</place_id>
+      <name>L&#xF8;kken</name>
+      <display_name>L&#xF8;kken (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>440</place_id>
+      <name>N&#xF8;rre Sundby</name>
+      <display_name>N&#xF8;rre Sundby (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>287</place_id>
+      <name>Hovg&#xE5;rds m&#xF8;lle</name>
+      <display_name>Hovg&#xE5;rds m&#xF8;lle (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

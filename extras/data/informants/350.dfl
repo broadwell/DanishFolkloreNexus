@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<informant person_id="350">
+  <core_informant/>
+  <full_name>Niels Clauss&#xF8;n</full_name>
+  <last_name>Clauss&#xF8;n</last_name>
+  <first_name>Niels</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="763" secondary_informant="0">
+      <informant_id>350</informant_id>
+      <publication_info>DS_III_81</publication_info>
+      <full_name>350 - 0.00 - DS_III_81</full_name>
+      <url>data/stories/763.dfl</url>
+      <place_recorded id="765">Dalby-Stubdrup</place_recorded>
+      <places_mentioned>
+        <place id="111">
+          <name>Dalby</name>
+        </place>
+        <place id="141">
+          <name>Elnebj&#xE6;rg</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>765</place_id>
+      <name>Dalby-Stubdrup</name>
+      <display_name>Dalby-Stubdrup (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>141</place_id>
+      <name>Elnebj&#xE6;rg</name>
+      <display_name>Elnebj&#xE6;rg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>111</place_id>
+      <name>Dalby</name>
+      <display_name>Dalby (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

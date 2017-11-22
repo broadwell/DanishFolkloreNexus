@@ -1,0 +1,132 @@
+tango_index_id	index_type	index_name
+1	People	Aristocrat / Royal
+2	People	Bailiff
+3	People	Beggar / Poor person
+4	People	Boy
+5	People	Children
+6	People	Cunning Folk
+7	People	Farmer
+8	People	Farmwife
+9	People	Farmhand / Shepherd
+10	People	Foreigner
+11	People	Girl
+12	People	Manor
+13	People	Midwife
+14	People	Minister
+15	People	Musician
+16	People	Parish Clerk
+17	People	Robber / Thief
+18	People	Sailor / Fisherman
+19	People	Soldier
+20	People	Strong Man / Hero
+21	People	Wanderer
+22	People	Witch
+23	People	Woman
+24	People	None / Unspecified
+25	Places	Barn
+26	Places	Bridge
+27	Places	Cemetery
+28	Places	Church
+29	Places	Farm
+30	Places	Field
+31	Places	Forest
+32	Places	Heath
+33	Places	Inn
+34	Places	Manor
+35	Places	Market
+36	Places	Meadow
+37	Places	Mill
+38	Places	Mound
+39	Places	Ocean / Sea
+40	Places	Pond / Lake
+41	Places	Road
+42	Places	Stream / River
+43	Places	Swamp
+44	Places	Town / Village
+45	Places	None / Unspecified
+46	Tools, Items and Conveyances	Bell
+47	Tools, Items and Conveyances	Boat
+48	Tools, Items and Conveyances	Books
+49	Tools, Items and Conveyances	Food
+50	Tools, Items and Conveyances	Metal
+51	Tools, Items and Conveyances	Plow
+52	Tools, Items and Conveyances	Tools
+53	Tools, Items and Conveyances	Treasure
+54	Tools, Items and Conveyances	Wagon
+55	Tools, Items and Conveyances	None / Unspecified
+56	Supernatural Beings	Changeling
+57	Supernatural Beings	Devil
+58	Supernatural Beings	Elf
+59	Supernatural Beings	Ghost / Revenant
+60	Supernatural Beings	Giant
+61	Supernatural Beings	Mare
+62	Supernatural Beings	Merfolk
+63	Supernatural Beings	Mound folk
+64	Supernatural Beings	Nightraven
+65	Supernatural Beings	Nisse
+66	Supernatural Beings	Troll
+67	Supernatural Beings	Werewolf
+68	Supernatural Beings	None / Unspecified
+69	Animals	Cat
+70	Animals	Cow
+71	Animals	Dog
+72	Animals	Farm animal
+73	Animals	Hare
+74	Animals	Horse
+75	Animals	Ox
+76	Animals	Serpent / Snake
+77	Animals	Sheep
+78	Animals	Swine
+79	Animals	None / Unspecified
+80	Actions or events	Church ceremony
+81	Actions or events	Conjuring
+82	Actions or events	Dancing
+83	Actions or events	Death
+84	Actions or events	Disease
+85	Actions or events	Drowning
+86	Actions or events	Feast / Celebration
+87	Actions or events	Gambling
+88	Actions or events	Haunting
+89	Actions or events	Injury
+90	Actions or events	Kidnapping
+91	Actions or events	Midwifery
+92	Actions or events	Murder
+93	Actions or events	Music
+94	Actions or events	Oath
+95	Actions or events	Punishment
+96	Actions or events	Suicide
+97	Actions or events	Theft
+98	Actions or events	Transaction
+99	Actions or events	Witchcraft
+100	Actions or events	Work
+101	Actions or events	None / Unspecified
+102	Time, Season, Weather	Sunday
+103	Time, Season, Weather	Monday
+104	Time, Season, Weather	Tuesday
+105	Time, Season, Weather	Wednesday
+106	Time, Season, Weather	Thursday
+107	Time, Season, Weather	Friday
+108	Time, Season, Weather	Saturday
+109	Time, Season, Weather	Morning
+110	Time, Season, Weather	Noon
+111	Time, Season, Weather	Evening
+112	Time, Season, Weather	Night 
+113	Time, Season, Weather	Midnight
+114	Time, Season, Weather	Spring
+115	Time, Season, Weather	Summer
+116	Time, Season, Weather	Winter
+117	Time, Season, Weather	Fall
+118	Time, Season, Weather	Holiday
+119	Time, Season, Weather	Skt. Hans
+120	Time, Season, Weather	Christmas
+121	Time, Season, Weather	New Years
+122	Time, Season, Weather	Easter
+123	Time, Season, Weather	Snow
+124	Time, Season, Weather	Rain
+125	Time, Season, Weather	Moon
+126	Time, Season, Weather	None / Unspecified
+127	Resolution	Positive
+128	Resolution	Negative
+129	Resolution	Ambiguous
+130	Resolution	None / Unspecified
+131	Stylistics	Direct Conversation

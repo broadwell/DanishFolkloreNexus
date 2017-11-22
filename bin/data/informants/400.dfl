@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="400">
+  <core_informant/>
+  <full_name>L&#xE6;rer Kr. Jensen</full_name>
+  <last_name>Jensen</last_name>
+  <first_name>Kr.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="621" secondary_informant="0">
+      <informant_id>400</informant_id>
+      <publication_info>DS_IV_1161</publication_info>
+      <full_name>400 - 0.00 - DS_IV_1161</full_name>
+      <url>data/stories/621.dfl</url>
+      <place_recorded id="907">Vester Vedsted</place_recorded>
+      <places_mentioned>
+        <place id="1038">
+          <name>Vilslev</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>907</place_id>
+      <name>Vester Vedsted</name>
+      <display_name>Vester Vedsted (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>1038</place_id>
+      <name>Vilslev</name>
+      <display_name>Vilslev (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

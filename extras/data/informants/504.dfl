@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<informant person_id="504">
+  <core_informant/>
+  <full_name>L&#xE6;rer C. C. N&#xF8;rg&#xE5;rd</full_name>
+  <last_name>N&#xF8;rg&#xE5;rd</last_name>
+  <first_name>C. C.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="654" secondary_informant="0">
+      <informant_id>504</informant_id>
+      <publication_info>DS_I_593</publication_info>
+      <full_name>504 - 0.00 - DS_I_593</full_name>
+      <url>data/stories/654.dfl</url>
+      <place_recorded id="872">Snedsted</place_recorded>
+      <places_mentioned>
+        <place id="50">
+          <name>Bedsted</name>
+        </place>
+        <place id="644">
+          <name>Tofth&#xF8;j</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>872</place_id>
+      <name>Snedsted</name>
+      <display_name>Snedsted (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>644</place_id>
+      <name>Tofth&#xF8;j</name>
+      <display_name>Tofth&#xF8;j (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>50</place_id>
+      <name>Bedsted</name>
+      <display_name>Bedsted (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

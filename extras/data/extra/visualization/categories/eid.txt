@@ -1,0 +1,84 @@
+etk_index_id	english_heading	publication_prefix
+1	Mound dwellers (Hidden folk)	DS_I_
+2	Elves	DS_II_A_
+3	Household spirits	DS_II_B_
+4	Traveling monsters	DS_II_C_
+5	Water spirits	DS_II_D_
+6	Wiverns and small creepy-crawlies	DS_II_E_
+7	Werewolves and nightmares	DS_II_F_
+8	Religious legends	DS_II_G_
+9	Death portents	DS_II_H_
+10	Lights and portents	DS_II_I_
+11	Heroes and their sport	DS_III_
+12	Churches and their construction. Monasteries, holy springs, etc.	DS_III_
+13	Legends about farms and towns	DS_III_
+14	Diverse place legends	DS_III_
+15	Legends about treasure	DS_III_
+16	Small kings and their feuds. Kings. Enemy invasions	DS_IV_
+17	Manor lords, ladies and misstresses	DS_IV_
+18	Ministers	DS_IV_
+19	Diverse people	DS_IV_
+20	Robbers, murderers and thieves	DS_IV_
+21	Strandings	DS_IV_
+22	Plague and illnesses	DS_IV_
+23	Revenants and their conjuring	DS_V_
+24	Female revenants	DS_V_
+25	Revenants on ill-gotten land	DS_V_
+26	Revenants in diverse places	DS_V_
+27	About the Devil and being in league with the Devil	DS_VI_
+28	Cunning men and women and their activities	DS_VI_
+29	Witches and their sport	DS_VII_
+30	Human and cattle illnesses	DS_VII_
+31	Concerning earlier agricultural practices	JAH_I_
+32	From the time of villeinage	JAH_II_
+33	Houses and life in them	JAH_III_
+34	Social gatherings and parties	JAH_IV_
+35	Life outdoors	JAH_V_
+36	Our forebears' way of thinking and spiritual life	JAH_VI_
+37	Danish Jocular Tales	DSk_I_
+38	Danish Jocular Ballads	DSkv_
+39	Our forebears' Church services	FK_0_
+40	Folklore from Jutland	JFm_
+41	Danish Children's Rhymes, Counting-out Rhymes, and Games	Lege_0_
+42	Stories of Molbo and Aggerbo (Numbskull tales)	MA_
+43	Curious Examinations (Amusing stories from church and school)	KO_
+44	Unpublished stories	Unpub_
+45	Index of Evald Tang Kristensen's collected Fairy Tales	Æv_0_
+1	Mound dwellers (Hidden folk)	DSnr_I_
+2	Elves	DSnr_II_A_
+3	Household spirits	DSnr_II_B_
+4	Traveling monsters	DSnr_II_C_
+5	Water spirits	DSnr_II_D_
+6	Wiverns and small creepy-crawlies	DSnr_II_E_
+7	Werewolves and nightmares	DSnr_II_F_
+8	Religious legends	DSnr_II_G_
+9	Death portents	DSnr_II_H_
+10	Lights and portents	DSnr_II_I_
+11	Heroes and their sport	DSnr_III_
+12	Churches and their construction. Monasteries, holy springs, etc.	DSnr_III_
+13	Legends about farms and towns	DSnr_III_
+14	Diverse place legends	DSnr_III_
+15	Legends about treasure	DSnr_III_
+16	Small kings and their feuds. Kings. Enemy invasions	DSnr_IV_
+17	Manor lords, ladies and misstresses	DSnr_IV_
+18	Ministers	DSnr_IV_
+19	Diverse people	DSnr_IV_
+20	Robbers, murderers and thieves	DSnr_IV_
+21	Strandings	DSnr_IV_
+22	Plague and illnesses	DSnr_IV_
+23	Revenants and their conjuring	DSnr_V_
+24	Female revenants	DSnr_V_
+25	Revenants on ill-gotten land	DSnr_V_
+26	Revenants in diverse places	DSnr_V_
+27	About the Devil and being in league with the Devil	DSnr_VI_
+28	Cunning men and women and their activities	DSnr_VI_
+29	Witches and their sport	DSnr_VI_
+30	Human and cattle illnesses	DSnr_VI_
+31	Concerning earlier agricultural practices	JAT_I_
+32	From the time of villeinage	JAT_II_
+33	Houses and life in them	JAT_III_
+34	Social gatherings and parties	JAT_IV_
+35	Life outdoors	JAT_V_
+36	Our forebears' way of thinking and spiritual life	JAT_VI_
+46	Nature sounds	Fab_0_
+10	Lights and portents	DS_II_J_

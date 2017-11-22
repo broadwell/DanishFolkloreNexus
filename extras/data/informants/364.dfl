@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<informant person_id="364">
+  <core_informant/>
+  <full_name>Lars Frederiksen</full_name>
+  <last_name>Frederiksen</last_name>
+  <first_name>Lars</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="640" secondary_informant="0">
+      <informant_id>364</informant_id>
+      <publication_info>DS_V_133</publication_info>
+      <full_name>364 - 0.00 - DS_V_133</full_name>
+      <url>data/stories/640.dfl</url>
+      <place_recorded id="758">Bredballe</place_recorded>
+      <places_mentioned>
+        <place id="1044">
+          <name>Dalby mark</name>
+        </place>
+        <place id="1045">
+          <name>Skelenborg</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="660" secondary_informant="0">
+      <informant_id>364</informant_id>
+      <publication_info>DS_II_F_8</publication_info>
+      <full_name>364 - 0.00 - DS_II_F_8</full_name>
+      <url>data/stories/660.dfl</url>
+      <place_recorded id="758">Bredballe</place_recorded>
+      <places_mentioned/>
+    </story>
+    <story story_id="661" secondary_informant="0">
+      <informant_id>364</informant_id>
+      <publication_info>DS_VII_527</publication_info>
+      <full_name>364 - 0.00 - DS_VII_527</full_name>
+      <url>data/stories/661.dfl</url>
+      <place_recorded id="758">Bredballe</place_recorded>
+      <places_mentioned>
+        <place id="260">
+          <name>Hindsholm</name>
+        </place>
+        <place id="292">
+          <name>Hundslev</name>
+        </place>
+        <place id="296">
+          <name>Hverringe</name>
+        </place>
+        <place id="327">
+          <name>Kj&#xE6;rteminde</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>758</place_id>
+      <name>Bredballe</name>
+      <display_name>Bredballe (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>296</place_id>
+      <name>Hverringe</name>
+      <display_name>Hverringe (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>327</place_id>
+      <name>Kj&#xE6;rteminde</name>
+      <display_name>Kj&#xE6;rteminde (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>292</place_id>
+      <name>Hundslev</name>
+      <display_name>Hundslev (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>260</place_id>
+      <name>Hindsholm</name>
+      <display_name>Hindsholm (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>1045</place_id>
+      <name>Skelenborg</name>
+      <display_name>Skelenborg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>1044</place_id>
+      <name>Dalby mark</name>
+      <display_name>Dalby mark (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

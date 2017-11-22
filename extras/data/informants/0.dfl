@@ -1,0 +1,740 @@
+<?xml version="1.0"?>
+<informant person_id="0">
+  <core_informant/>
+  <full_name>Unknown informant</full_name>
+  <last_name>informant</last_name>
+  <first_name>Unknown</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="863" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_I_818</publication_info>
+      <full_name>0 - 0.00 - DS_I_818</full_name>
+      <url>data/stories/863.dfl</url>
+      <places_mentioned>
+        <place id="80">
+          <name>Boslunde</name>
+        </place>
+        <place id="538">
+          <name>Skjelsk&#xF8;r</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="862" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_I_756</publication_info>
+      <full_name>0 - 0.00 - DS_I_756</full_name>
+      <url>data/stories/862.dfl</url>
+      <place_recorded id="953">Kvorning</place_recorded>
+      <places_mentioned>
+        <place id="452">
+          <name>&#xD8;rum</name>
+        </place>
+        <place id="471">
+          <name>Randers</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="865" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_II_C_106</publication_info>
+      <full_name>0 - 0.00 - DS_II_C_106</full_name>
+      <url>data/stories/865.dfl</url>
+      <place_recorded id="697">Vesterb&#xF8;lle</place_recorded>
+      <places_mentioned/>
+    </story>
+    <story story_id="897" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_II_J_306</publication_info>
+      <full_name>0 - 0.00 - DS_II_J_306</full_name>
+      <url>data/stories/897.dfl</url>
+      <place_recorded id="310">Jebj&#xE6;rg</place_recorded>
+      <places_mentioned>
+        <place id="922">
+          <name>T&#xF8;ndering</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="904" secondary_informant="0">
+      <informant_id/>
+      <publication_info>JAH_II_253</publication_info>
+      <full_name>0 - 0.00 - JAH_II_253</full_name>
+      <url>data/stories/904.dfl</url>
+      <place_recorded id="282">Hornum</place_recorded>
+      <places_mentioned>
+        <place id="338">
+          <name>K&#xF8;benhavn</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="868" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_II_G_351</publication_info>
+      <full_name>0 - 0.00 - DS_II_G_351</full_name>
+      <url>data/stories/868.dfl</url>
+      <place_recorded id="709">Vinding</place_recorded>
+      <places_mentioned>
+        <place id="83">
+          <name>Br&#xE6;dstrup</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="878" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_V_1417</publication_info>
+      <full_name>0 - 0.00 - DS_V_1417</full_name>
+      <url>data/stories/878.dfl</url>
+      <place_recorded id="725">Vorde kirke</place_recorded>
+      <places_mentioned>
+        <place id="653">
+          <name>Torsbj&#xE6;rg</name>
+        </place>
+        <place id="725">
+          <name>Vorde kirke</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="884" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_VI_222</publication_info>
+      <full_name>0 - 0.00 - DS_VI_222</full_name>
+      <url>data/stories/884.dfl</url>
+      <place_recorded id="734">Vrinders</place_recorded>
+      <places_mentioned>
+        <place id="481">
+          <name>Regtrup</name>
+        </place>
+        <place id="109">
+          <name>Clausholm</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="886" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_VI_87</publication_info>
+      <full_name>0 - 0.00 - DS_VI_87</full_name>
+      <url>data/stories/886.dfl</url>
+      <place_recorded id="925">Ovsted</place_recorded>
+      <places_mentioned/>
+    </story>
+    <story story_id="892" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_VII_591</publication_info>
+      <full_name>0 - 0.00 - DS_VII_591</full_name>
+      <url>data/stories/892.dfl</url>
+      <place_recorded id="142">Eltang</place_recorded>
+      <places_mentioned>
+        <place id="379">
+          <name>L&#xF8;gst&#xF8;r</name>
+        </place>
+        <place id="472">
+          <name>Randum</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="888" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_VII_268</publication_info>
+      <full_name>0 - 0.00 - DS_VII_268</full_name>
+      <url>data/stories/888.dfl</url>
+      <place_recorded id="634">Testrup h&#xF8;jskole</place_recorded>
+      <places_mentioned>
+        <place id="324">
+          <name>Katrup mark</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="910" secondary_informant="0">
+      <informant_id/>
+      <publication_info>JAT_II_192</publication_info>
+      <full_name>0 - 0.00 - JAT_II_192</full_name>
+      <url>data/stories/910.dfl</url>
+      <place_recorded id="930">K&#xE5;strup</place_recorded>
+      <places_mentioned>
+        <place id="930">
+          <name>K&#xE5;strup</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="891" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_VII_574</publication_info>
+      <full_name>0 - 0.00 - DS_VII_574</full_name>
+      <url>data/stories/891.dfl</url>
+      <place_recorded id="488">R&#xF8;dding</place_recorded>
+      <places_mentioned>
+        <place id="146">
+          <name>Erslev</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="861" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_I_1358</publication_info>
+      <full_name>0 - 0.00 - DS_I_1358</full_name>
+      <url>data/stories/861.dfl</url>
+      <place_recorded id="936">S&#xF8;dinge skole</place_recorded>
+      <places_mentioned>
+        <place id="886">
+          <name>Svendborg</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="864" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_I_87</publication_info>
+      <full_name>0 - 0.00 - DS_I_87</full_name>
+      <url>data/stories/864.dfl</url>
+      <place_recorded id="180">Gadbj&#xE6;rg</place_recorded>
+      <places_mentioned>
+        <place id="935">
+          <name>Tyrskind</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="866" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_II_F_101</publication_info>
+      <full_name>0 - 0.00 - DS_II_F_101</full_name>
+      <url>data/stories/866.dfl</url>
+      <place_recorded id="937">Trebj&#xE6;rg</place_recorded>
+      <places_mentioned/>
+    </story>
+    <story story_id="869" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_III_2252</publication_info>
+      <full_name>0 - 0.00 - DS_III_2252</full_name>
+      <url>data/stories/869.dfl</url>
+      <place_recorded id="923">Skj&#xE6;ve</place_recorded>
+      <places_mentioned>
+        <place id="310">
+          <name>Jebj&#xE6;rg</name>
+        </place>
+        <place id="447">
+          <name>&#xD8;ksenvad</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="870" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_IV_1384</publication_info>
+      <full_name>0 - 0.00 - DS_IV_1384</full_name>
+      <url>data/stories/870.dfl</url>
+      <place_recorded id="720">Vokslev</place_recorded>
+      <places_mentioned/>
+    </story>
+    <story story_id="871" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_IV_1490</publication_info>
+      <full_name>0 - 0.00 - DS_IV_1490</full_name>
+      <url>data/stories/871.dfl</url>
+      <place_recorded id="190">Gjedved</place_recorded>
+      <places_mentioned>
+        <place id="682">
+          <name>Vedslet</name>
+        </place>
+        <place id="938">
+          <name>Hoved kro</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="872" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_IV_151</publication_info>
+      <full_name>0 - 0.00 - DS_IV_151</full_name>
+      <url>data/stories/872.dfl</url>
+      <places_mentioned>
+        <place id="135">
+          <name>Egholm</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="873" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_IV_1686</publication_info>
+      <full_name>0 - 0.00 - DS_IV_1686</full_name>
+      <url>data/stories/873.dfl</url>
+      <place_recorded id="939">Vrenderup</place_recorded>
+      <places_mentioned/>
+    </story>
+    <story story_id="874" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_IV_1728</publication_info>
+      <full_name>0 - 0.00 - DS_IV_1728</full_name>
+      <url>data/stories/874.dfl</url>
+      <place_recorded id="940">Dalby Over</place_recorded>
+      <places_mentioned>
+        <place id="941">
+          <name>Gjerlev</name>
+        </place>
+        <place id="942">
+          <name>Gassum</name>
+        </place>
+        <place id="943">
+          <name>Hvedsten</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="875" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_IV_1778</publication_info>
+      <full_name>0 - 0.00 - DS_IV_1778</full_name>
+      <url>data/stories/875.dfl</url>
+      <place_recorded id="310">Jebj&#xE6;rg</place_recorded>
+      <places_mentioned>
+        <place id="125">
+          <name>Drengsh&#xF8;j</name>
+        </place>
+        <place id="166">
+          <name>Flovtrup</name>
+        </place>
+        <place id="517">
+          <name>Selde</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="877" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_V_1389</publication_info>
+      <full_name>0 - 0.00 - DS_V_1389</full_name>
+      <url>data/stories/877.dfl</url>
+      <place_recorded id="944">Hoven h&#xF8;jskole</place_recorded>
+      <places_mentioned/>
+    </story>
+    <story story_id="879" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_V_421</publication_info>
+      <full_name>0 - 0.00 - DS_V_421</full_name>
+      <url>data/stories/879.dfl</url>
+      <place_recorded id="913">Voldby</place_recorded>
+      <places_mentioned>
+        <place id="203">
+          <name>Grenaa</name>
+        </place>
+        <place id="945">
+          <name>Bavneh&#xF8;j-m&#xF8;lle</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="880" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_V_43</publication_info>
+      <full_name>0 - 0.00 - DS_V_43</full_name>
+      <url>data/stories/880.dfl</url>
+      <place_recorded id="504">Ry</place_recorded>
+      <places_mentioned>
+        <place id="204">
+          <name>Grindslev</name>
+        </place>
+        <place id="479">
+          <name>Ravnsbakke</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="881" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_V_714</publication_info>
+      <full_name>0 - 0.00 - DS_V_714</full_name>
+      <url>data/stories/881.dfl</url>
+      <place_recorded id="821">Lem</place_recorded>
+      <places_mentioned>
+        <place id="290">
+          <name>Hummelg&#xE5;rd</name>
+        </place>
+        <place id="354">
+          <name>Krejbj&#xE6;rg</name>
+        </place>
+        <place id="488">
+          <name>R&#xF8;dding</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="883" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_V_913</publication_info>
+      <full_name>0 - 0.00 - DS_V_913</full_name>
+      <url>data/stories/883.dfl</url>
+      <place_recorded id="458">&#xD8;ster Hornum</place_recorded>
+      <places_mentioned>
+        <place id="4">
+          <name>Aalborg</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="887" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_VII_1418</publication_info>
+      <full_name>0 - 0.00 - DS_VII_1418</full_name>
+      <url>data/stories/887.dfl</url>
+      <place_recorded id="946">Vallensb&#xE6;k</place_recorded>
+      <places_mentioned>
+        <place id="338">
+          <name>K&#xF8;benhavn</name>
+        </place>
+        <place id="96">
+          <name>Br&#xF8;ndbyvester</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="890" secondary_informant="0">
+      <informant_id/>
+      <publication_info>DS_VII_506</publication_info>
+      <full_name>0 - 0.00 - DS_VII_506</full_name>
+      <url>data/stories/890.dfl</url>
+      <place_recorded id="504">Ry</place_recorded>
+      <places_mentioned>
+        <place id="949">
+          <name>Odense</name>
+        </place>
+        <place id="948">
+          <name>&#xC5;sum</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>953</place_id>
+      <name>Kvorning</name>
+      <display_name>Kvorning (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>697</place_id>
+      <name>Vesterb&#xF8;lle</name>
+      <display_name>Vesterb&#xF8;lle (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>310</place_id>
+      <name>Jebj&#xE6;rg</name>
+      <display_name>Jebj&#xE6;rg (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>282</place_id>
+      <name>Hornum</name>
+      <display_name>Hornum (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>709</place_id>
+      <name>Vinding</name>
+      <display_name>Vinding (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>725</place_id>
+      <name>Vorde kirke</name>
+      <display_name>Vorde kirke (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>734</place_id>
+      <name>Vrinders</name>
+      <display_name>Vrinders (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>925</place_id>
+      <name>Ovsted</name>
+      <display_name>Ovsted (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>142</place_id>
+      <name>Eltang</name>
+      <display_name>Eltang (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>634</place_id>
+      <name>Testrup h&#xF8;jskole</name>
+      <display_name>Testrup h&#xF8;jskole (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>930</place_id>
+      <name>K&#xE5;strup</name>
+      <display_name>K&#xE5;strup (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>488</place_id>
+      <name>R&#xF8;dding</name>
+      <display_name>R&#xF8;dding (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>936</place_id>
+      <name>S&#xF8;dinge skole</name>
+      <display_name>S&#xF8;dinge skole (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>180</place_id>
+      <name>Gadbj&#xE6;rg</name>
+      <display_name>Gadbj&#xE6;rg (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>937</place_id>
+      <name>Trebj&#xE6;rg</name>
+      <display_name>Trebj&#xE6;rg (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>923</place_id>
+      <name>Skj&#xE6;ve</name>
+      <display_name>Skj&#xE6;ve (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>720</place_id>
+      <name>Vokslev</name>
+      <display_name>Vokslev (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>190</place_id>
+      <name>Gjedved</name>
+      <display_name>Gjedved (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>939</place_id>
+      <name>Vrenderup</name>
+      <display_name>Vrenderup (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>940</place_id>
+      <name>Dalby Over</name>
+      <display_name>Dalby Over (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>944</place_id>
+      <name>Hoven h&#xF8;jskole</name>
+      <display_name>Hoven h&#xF8;jskole (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>913</place_id>
+      <name>Voldby</name>
+      <display_name>Voldby (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>504</place_id>
+      <name>Ry</name>
+      <display_name>Ry (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>821</place_id>
+      <name>Lem</name>
+      <display_name>Lem (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>458</place_id>
+      <name>&#xD8;ster Hornum</name>
+      <display_name>&#xD8;ster Hornum (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>946</place_id>
+      <name>Vallensb&#xE6;k</name>
+      <display_name>Vallensb&#xE6;k (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>338</place_id>
+      <name>K&#xF8;benhavn</name>
+      <display_name>K&#xF8;benhavn (mentioned in 2 stories)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>125</place_id>
+      <name>Drengsh&#xF8;j</name>
+      <display_name>Drengsh&#xF8;j (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>166</place_id>
+      <name>Flovtrup</name>
+      <display_name>Flovtrup (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>517</place_id>
+      <name>Selde</name>
+      <display_name>Selde (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>203</place_id>
+      <name>Grenaa</name>
+      <display_name>Grenaa (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>943</place_id>
+      <name>Hvedsten</name>
+      <display_name>Hvedsten (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>135</place_id>
+      <name>Egholm</name>
+      <display_name>Egholm (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>941</place_id>
+      <name>Gjerlev</name>
+      <display_name>Gjerlev (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>942</place_id>
+      <name>Gassum</name>
+      <display_name>Gassum (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>945</place_id>
+      <name>Bavneh&#xF8;j-m&#xF8;lle</name>
+      <display_name>Bavneh&#xF8;j-m&#xF8;lle (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>479</place_id>
+      <name>Ravnsbakke</name>
+      <display_name>Ravnsbakke (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>96</place_id>
+      <name>Br&#xF8;ndbyvester</name>
+      <display_name>Br&#xF8;ndbyvester (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>949</place_id>
+      <name>Odense</name>
+      <display_name>Odense (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>948</place_id>
+      <name>&#xC5;sum</name>
+      <display_name>&#xC5;sum (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>4</place_id>
+      <name>Aalborg</name>
+      <display_name>Aalborg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>488</place_id>
+      <name>R&#xF8;dding</name>
+      <display_name>R&#xF8;dding (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>938</place_id>
+      <name>Hoved kro</name>
+      <display_name>Hoved kro (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>290</place_id>
+      <name>Hummelg&#xE5;rd</name>
+      <display_name>Hummelg&#xE5;rd (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>354</place_id>
+      <name>Krejbj&#xE6;rg</name>
+      <display_name>Krejbj&#xE6;rg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>204</place_id>
+      <name>Grindslev</name>
+      <display_name>Grindslev (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>447</place_id>
+      <name>&#xD8;ksenvad</name>
+      <display_name>&#xD8;ksenvad (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>653</place_id>
+      <name>Torsbj&#xE6;rg</name>
+      <display_name>Torsbj&#xE6;rg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>725</place_id>
+      <name>Vorde kirke</name>
+      <display_name>Vorde kirke (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>481</place_id>
+      <name>Regtrup</name>
+      <display_name>Regtrup (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>83</place_id>
+      <name>Br&#xE6;dstrup</name>
+      <display_name>Br&#xE6;dstrup (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>922</place_id>
+      <name>T&#xF8;ndering</name>
+      <display_name>T&#xF8;ndering (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>538</place_id>
+      <name>Skjelsk&#xF8;r</name>
+      <display_name>Skjelsk&#xF8;r (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>452</place_id>
+      <name>&#xD8;rum</name>
+      <display_name>&#xD8;rum (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>471</place_id>
+      <name>Randers</name>
+      <display_name>Randers (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>109</place_id>
+      <name>Clausholm</name>
+      <display_name>Clausholm (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>379</place_id>
+      <name>L&#xF8;gst&#xF8;r</name>
+      <display_name>L&#xF8;gst&#xF8;r (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>935</place_id>
+      <name>Tyrskind</name>
+      <display_name>Tyrskind (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>310</place_id>
+      <name>Jebj&#xE6;rg</name>
+      <display_name>Jebj&#xE6;rg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>80</place_id>
+      <name>Boslunde</name>
+      <display_name>Boslunde (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>886</place_id>
+      <name>Svendborg</name>
+      <display_name>Svendborg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>146</place_id>
+      <name>Erslev</name>
+      <display_name>Erslev (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>472</place_id>
+      <name>Randum</name>
+      <display_name>Randum (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>324</place_id>
+      <name>Katrup mark</name>
+      <display_name>Katrup mark (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>930</place_id>
+      <name>K&#xE5;strup</name>
+      <display_name>K&#xE5;strup (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>682</place_id>
+      <name>Vedslet</name>
+      <display_name>Vedslet (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

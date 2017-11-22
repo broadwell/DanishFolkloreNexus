@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<story story_id="898">
+  <publication_info>DS_II_G_48</publication_info>
+  <full_name>546 - 0.00 - DS_II_G_48</full_name>
+  <informant_id>546</informant_id>
+  <informant_last_name>Toxv&#xE6;rd</informant_last_name>
+  <informant_first_name>Karen</informant_first_name>
+  <informant_full_name>Karen Toxv&#xE6;rd</informant_full_name>
+  <order_told>0.00</order_told>
+  <fieldtrip id="">None recorded</fieldtrip>
+  <places>
+    <place type="place_recorded">
+      <place_id>862</place_id>
+      <name>Sillestrup</name>
+      <display_name>Sillestrup (place recorded)</display_name>
+    </place>
+  </places>
+  <stories_mentioned/>
+  <fielddiary_page_start>N/A</fielddiary_page_start>
+  <fielddiary_page_end>N/A</fielddiary_page_end>
+  <bibliographic_info/>
+  <bibliography_references/>
+  <annotation/>
+  <danish_manuscript/>
+  <english_manuscript/>
+  <danish_publication/>
+  <english_publication/>
+  <keywords/>
+  <etk_index id="8">
+    <heading_danish>Religi&#xF8;se sagn</heading_danish>
+    <heading_english>Religious legends</heading_english>
+  </etk_index>
+  <tango_indices/>
+</story>

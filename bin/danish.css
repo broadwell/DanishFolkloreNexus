@@ -1,0 +1,154 @@
+/* CSS file */
+	.accordionHead	{ 	fillColors: #4c4c4c, #000000;
+					}
+	.accordion		{	cornerRadius: 4;
+						borderColor: #7e7d6c;
+						borderThickness: 1;
+						backgroundColor: #cbe4e9;
+						color: #c1dee4;
+					}
+	.navPanel		{	backgroundAlpha: 0.01;
+						fontFamily: Arial;
+						fontSize: 12;
+						color: #000000;
+						themeColor: #D00C33;
+						alpha: 1.0;
+						borderColor: #a3a3a3;
+					}
+	.canvasTitle	{	fontFamily: Arial;
+						fontSize: 12;
+						backgroundAlpha: 0.01;
+						color: #000000;
+						backgroundColor: #b9b9b9;
+						themeColor: #D00C33;
+						borderColor: #7e7d6c;
+					}
+	.sectionTitle	{	fontFamily: Arial;
+						fontSize: 12;
+						color: #000000;
+						backgroundColor: #f9f9f9;
+					}
+	.tabNavigator	{	fontFamily: Arial;
+						fontSize: 12;
+						alpha: 1.0;
+						backgroundAlpha: 0.01;
+						color: #000000;
+						themeColor: #D00C33;
+						backgroundColor: #FCFCFC;
+						borderStyle: solid;
+						borderColor: #a3a3a3;
+						borderThickness: 1;
+						cornerRadius: 4;
+						}
+	.smallText		{	fontFamily: Arial;
+						fontSize: 12;
+						color: #000000;
+					}
+					
+	.bibText		{	fontFamily: Georgia;
+						fontSize: 13;
+						color: #000000;
+					}
+	.basicText		{	fontFamily: Arial;
+						fontSize: 13;
+						color: #000000;
+					}
+					
+	.linkButton		{	fontFamily: Arial;
+						fontSize: 13;
+						fontWeight: normal;
+						color: #ff0033;
+						labelPlacement: left;
+						cornerRadius: 0;
+						paddingTop: 0;
+						paddingBottom: 0;
+						paddingLeft: 0;
+						paddingRight: 0;
+						verticalGap: 0;
+						horizontalGap: 0;
+					}
+					
+	.menuBar		{	fontFamily: Arial;
+						fontSize: 12;
+						alpha: 1;
+						textAlign: left;
+						cornerRadius: 4;
+						borderColor: #a8a690;
+					}
+	.navButton		{	fontFamily: Arial;
+						fontSize: 12;
+						color: #000000;
+						borderColor: #a8a690;
+						fillColor: #a2a2a2;
+						themeColor: #d00c33;
+						rolloverColor: #700015;
+					}
+	.infoWindowBox	{	verticalGap: 0;
+						horizontalGap: 0;
+						borderColor: #a3a3a3;
+						borderThickness: 1;
+						borderStyle: solid;
+						cornerRadius: 0;
+						paddingBottom: 0;
+						paddingTop: 0;
+						paddingLeft: 0;
+						paddingRight: 0;
+					}
+					
+	.ViewerPanel	{
+            			borderColor: #333333;
+            			headerHeight: 0;    
+            			borderThicknessLeft: 4;
+            			borderThicknessRight: 4;
+            			borderThicknessTop: 4;
+            			borderThicknessBottom: 4;        
+            			color: #999999;
+            			backgroundColor: #000000;
+        			}
+    .InfoExpandButton {       
+    					disabledSkin: Embed(source="icons/skins.swf",symbol="Callout_expandButtonDisabledSkin");
+						downSkin: Embed(source="icons/skins.swf",symbol="Callout_expandButtonDownSkin");
+        				overSkin: Embed(source="icons/skins.swf",symbol="Callout_expandButtonOverSkin");
+            			upSkin: Embed(source="icons/skins.swf",symbol="Callout_expandButtonUpSkin");    
+        }
+    .InfoCloseButton {       
+    					disabledSkin: Embed(source="icons/skins.swf",symbol="Callout_closeButtonDisabledSkin");
+            			downSkin: Embed(source="icons/skins.swf",symbol="Callout_closeButtonDownSkin");
+            			overSkin: Embed(source="icons/skins.swf",symbol="Callout_closeButtonOverSkin");
+            			upSkin: Embed(source="icons/skins.swf",symbol="Callout_closeButtonUpSkin");    
+        }
+	.ZoomInButton	{		
+						disabledSkin: Embed(source="icons/demoIcons.swf",symbol="MinusButton_Disabled");
+						downSkin: Embed(source="icons/demoIcons.swf",symbol="MinusButton_Down");
+						overSkin: Embed(source="icons/demoIcons.swf",symbol="MinusButton_Over");
+						upSkin: Embed(source="icons/demoIcons.swf",symbol="MinusButton_Up");		
+					}	
+	.ZoomOutButton	{		
+						disabledSkin: Embed(source="icons/demoIcons.swf",symbol="PlusButton_Disabled");
+						downSkin: Embed(source="icons/demoIcons.swf",symbol="PlusButton_Down");
+						overSkin: Embed(source="icons/demoIcons.swf",symbol="PlusButton_Over");
+						upSkin: Embed(source="icons/demoIcons.swf",symbol="PlusButton_Up");
+					}
+	.ViewerVBox		{
+            			borderStyle: solid;
+            			horizontalAlign: center; 
+            			cornerRadius: 10; 
+            			backgroundAlpha: 0.5; 
+            			borderThickness: 0;         
+					}
+					
+	.underline		{
+						over-skin: ClassReference("com.hillelcoren.assets.skins.BlankSkin");
+						up-skin: ClassReference("com.hillelcoren.assets.skins.BlankSkin");
+						down-skin: ClassReference("com.hillelcoren.assets.skins.BlankSkin");
+						selected-over-skin : ClassReference("com.hillelcoren.assets.skins.BlankSkin");
+						selected-up-skin : ClassReference("com.hillelcoren.assets.skins.BlankSkin");
+						selected-down-skin : ClassReference("com.hillelcoren.assets.skins.BlankSkin");
+						padding-top: 0;
+						padding-bottom: 0;
+						padding-left: 0;
+						padding-right: 0;
+						font-weight: normal;
+						selected-font-weight: normal;
+						show-comma: yes;
+					}

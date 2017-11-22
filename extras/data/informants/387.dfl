@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<informant person_id="387">
+  <core_informant/>
+  <full_name>J&#xF8;rgen Henriksen</full_name>
+  <last_name>Henriksen</last_name>
+  <first_name>J&#xF8;rgen</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="595" secondary_informant="0">
+      <informant_id>387</informant_id>
+      <publication_info>DS_II_F_18</publication_info>
+      <full_name>387 - 0.00 - DS_II_F_18</full_name>
+      <url>data/stories/595.dfl</url>
+      <place_recorded id="889">Testrup</place_recorded>
+      <places_mentioned/>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>889</place_id>
+      <name>Testrup</name>
+      <display_name>Testrup (stories recorded here)</display_name>
+    </place>
+  </places>
+</informant>

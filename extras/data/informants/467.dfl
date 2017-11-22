@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<informant person_id="467">
+  <core_informant/>
+  <full_name>L&#xE6;rer P. K. Madsen</full_name>
+  <last_name>Madsen</last_name>
+  <first_name>P. K.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="781" secondary_informant="0">
+      <informant_id>467</informant_id>
+      <publication_info>DS_II_B_214</publication_info>
+      <full_name>467 - 0.00 - DS_II_B_214</full_name>
+      <url>data/stories/781.dfl</url>
+      <place_recorded id="878">Staby</place_recorded>
+      <places_mentioned>
+        <place id="969">
+          <name>Vejlby</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="783" secondary_informant="0">
+      <informant_id>467</informant_id>
+      <publication_info>DS_VI_75</publication_info>
+      <full_name>467 - 0.00 - DS_VI_75</full_name>
+      <url>data/stories/783.dfl</url>
+      <place_recorded id="878">Staby</place_recorded>
+      <places_mentioned/>
+    </story>
+    <story story_id="784" secondary_informant="0">
+      <informant_id>467</informant_id>
+      <publication_info>DS_II_D_16</publication_info>
+      <full_name>467 - 0.00 - DS_II_D_16</full_name>
+      <url>data/stories/784.dfl</url>
+      <place_recorded id="878">Staby</place_recorded>
+      <places_mentioned/>
+    </story>
+    <story story_id="896" secondary_informant="0">
+      <informant_id>467</informant_id>
+      <publication_info>DS_II_G_95</publication_info>
+      <full_name>467 - 0.00 - DS_II_G_95</full_name>
+      <url>data/stories/896.dfl</url>
+      <place_recorded id="924">Gr&#xE5;kj&#xE6;r</place_recorded>
+      <places_mentioned>
+        <place id="259">
+          <name>Himmerland</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>878</place_id>
+      <name>Staby</name>
+      <display_name>Staby (stories recorded here)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>924</place_id>
+      <name>Gr&#xE5;kj&#xE6;r</name>
+      <display_name>Gr&#xE5;kj&#xE6;r (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>259</place_id>
+      <name>Himmerland</name>
+      <display_name>Himmerland (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>969</place_id>
+      <name>Vejlby</name>
+      <display_name>Vejlby (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

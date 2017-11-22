@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<informant person_id="476">
+  <core_informant/>
+  <full_name>Fr&#xF8;ken Anna Moltke</full_name>
+  <last_name>Moltke</last_name>
+  <first_name>Anna</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="446" secondary_informant="0">
+      <informant_id>476</informant_id>
+      <publication_info>DS_V_864</publication_info>
+      <full_name>476 - 0.00 - DS_V_864</full_name>
+      <url>data/stories/446.dfl</url>
+      <place_recorded id="848">Palsg&#xE5;rd</place_recorded>
+      <places_mentioned/>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>848</place_id>
+      <name>Palsg&#xE5;rd</name>
+      <display_name>Palsg&#xE5;rd (stories recorded here)</display_name>
+    </place>
+  </places>
+</informant>

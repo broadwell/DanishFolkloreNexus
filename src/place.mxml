@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:custom="components.*"
+	themeColor="#D00C33"
+	creationComplete="initializeData()"
+	currentState="placeState">
+
+<mx:Style source="danish.css"/>
+
+<!-- application states or views -->
+
+	<mx:states>
+<!-- initial state or starting point of the application for reference only -->
+		<mx:State name="placeState">
+			<mx:SetEventHandler target="{menuAccordion}" name="change" handler="{mapUpdate()}"/>
+		</mx:State>
+	</mx:states>
+
+<!-- AS3 code -->
+
+<mx:Script>
+<![CDATA[
+	import mx.core.Application;
+	import com.esri.ags.Graphic;
+	// DEBUGGING
+	import mx.controls.Alert;
+	
+	// FIELDTRIP STUFF
+	import mx.controls.listClasses.IListItemRenderer;
+	import mx.core.IInvalidating;
+	
+	// MENU STUFF
+	import mx.events.ListEvent;
+	import flash.net.navigateToURL;
+	import mx.rpc.events.FaultEvent;
+
+    private var markerColors:Object = Application.application.markerColors;
+	
+    public var fieldtripSelected:Array = new Array();
+    public var fieldtripDisplayed:Array = new Array();
+    private var fieldtripPoints:Array = new Array();
+    
+    [Bindable] private var fieldtripsProvider:XMLList;
+	public var placeID:String;
+	[Bindable] private var placeName:String;
+	[Bindable] private var informantsProvider:XMLList;
+	[Bindable] private var storiesCollectedProvider:XMLList;
+	[Bindable] private var storiesMentioningProvider:XMLList;
+    private var informantsMarkers:Object = new Object();
+    private var storiesMarkers:Object = new Object();
+    private var storiesMentioningMarkers:Object = new Object();
+	private var accordionLastSelected:int = 1;
+    [Bindable] private var listItemToolTip:String = "Double click to open a new window about this item.";
+
+    private function initializeData():void {
+
+		if (Application.application.placesData.lastResult.hasOwnProperty("place")) {
+			placesData = Application.application.placesData;
+			placesDataHandler();
+		} else {
+			placesData.send();
+		}
+    }
+    
+    private function placesDataHandler():void {
+    	
+    	placeName = placesData.lastResult.place.(@place_id==placeID).name;
+
+		informantsProvider = placesData.lastResult.place.(@place_id==placeID).people.person;
+		
+		if ((Application.application.fieldtripsData.lastResult != null) &&
+			Application.application.fieldtripsData.lastResult.hasOwnProperty("fieldtrip")) {
+			fieldtripsData = Application.application.fieldtripsData;
+			fieldtripsDataHandler();
+		} else {
+			fieldtripsData.send();
+		}		
+
+		if ((Application.application.placesMentionedData.lastResult != null) &&
+			Application.application.placesMentionedData.lastResult.hasOwnProperty("place")) {
+			placesMentionedData = Application.application.placesMentionedData;
+			placesMentionedDataHandler();
+		} else {
+			placesMentionedData.send();
+		}
+				
+		if ((Application.application.storiesCollectedData.lastResult != null) &&
+			Application.application.storiesCollectedData.lastResult.hasOwnProperty("place")) {
+			storiesCollectedData = Application.application.storiesCollectedData;
+			storiesCollectedDataHandler();
+		} else {
+			storiesCollectedData.send();
+		}		
+
+    }
+    
+    private function placesMentionedDataHandler():void {
+    	storiesMentioningProvider = placesMentionedData.lastResult.place.(@place_id==placeID).stories.story;
+    	
+    	addStoriesMentioningMarkers();
+    }
+    
+    private function storiesCollectedDataHandler():void {
+    	storiesCollectedProvider = storiesCollectedData.lastResult.place.(@place_id==placeID).stories.story;
+    }
+    
+	private function fieldtripsDataHandler():void {
+
+		var associatedFieldtripIDs:Array = new Array();
+		
+		for (var p:int=0;p<placesData.lastResult.place.(@place_id==placeID).fieldtrips.fieldtrip_id.length();p++) {
+			associatedFieldtripIDs.push(placesData.lastResult.place.(@place_id==placeID).fieldtrips.fieldtrip_id[p].toString());
+		}
+		
+		var pv:XML = <fieldtrips></fieldtrips>;
+		
+		/* NOTE that this assumes the associated fieldtrip list doesn't contain IDs not in the global fieldtrips.xml file */
+		for (var j:int=0;j<associatedFieldtripIDs.length;j++) {
+			pv.appendChild(fieldtripsData.lastResult.fieldtrip.(@fieldtrip_id==associatedFieldtripIDs[j]).copy());
+		}
+		
+		
+		/*for (var j:int=0;j<fieldtripsData.lastResult.fieldtrip.length();j++) {
+			var thisID:String = fieldtripsData.lastResult.fieldtrip[j].@fieldtrip_id;
+
+			if (associatedFieldtripIDs.indexOf(thisID) > -1) {
+				pv.appendChild(fieldtripsData.lastResult.fieldtrip[j]);
+				//Alert.show("added fieldtrip ID " + fieldtripsData.lastResult.fieldtrip[j].@fieldtrip_id);
+			}
+		}*/
+			
+		/*
+			for (var k:int=0;k<fieldtripsData.lastResult.fieldtrip[j].places_visited.place.length();k++) {
+				if (fieldtripsData.lastResult.fieldtrip[j].places_visited.place[k].@place_id == placeID) {
+					pv.appendChild(fieldtripsData.lastResult.fieldtrip[j]);	
+					break;
+				}
+			}
+		}
+		*/
+		
+		if (pv.fieldtrip.length() > 1)
+			pv.appendChild(fieldtripsData.lastResult.fieldtrip.(@fieldtrip_id=="-1").copy());
+
+		fieldtripsProvider = pv.fieldtrip;
+		
+		for (var i:int=0;i<fieldtripsProvider.length();i++) {
+			fieldtripSelected[fieldtripsProvider[i].@fieldtrip_id] = false;
+			fieldtripDisplayed[fieldtripsProvider[i].@fieldtrip_id] = false;
+		}
+	}
+    
+    private function informantClickHandler(event:ListEvent):void {
+
+		var informantID:String = event.currentTarget.selectedItem.@person_id;
+		
+		if (event.currentTarget.selectedItem.residence_place.hasOwnProperty("name")) {
+			var lon:Number = placesData.lastResult.place.(@place_id==event.currentTarget.selectedItem.residence_place.@place_id).longitude;
+			var lat:Number = placesData.lastResult.place.(@place_id==event.currentTarget.selectedItem.residence_place.@place_id).latitude;
+		
+			if (event.currentTarget.selectedItem.core_informant != "1") {
+        		var toolTip:String = event.currentTarget.selectedItem.full_name + " (" + event.currentTarget.selectedItem.residence_place.name + ")";
+				danishmap.toggleTextAtCoords(lon, lat, toolTip, markerColors["informant"]);
+			} else {
+				danishmap.recenterMapAtCoords(lon, lat);
+			}
+		}
+    }
+    
+    private function informantDoubleClickHandler(event:ListEvent):void {
+    	Application.application.loadNewTab("Informant", informantsList.selectedItem.@person_id);
+    }
+    
+    private function storyMentioningClickHandler(event:ListEvent):void {
+ 		if (event.currentTarget.selectedItem.hasOwnProperty("place_recorded")) {   	
+			var lon:Number = placesData.lastResult.place.(@place_id==event.currentTarget.selectedItem.place_recorded.@id).longitude;
+			var lat:Number = placesData.lastResult.place.(@place_id==event.currentTarget.selectedItem.place_recorded.@id).latitude;
+    	
+ 	   		var tt:String = event.currentTarget.selectedItem.publication_info + " recorded at " + event.currentTarget.selectedItem.place_recorded;
+    	
+    		danishmap.toggleTextAtCoords(lon, lat, tt, markerColors["story"]);
+    	}
+    	
+    }
+
+	private function storyClickHandler(event:ListEvent):void {
+	
+		var lon:Number = placesData.lastResult.place.(@place_id==placeID).longitude;
+		var lat:Number = placesData.lastResult.place.(@place_id==placeID).latitude;
+		
+		var tt:String = event.currentTarget.selectedItem.publication_info + " recorded at " + placeName; 
+		
+		danishmap.toggleTextAtCoords(lon, lat, tt, markerColors["story"]);
+	}
+
+	private function storyDoubleClickHandler(event:ListEvent):void {
+    	Application.application.loadNewTab("Story", event.currentTarget.selectedItem.@story_id);
+   	}
+   	
+   	//-------------------------------------------------------------------------------------------------------//
+   	//-------------------------------------------------------------------------------------------------------//
+   	//---------------------------------FIELDTRIP STUFF-------------------------------------------------------//
+
+   	private function drawFieldtrip(fieldtripID:String):void {
+   		
+   		var newFieldtripPoints:Array = new Array();
+									
+		var fieldtripData:XMLList = fieldtripsProvider.(@fieldtrip_id == fieldtripID);
+									
+		for (var p:int=0;p<fieldtripData.places_visited.place.length();p++) {
+ 
+ 	    	var fullName:String = fieldtripData.places_visited.place[p].full_name;
+ 	    	var lon:Number = placesData.lastResult.place.(@place_id==fieldtripData.places_visited.place[p].@place_id).longitude;
+ 	    	var lat:Number = placesData.lastResult.place.(@place_id==fieldtripData.places_visited.place[p].@place_id).latitude;
+ 	    	/*
+ 	      	var lon:Number = fieldtripData.places_visited.place[p].longitude;
+  			var lat:Number = fieldtripData.places_visited.place[p].latitude;
+  			*/
+  			
+  			var g:Graphic = danishmap.drawSimpleMarkerAtCoords(lon, lat, markerColors["fieldtrip"], fullName, fieldtripData.places_visited.place[p].@place_id);
+  			/*var g:Graphic = danishmap.drawPictureMarkerAtCoords(lon, lat, "images/fieldtripIconDS.png",
+  																fieldtripsProvider.(fieldtrip_id == fieldtripID).places_visited.place[p].full_name);
+  			*/
+            				
+       		newFieldtripPoints[p] = g;
+        }
+        /*danishmap.toggleTextAtCoords(fieldtripsProvider.(fieldtrip_id == fieldtripID).places_visited.place[0].longitude,
+									 fieldtripsProvider.(fieldtrip_id == fieldtripID).places_visited.place[0].latitude,
+									 fieldtripsProvider.(fieldtrip_id == fieldtripID).places_visited.place[0].full_name,
+									 "on");*/
+									 
+//		fieldtripPath[fieldtripID] = danishmap.drawPolylineFromMarkers(newFieldtripPoints);
+   			
+       	fieldtripPoints[fieldtripID] = newFieldtripPoints;
+       	
+		danishmap.showFieldtripPath(fieldtripID, fieldtripData.fieldtrip_name);
+   		
+   		//return newFieldtripPoints;
+   	}
+   	
+   	private function deleteFieldtrip(fieldtripID:String):void {
+   		
+		/*danishmap.toggleTextAtCoords(fieldtripsProvider.(@fieldtrip_id == fieldtripID).places_visited.place[0].longitude,
+								 	fieldtripsProvider.(@fieldtrip_id == fieldtripID).places_visited.place[0].latitude,
+								 	fieldtripsProvider.(@fieldtrip_id == fieldtripID).places_visited.place[0].full_name,
+									"off");*/
+		
+		danishmap.removeMarkersArray(fieldtripPoints[fieldtripID]);
+
+		//var deletedFieldtripPoints:Array = fieldtripPoints[fieldtripID];
+
+		fieldtripPoints[fieldtripID] = [];
+		
+		danishmap.hideFieldtripPath(fieldtripID);
+		
+		//return deletedFieldtripPoints;
+   	}
+
+	private function fieldtripClickHandler(ev:ListEvent):void {
+
+		var fieldtripID:String = ev.currentTarget.selectedItem.@fieldtrip_id;
+		var allSelectedFieldtripPoints:Array;
+
+		if (!fieldtripSelected[fieldtripID]) {
+			
+			// Handle the all case (the fieldtrip_id for All is -1)
+			if (fieldtripID == "-1") {
+				fieldtripSelected["-1"] = true;
+
+				for each (var thisFieldtrip:XML in fieldtripsProvider) {
+					fieldtripSelected[thisFieldtrip.@fieldtrip_id] = true;
+				}
+				
+			} else {
+				fieldtripSelected[fieldtripID] = true;	
+   			}
+
+		} else {
+
+			if (fieldtripID == "-1") {
+				fieldtripSelected["-1"] = false;
+				
+				for each (var consideredFieldtrip:XML in fieldtripsProvider) {
+					fieldtripSelected[consideredFieldtrip.@fieldtrip_id] = false;					
+				}
+
+			} else {				
+				fieldtripSelected[fieldtripID] = false;
+			}
+			
+		}
+		
+		allSelectedFieldtripPoints = updateFieldtrips();
+		
+		if (allSelectedFieldtripPoints.length > 0) {
+			danishmap.expandToMarkersArray(allSelectedFieldtripPoints);
+		} else {
+			if (accordionLastSelected == 0) {
+				danishmap.zoomInOnMarkers(informantsMarkers, 1.9);
+			} else if (accordionLastSelected == 1) {
+				danishmap.zoomInOnMarkers(storiesMentioningMarkers, 1.9);
+			} else if (accordionLastSelected == 2) {
+				danishmap.zoomInOnMarkers(storiesMarkers);
+			}
+		}
+		/* Mark as selected all fieldtrips in the horizontal list below the map */
+		for (var c:int=0;c<fieldtripsProvider.length();c++) {
+			var ir:IListItemRenderer = fieldtripsList.itemToItemRenderer(fieldtripsProvider[c]);
+			// We don't get a handle for the ItemRenderer if it's scrolled off the screen (this is OK)
+			if (ir != null)
+				IInvalidating(ir).invalidateDisplayList();
+		}	
+   	}
+
+  	private function updateFieldtrips():Array {
+
+		var allFieldtripPoints:Array = new Array();
+ 
+ 		for each (var thisFieldtrip:XML in fieldtripsProvider) {
+ 			if (thisFieldtrip.@fieldtrip_id == -1)
+ 				continue;
+ 			if (fieldtripSelected[thisFieldtrip.@fieldtrip_id] && !fieldtripDisplayed[thisFieldtrip.@fieldtrip_id]) {
+
+ 				drawFieldtrip(thisFieldtrip.@fieldtrip_id);
+				fieldtripDisplayed[thisFieldtrip.@fieldtrip_id] = true;
+ 			} else if (!fieldtripSelected[thisFieldtrip.@fieldtrip_id] && fieldtripDisplayed[thisFieldtrip.@fieldtrip_id]) {
+
+				deleteFieldtrip(thisFieldtrip.@fieldtrip_id);
+				fieldtripDisplayed[thisFieldtrip.@fieldtrip_id] = false; 				
+ 			}
+ 			
+ 			if (fieldtripDisplayed[thisFieldtrip.@fieldtrip_id])
+ 				allFieldtripPoints = allFieldtripPoints.concat(fieldtripPoints[thisFieldtrip.@fieldtrip_id]);
+ 			
+ 		}
+ 		
+   		return allFieldtripPoints;
+   		
+   	}  	
+
+   	private function fieldtripDoubleClickHandler(event:ListEvent):void {
+   		var fieldtripID:String = event.currentTarget.selectedItem.@fieldtrip_id;
+   
+   		if (fieldtripID != "-1") {
+    		Application.application.loadNewTab("Fieldtrip", fieldtripID);
+   		}
+   	}   	
+
+   	//-------------------------------------------------------------------------------------------------------//
+   	//-------------------------------------------------------------------------------------------------------//
+	//--------------------------------------------code for map-----------------------------------------------//
+   	//-------------------------------------------------------------------------------------------------------//
+   	
+   	private function addInformantsMarkers():void {
+   		
+   		var placesTheSame:Boolean = true;
+
+		resetMapMarkers();
+		
+		/* Just go ahead and draw the home place on the map, even if we don't have an easy way of erasing it. */
+		
+		var p:Graphic = danishmap.drawSimpleMarkerAtCoords(placesData.lastResult.place.(@place_id==placeID).longitude,
+														   placesData.lastResult.place.(@place_id==placeID).latitude,
+														   markerColors["place"], placeName);
+		storiesMarkers[placeID] = p;
+		
+		danishmap.toggleTextAtCoords(placesData.lastResult.place.(@place_id==placeID).longitude,
+									 placesData.lastResult.place.(@place_id==placeID).latitude,
+									 placeName, markerColors["place"], "on");
+						
+        for (var i:int=0;i<informantsProvider.length();i++) {
+			var toolTip:String = "Relationship: " + informantsProvider[i].relationship;
+			var g:Graphic;
+
+        	/*var g:Graphic = danishmap.drawPictureMarkerAtCoords(informantsProvider[i].first_visit_place.longitude,
+        														informantsProvider[i].first_visit_place.latitude,
+        														"images/smInformantIcon.gif", toolTip); */
+        	
+        	if (informantsProvider[i].hasOwnProperty("image")) {
+				g = danishmap.drawPopupMarkerAtCoords(placesData.lastResult.place.(@place_id==informantsProvider[i].residence_place.@place_id).longitude,
+												  	  placesData.lastResult.place.(@place_id==informantsProvider[i].residence_place.@place_id).latitude,
+												  	  informantsProvider[i].image,
+												  	  informantsProvider[i].full_name,
+												      toolTip, informantsProvider[i].@person_id);
+		
+				informantsMarkers[informantsProvider[i].@person_id] = g;
+				
+        	} else {        		
+        		g = danishmap.drawSimpleMarkerAtCoords(placesData.lastResult.place.(@place_id==informantsProvider[i].residence_place.@place_id).longitude,
+        											   placesData.lastResult.place.(@place_id==informantsProvider[i].residence_place.@place_id).latitude,
+        											   markerColors["informant"], toolTip, informantsProvider[i].@person_id,
+        											   "informant");
+				informantsMarkers[informantsProvider[i].@person_id] = g;
+        	}
+        	placesTheSame = (placesTheSame &&
+							(informantsProvider[i].residence_place.longitude == placesData.lastResult.place.(@place_id==placeID).longitude) &&
+							(informantsProvider[i].residence_place.latitude == placesData.lastResult.place.(@place_id==placeID).latitude));
+			
+        }
+        
+        if (placesTheSame)
+			danishmap.recenterMapAtCoords(placesData.lastResult.place.(@place_id==placeID).longitude, placesData.lastResult.place.(@place_id==placeID).latitude);
+   		else
+			danishmap.zoomInOnMarkers(informantsMarkers, 1.9);        
+
+   	}
+   	
+   	private function addStoriesMarkers():void {
+
+		resetMapMarkers();
+        
+		//var storiesCollectedHere:String = "";
+		var toolTip:String = placeName;
+        var numberOfStories:Number = storiesCollectedProvider.length();
+        
+        /*for (var p:int=0;p<storiesCollectedProvider.length();p++) {
+        	storiesCollectedHere = storiesCollectedHere + "\n" + storiesCollectedProvider[p].full_name;
+        }*/
+        
+		if (numberOfStories) {
+			if (numberOfStories == 1)
+				toolTip = toolTip + ": " + numberOfStories + " story collected here";
+			else
+				toolTip = toolTip + ": " + numberOfStories + " stories collected here";
+		}
+		
+		var g:Graphic = danishmap.drawSimpleMarkerAtCoords(placesData.lastResult.place.(@place_id==placeID).longitude,
+														   placesData.lastResult.place.(@place_id==placeID).latitude,
+														   markerColors["story"], toolTip);
+														   
+		storiesMarkers[placeID] = g;
+		
+		danishmap.toggleTextAtCoords(placesData.lastResult.place.(@place_id==placeID).longitude,
+									 placesData.lastResult.place.(@place_id==placeID).latitude,
+									 placeName, markerColors["story"], "on");
+
+		danishmap.zoomInOnMarkers(storiesMarkers);
+
+   	}
+   	
+   	private function addStoriesMentioningMarkers():void {
+
+		resetMapMarkers();
+   		
+		var p:Graphic = danishmap.drawSimpleMarkerAtCoords(placesData.lastResult.place.(@place_id==placeID).longitude,
+														   placesData.lastResult.place.(@place_id==placeID).latitude,
+														   markerColors["place"], placeName);
+														   
+		storiesMarkers[placeID] = p;
+		
+		danishmap.toggleTextAtCoords(placesData.lastResult.place.(@place_id == placeID).longitude,
+									 placesData.lastResult.place.(@place_id == placeID).latitude,
+									 placeName, markerColors["place"], "on");
+		
+		for (var m:int=0;m<storiesMentioningProvider.length();m++) {
+		
+			if (!storiesMentioningProvider[m].hasOwnProperty("place_recorded"))
+				continue;
+					
+			var placeRecordedID:String = storiesMentioningProvider[m].place_recorded.@id;
+	
+			/* Avoid duplicate points */
+			if (!storiesMentioningMarkers.hasOwnProperty(placeRecordedID)) {
+				var lon:Number = placesData.lastResult.place.(@place_id==placeRecordedID).longitude;
+				var lat:Number = placesData.lastResult.place.(@place_id==placeRecordedID).latitude;
+			
+				var toolTip:String = storiesMentioningProvider[m].place_recorded;
+						
+				var g:Graphic = danishmap.drawSimpleMarkerAtCoords(lon, lat, markerColors["story"], toolTip, placeRecordedID);
+			
+				storiesMentioningMarkers[placeRecordedID] = g;
+			}
+		}
+		
+		danishmap.zoomInOnMarkers(storiesMentioningMarkers, 1.9);
+
+   	}
+   	
+	private function resetMapMarkers():void {
+		danishmap.removeMarkers(storiesMentioningMarkers);
+   		storiesMentioningMarkers = {};
+   		danishmap.removeMarkers(informantsMarkers);
+   		informantsMarkers = {};
+   		danishmap.removeMarkers(storiesMarkers);
+   		storiesMarkers = {};
+	}
+   	
+	private function mapUpdate():void {
+		danishmap.clearAllTextMarkers();
+		var sI:int = menuAccordion.selectedIndex;
+		if (sI==0) {
+			addInformantsMarkers();
+		} else if (sI==1) {
+			addStoriesMentioningMarkers();
+		} else if (sI==2) {
+			addStoriesMarkers();
+		}
+		accordionLastSelected = sI;
+	}
+
+	//-------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------//
+	]]>
+
+</mx:Script>
+
+<!-- requests for initial values to populate the lists -->
+<custom:ZIPService id="placesData" resultFormat="e4x" url="data/places.dfl" result="placesDataHandler()"/>
+<custom:ZIPService id="storiesCollectedData" resultFormat="e4x" url="data/stories_collected.dfl" result="storiesCollectedDataHandler()"/>
+<custom:ZIPService id="placesMentionedData" resultFormat="e4x" url="data/places_mentioned.dfl" result="placesMentionedDataHandler()"/>
+
+<custom:ZIPService id="fieldtripsData" resultFormat="e4x" url="data/fieldtrips.dfl" result="fieldtripsDataHandler()"/>
+
+<!-- layout -->
+<mx:Panel height="100%" width="100%" cornerRadius="6" borderStyle="solid" borderThickness="1" id="mainPanel" backgroundColor="#f9f9f9" backgroundAlpha="0.42" title="PLACE DETAILS for {placeName}" styleName="sectionTitle" paddingTop="0">
+    <mx:HBox width="100%" id="hbox2" height="100%">
+        <custom:danishmap id="danishmap" width="60%" height="100%">
+	    </custom:danishmap>
+	    <mx:Spacer width="2"/>
+	    <mx:Panel width="40%" height="100%" layout="absolute" title="{placeName}" shadowDistance="0" id="menuPanel" styleName="navPanel">
+		    <mx:Accordion x="0" y="0" width="100%" height="100%" id="menuAccordion" selectedIndex="1" styleName="accordion" headerStyleName="accordionHead">
+		    	<mx:Canvas label="PEOPLE ASSOCIATED with {placeName}" width="100%" height="100%" id="informantsCanvas" styleName="canvasTitle">
+					<mx:List x="0" y="0" width="100%" id="informantsList" height="100%" dataProvider="{informantsProvider}" labelField="full_name" enabled="true" styleName="basicText" itemClick="{informantClickHandler(event)}" doubleClickEnabled="true" itemDoubleClick="{informantDoubleClickHandler(event)}" toolTip="{listItemToolTip}"/>
+			    </mx:Canvas>
+			    <mx:Canvas label="STORIES THAT MENTION {placeName}" width="100%" height="100%" id="placesCanvas" styleName="canvasTitle">
+				    <mx:List x="0" y="0" width="100%" id="placesList" height="100%" dataProvider="{storiesMentioningProvider}" labelField="full_name" enabled="true" styleName="basicText" itemClick="{storyMentioningClickHandler(event)}" doubleClickEnabled="true" itemDoubleClick="{storyDoubleClickHandler(event)}" toolTip="{listItemToolTip}"/>
+			    </mx:Canvas>
+			    <mx:Canvas label="STORIES COLLECTED in {placeName}" width="100%" height="100%" id="storiesCanvas" styleName="canvasTitle">
+				    <mx:List x="0" y="0" width="100%" id="storiesList" height="100%" dataProvider="{storiesCollectedProvider}" labelField="full_name" enabled="true" styleName="basicText" itemClick="{storyClickHandler(event)}" doubleClickEnabled="true" itemDoubleClick="{storyDoubleClickHandler(event)}" toolTip="{listItemToolTip}"/>
+			    </mx:Canvas>
+		    </mx:Accordion>
+	    </mx:Panel>
+	</mx:HBox>
+    <mx:TabNavigator width="100%" height="75" styleName="canvasTitle" selectedIndex="0" paddingTop="0" paddingBottom="0">
+		<mx:HBox verticalAlign="middle" width="100%" height="100%" borderThickness="0" top="0" bottom="0" label="FIELDTRIPS">
+			<mx:HorizontalList wordWrap="true" rowCount="1" horizontalScrollPolicy="auto" verticalScrollPolicy="off" paddingLeft="5" paddingRight="5" selectionColor="#ffffff" id="fieldtripsList" height="100%" width="100%" dataProvider="{fieldtripsProvider}" itemRenderer="fieldtripButton" cornerRadius="4" itemClick="{fieldtripClickHandler(event)}" doubleClickEnabled="true" itemDoubleClick="{fieldtripDoubleClickHandler(event)}" toolTip="{listItemToolTip}" />    	
+		</mx:HBox>
+   </mx:TabNavigator>
+<!--
+	<mx:Spacer height="1%" width="100%"/>
+	<mx:Panel verticalScrollPolicy="off" title="FIELDTRIPS" id="fieldtripMenuPanel" height="85" width="100%" borderStyle="solid" backgroundColor="#b9b9b9" styleName="sectionTitle">
+		<mx:HorizontalList wordWrap="true" rowCount="1" horizontalScrollPolicy="auto" paddingLeft="5" paddingRight="5" rollOverColor="#d2d2d2" selectionColor="#ffffff" id="fieldtripsList" height="45" width="100%" dataProvider="{fieldtripsProvider}" itemRenderer="fieldtripButton" cornerRadius="4" itemClick="{fieldtripClickHandler(event)}" doubleClickEnabled="true" itemDoubleClick="{fieldtripDoubleClickHandler(event)}" toolTip="{listItemToolTip}" />
+	</mx:Panel>
+-->
+</mx:Panel>
+
+</mx:Canvas>

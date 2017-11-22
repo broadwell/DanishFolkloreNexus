@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="416">
+  <core_informant/>
+  <full_name>Niels Jonsen</full_name>
+  <last_name>Jonsen</last_name>
+  <first_name>Niels</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="743" secondary_informant="0">
+      <informant_id>416</informant_id>
+      <publication_info>DS_III_2228</publication_info>
+      <full_name>416 - 0.00 - DS_III_2228</full_name>
+      <url>data/stories/743.dfl</url>
+      <place_recorded id="749">B&#xE6;kke</place_recorded>
+      <places_mentioned>
+        <place id="749">
+          <name>B&#xE6;kke</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>749</place_id>
+      <name>B&#xE6;kke</name>
+      <display_name>B&#xE6;kke (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>749</place_id>
+      <name>B&#xE6;kke</name>
+      <display_name>B&#xE6;kke (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

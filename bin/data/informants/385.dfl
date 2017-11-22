@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<informant person_id="385">
+  <core_informant/>
+  <full_name>Farversvend C. C. Haug&#xE5;rd</full_name>
+  <last_name>Haug&#xE5;rd</last_name>
+  <first_name>C. C.</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="474" secondary_informant="0">
+      <informant_id>385</informant_id>
+      <publication_info>DS_IV_1343</publication_info>
+      <full_name>385 - 0.00 - DS_IV_1343</full_name>
+      <url>data/stories/474.dfl</url>
+      <place_recorded id="11">&#xC5;benr&#xE5;</place_recorded>
+      <places_mentioned>
+        <place id="1003">
+          <name>Rishjarup</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="475" secondary_informant="0">
+      <informant_id>385</informant_id>
+      <publication_info>DS_IV_1376</publication_info>
+      <full_name>385 - 0.00 - DS_IV_1376</full_name>
+      <url>data/stories/475.dfl</url>
+      <place_recorded id="11">&#xC5;benr&#xE5;</place_recorded>
+      <places_mentioned>
+        <place id="11">
+          <name>&#xC5;benr&#xE5;</name>
+        </place>
+        <place id="150">
+          <name>F&#xE5;rehus</name>
+        </place>
+        <place id="160">
+          <name>Flensborg</name>
+        </place>
+        <place id="460">
+          <name>&#xD8;ster L&#xF8;gum</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="476" secondary_informant="0">
+      <informant_id>385</informant_id>
+      <publication_info>DS_IV_1711</publication_info>
+      <full_name>385 - 0.00 - DS_IV_1711</full_name>
+      <url>data/stories/476.dfl</url>
+      <place_recorded id="11">&#xC5;benr&#xE5;</place_recorded>
+      <places_mentioned>
+        <place id="460">
+          <name>&#xD8;ster L&#xF8;gum</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="481" secondary_informant="0">
+      <informant_id>385</informant_id>
+      <publication_info>DS_IV_1307</publication_info>
+      <full_name>385 - 0.00 - DS_IV_1307</full_name>
+      <url>data/stories/481.dfl</url>
+      <place_recorded id="11">&#xC5;benr&#xE5;</place_recorded>
+      <places_mentioned>
+        <place id="1004">
+          <name>N&#xF8;rre Hjarup</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>11</place_id>
+      <name>&#xC5;benr&#xE5;</name>
+      <display_name>&#xC5;benr&#xE5; (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>460</place_id>
+      <name>&#xD8;ster L&#xF8;gum</name>
+      <display_name>&#xD8;ster L&#xF8;gum (mentioned in 2 stories)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>1004</place_id>
+      <name>N&#xF8;rre Hjarup</name>
+      <display_name>N&#xF8;rre Hjarup (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>160</place_id>
+      <name>Flensborg</name>
+      <display_name>Flensborg (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>150</place_id>
+      <name>F&#xE5;rehus</name>
+      <display_name>F&#xE5;rehus (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>11</place_id>
+      <name>&#xC5;benr&#xE5;</name>
+      <display_name>&#xC5;benr&#xE5; (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>1003</place_id>
+      <name>Rishjarup</name>
+      <display_name>Rishjarup (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<informant person_id="412">
+  <core_informant/>
+  <full_name>L&#xE6;rer Diderik Johansen</full_name>
+  <last_name>Johansen</last_name>
+  <first_name>Diderik</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="491" secondary_informant="0">
+      <informant_id>412</informant_id>
+      <publication_info>DS_II_E_163</publication_info>
+      <full_name>412 - 0.00 - DS_II_E_163</full_name>
+      <url>data/stories/491.dfl</url>
+      <place_recorded id="905">Vester Egede</place_recorded>
+      <places_mentioned>
+        <place id="95">
+          <name>Brodg&#xE5;rd</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="492" secondary_informant="0">
+      <informant_id>412</informant_id>
+      <publication_info>DS_VI_144</publication_info>
+      <full_name>412 - 0.00 - DS_VI_144</full_name>
+      <url>data/stories/492.dfl</url>
+      <place_recorded id="905">Vester Egede</place_recorded>
+      <places_mentioned>
+        <place id="561">
+          <name>S&#xF8;by S&#xF8;g&#xE5;rd</name>
+        </place>
+      </places_mentioned>
+    </story>
+    <story story_id="594" secondary_informant="0">
+      <informant_id>412</informant_id>
+      <publication_info>DS_V_1158</publication_info>
+      <full_name>412 - 0.00 - DS_V_1158</full_name>
+      <url>data/stories/594.dfl</url>
+      <place_recorded id="905">Vester Egede</place_recorded>
+      <places_mentioned/>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>905</place_id>
+      <name>Vester Egede</name>
+      <display_name>Vester Egede (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>561</place_id>
+      <name>S&#xF8;by S&#xF8;g&#xE5;rd</name>
+      <display_name>S&#xF8;by S&#xF8;g&#xE5;rd (mentioned in 1 story)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>95</place_id>
+      <name>Brodg&#xE5;rd</name>
+      <display_name>Brodg&#xE5;rd (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

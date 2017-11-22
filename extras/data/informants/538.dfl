@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<informant person_id="538">
+  <core_informant/>
+  <full_name>Hjalmar Svendsen</full_name>
+  <last_name>Svendsen</last_name>
+  <first_name>Hjalmar</first_name>
+  <gender>N/A</gender>
+  <birth_date>N/A</birth_date>
+  <death_date>N/A</death_date>
+  <occupations/>
+  <stories>
+    <story story_id="541" secondary_informant="0">
+      <informant_id>538</informant_id>
+      <publication_info>DS_VI_33</publication_info>
+      <full_name>538 - 0.00 - DS_VI_33</full_name>
+      <url>data/stories/541.dfl</url>
+      <place_recorded id="809">Kirke Skjensved</place_recorded>
+      <places_mentioned>
+        <place id="271">
+          <name>H&#xF8;jelse</name>
+        </place>
+      </places_mentioned>
+    </story>
+  </stories>
+  <places>
+    <place type="birth_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (birth place)</display_name>
+    </place>
+    <place type="death_place">
+      <place_id>N/A</place_id>
+      <name>N/A</name>
+      <display_name>N/A (death place)</display_name>
+    </place>
+    <place type="story_place">
+      <place_id>809</place_id>
+      <name>Kirke Skjensved</name>
+      <display_name>Kirke Skjensved (stories recorded here)</display_name>
+    </place>
+    <place type="place_mentioned">
+      <place_id>271</place_id>
+      <name>H&#xF8;jelse</name>
+      <display_name>H&#xF8;jelse (mentioned in 1 story)</display_name>
+    </place>
+  </places>
+</informant>

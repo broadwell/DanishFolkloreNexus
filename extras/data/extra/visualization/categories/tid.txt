@@ -1,0 +1,6 @@
+node_type_id	type
+1	story
+2	Tango index or genre
+3	keyword
+4	ETK index
+5	informant
