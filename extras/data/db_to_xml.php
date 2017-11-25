@@ -2,7 +2,7 @@
 
 # Connect to the database
 $user="dfl";
-$password="Dfl#123!";
+$password="???";
 $database="folkloredb";
 $dblink = mysql_connect("localhost:3306",$user,$password);
 if (!$dblink) {
